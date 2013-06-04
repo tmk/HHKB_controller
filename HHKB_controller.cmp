@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = 2013年06月03日 14時47分48秒
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = 2013年06月04日 11時26分46秒
 
 BeginCmp
 TimeStamp = /4EB8BB66;
 Reference = C1;
 ValeurCmp = 10u;
-IdModule  = SM_3216_POL;
+IdModule  = C_3216;
 EndCmp
 
 BeginCmp
@@ -60,7 +60,14 @@ BeginCmp
 TimeStamp = /51A7ECF4;
 Reference = C9;
 ValeurCmp = 10u;
-IdModule  = SM_3216_POL;
+IdModule  = C_3216;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AD4FB4;
+Reference = C10;
+ValeurCmp = 0.1u;
+IdModule  = C_1608;
 EndCmp
 
 BeginCmp
@@ -221,14 +228,14 @@ BeginCmp
 TimeStamp = /517F61D5;
 Reference = P18;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F61E2;
 Reference = P19;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
@@ -291,42 +298,42 @@ BeginCmp
 TimeStamp = /517F622A;
 Reference = P28;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F6230;
 Reference = P29;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F6236;
 Reference = P30;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F623E;
 Reference = P31;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F624B;
 Reference = P32;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F6251;
 Reference = P33;
 ValeurCmp = CONN_1;
-IdModule  = ;
+IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
