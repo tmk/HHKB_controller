@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = 2013年06月15日 16時01分06秒
+Cmp-Mod V01 Created by PcbNew date = 2013年06月17日 14時59分02秒
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -449,6 +449,13 @@ IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
+TimeStamp = /51BE8CA2;
+Reference = PTC1;
+ValeurCmp = PTC;
+IdModule  = PTC_3225;
+EndCmp
+
+BeginCmp
 TimeStamp = /51AFD396/51BB5234;
 Reference = Q1;
 ValeurCmp = MOSFET_N;
@@ -570,6 +577,20 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51BC0B88;
 Reference = R16;
+ValeurCmp = 1K;
+IdModule  = R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51BE9662;
+Reference = R17;
+ValeurCmp = R;
+IdModule  = R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51BE9671;
+Reference = R18;
 ValeurCmp = R;
 IdModule  = R_1608;
 EndCmp
@@ -585,7 +606,7 @@ BeginCmp
 TimeStamp = /51AFD396/51B98CFB;
 Reference = SW2;
 ValeurCmp = SPST;
-IdModule  = SW_ALPS_SSAA;
+IdModule  = SW_MINI_SLIDE;
 EndCmp
 
 BeginCmp
