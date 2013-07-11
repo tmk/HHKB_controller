@@ -1,0 +1,38 @@
+Power switching
+    slide switch USB<->BT
+
+    Powering and charging from USB bus durig conecting to USB port
+
+    States:
+            |   USB                 BT
+    --------+-------------------------------------
+    Plug in:|   Charge/USB kbd      Charge/BT kbd
+    No Plug:|   OFF                 BT kbd
+
+
+    (1)                 FET SW
+    VUSB-----+------------->|------VIN(5V)
+             |             =
+    Charger--+             |
+      |                    |
+    BATT---SW---DC-DC(5V)--+--DC-DC(3.3V)---BT module
+
+
+                              
+    (2)
+    VUSB-----+-------------SW------VIN(5V)
+             |             |        |
+    Charger--+             |        |
+      |                    |        |
+    BATT--------DC-DC(5V)--+        +--DC-DC(3.3V)---BT module
+
+    Can't turn off BT
+
+
+Mini USB receptacle
+    a bit more left? 0.1? 0.2mm?
+
+key state PIN pull up resistor(R1)
+    1KOhm is too strong it doesn't work.
+    10KOhm works. Without pull up resistor it also works well.
+    This land should be removed?
