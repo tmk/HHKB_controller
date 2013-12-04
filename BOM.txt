@@ -1,0 +1,55 @@
+
+
+Capacitor
+22pF        1608            sengoku                  40     for Xtal
+
+0.1uF       1608 50V    Z   akizuki     \100/200    300     for decoupling  GRM188F11H104ZA
+1uF         1608 16V  10%   akizuki     \200/100    150     for USB Vreg
+18pF        1608 50V   5%   akizuki     \200/100    100     for Xtal
+47uF        3225 16V        akizuki     \200/5      4       for DC-DC power
+22uF        3528            akizuki     \100/10     8       for DC-DC power Tantalium
+
+1uF         1608 16V  80%   akizuki     \200/100    200     Not Used        GRM188F11C105ZA
+0.01uF      1608 50V  10%   akizuki     \100/100    100     Not Used
+0.1uF       2012            akizuki     \100/25     20      Not Used
+
+10uF        2012 6.3V 10%   akizuki     \100/20     30      for Power decoupling
+            3216 16V  10%   akizuki     \250/20     0
+            3225 50V        akizuki     \250/10     0
+            3216 10V  10%   akizuki     \250/20     0       GRM31CR71A106KA01
+            3216 10V  10%   akizuki     \250/20     0       GRM31MB31A106KE18
+1uF         3016                                    6       for Power decoupling
+
+
+
+Resistor
+68R                                                 20
+1.5KR                                               20
+2.2KR                                               20
+3.3KR                                               20
+4.7KR                                               20
+22R                                                 40
+10KR                                                4       ****
+1KR                                                 25      ****
+
+
+Switch
+Tactile SW  lead            sengoku     \150/10     10      for converter reset button
+Tactile SW  lead side       aitendo     \100/2      4       for HHKB reset button
+
+
+Xtal        16MHZ           akizuki     \200/5      10      SMD             *
+Xtal        16MHZ           akizuki     \400/10      0      TH 
+Xtal        16MHZ           digikey     \25          3      TH 
+
+
+LED         1608 red        akizuki     \200/40     40
+LED         1608 green      akizuki     \150/10     10
+
+
+JST         ZR 13p                      \45         4       TH              ****
+
+
+ATMega32U4                              \328        12      TQFP            **      \540/10, \400/25
+ATMega32U2                  akizuki     \400        0       TQFP            **      \400/10, \300/25
+AT90USB162                  akizuki     \300        0       TQFP            **      \330/10, \250/25

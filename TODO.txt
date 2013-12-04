@@ -1,4 +1,32 @@
+Diode O-ring selector
+---------------------
+Schottkys are usually used to minimize voltage drop. The heighest voltage power source is selected in Output.
+
+    PS1 --|>S----+
+                 |
+    PS2 --|>S----+--- OUT
+                 |
+    PS3 --|>S----+
+
+http://www.codemsys.com/SMPS/Parallel.htm
+
+### MOSFET O-Ring
+http://www.edn.com/design/analog/4368307/Use-op-amps-to-make-automatic-ORing-power-selector
+
+
+Ideal Diode
+-----------
+
+
+
+Load switching
+--------------
+http://www.onsemi.com/pub_link/Collateral/AND9093-D.PDF
+http://www.eetimes.com/document.asp?doc_id=1272433
+
+
 Power switching
+---------------
     slide switch USB<->BT
 
     Powering and charging from USB bus durig conecting to USB port
@@ -29,6 +57,31 @@ Power switching
     Can't turn off BT
 
 
+
+Revise PCB
+----------
+Size of Hole
+    Type-S board is a bit more tight than pro2 and my PCB. Right top and Left top hole can be smaller of diameter or height of oval.
+
+C1,C2 10uF: proper size 3216,3225,2012?
+    Use cheaper component?
+    
+JP1
+    solder jumper is no good. redesign is needed.
+    VBUS-VIN(No wireless) by default
+
+JP4
+    NO POWER CONTROL(connected) by default
+
+SMD Connector
+    instead of TH
+
+SMD Xtal
+    instead of TH
+
+Reset button
+    SMD?
+
 Mini USB receptacle
     a bit more left? 0.1? 0.2mm?
 
@@ -36,3 +89,158 @@ key state PIN pull up resistor(R1)
     1KOhm is too strong it doesn't work.
     10KOhm works. Without pull up resistor it also works well.
     This land should be removed?
+
+Components for USB controller
+    0.1uF * 5
+      1uF * 1
+     10uF * 2
+     22pF * 2
+    1KOhm * 2
+    Xtal
+    ATMega32U4
+    LED
+    Push Button
+    Mini USB receptacle
+    JST connector
+    22Ohm * 2
+
+
+Power Switching
+---------------
+Rule of switch between Lipo battery and USB power:
+- Power is souced from USB when cable is connected
+- Power is souced from Lipo when cable is disconnected
+- Always charging Lipo whenever USB cable is connected
+
+<http://forum.arduino.cc/index.php?topic=22596.0>
+
+
+### Whether USB is connected and powered
+With state change interruption of VBUS pin (ATMega32u4 VBUS) firmware can detect this.
+ATMega32u2 has no VBUS state change intterupt.
+
+### Whether BT module is powered
+TODO: research if USART engine can detect this
+
+### Lipo Charger
+Lipo charger is alway powered from USB
+
+### BT module
+This requires 3.3V and DC-DC step-up/buck converter.(RN-42 and WT12)
+With slide switch user can siwtch between BT and USB keyboard connection and control power of the module.
+
+### HHKB key switch
+This requires 5V and sourced from USB power line or Lipo with DC-DC step-up converter.
+
+### 5V DC-DC step-up converter
+
+### 3.3V DC-DC buck converter
+For Bluetooth modules like RN-42 or WT12.
+
+
+FET Selection
+--------------------
+Uno, Leonardo uses FET: FDN340P
+http://arduino.cc/en/uploads/Main/Arduino_Uno_Rev3-schematic.pdf
+http://arduino.cc/en/uploads/Main/arduino-leonardo-schematic_3b.pdf
+Duemilanove uses NDT2955
+http://arduino.cc/en/uploads/Main/arduino-duemilanove-schematic.pdf
+
+FDN340P - P-Ch Power Trench CMOS
+https://www.fairchildsemi.com/ds/FD/FDN340P.pdf
+Rds     60mOhm, Vgs=-4.5 Id=-2A
+
+NDT2955 - P-Ch
+http://www.fairchildsemi.com/ds/ND/NDT2955.pdf
+Rds     163mOhm, Vgs=-4.5 Id=-2A
+
+Power FET list:
+http://www.latticesemi.com/~/media/Documents/ApplicationNotes/UsingPowerMOSFETswithPowerManagerDevices.ashx
+
+
+Protocol Switching
+------------------
+Rules of switcing:
+- BT is not powered when user turns it off with slide switch.
+- When USB cable is connected BT is sourced from USB power line and it charges Lipo
+- When USB cable is not connected BT is sourced from Lipo via DC-DC converter
+- USB works when BT is turned off by user and USB cable is connected
+
+### State of keyboard:
+
+    BT switch   USB cable       Lipo        keyboard    USB debug   UART debug
+    ----------------------------------------------------------------------------
+    On          connected       charge      BT          On          On
+    On          not connected   discahrge   BT          Off         On
+    Off         connected       charge      USB         On          On
+    Off         not connected   quiescent   not work    Off         Off
+
+    Lipo Switch USB cable       Lipo        keyboard    USB debug   UART debug
+    ----------------------------------------------------------------------------
+    On          connected       charge      BT(USB)     On          On
+    On          not connected   discahrge   BT          Off         On
+    Off         connected       charge      USB(BT)     On          On
+    Off         not connected   quiescent   not work    Off         Off
+
+### Without BT Switch:
+Not a good idea. It can't be powered off and continues discharging till Lipo is exhausted. User will want to turn it off to save the battery while their traveling or commuting.
+
+    USB cable       Lipo        keyboard    USB debug   UART debug
+    ----------------------------------------------------------------
+    connected       charge      USB         On          On
+    not connected   discahrge   BT          Off         On
+
+
+Bluetooth Modules
+-----------------
+Bluegiga        WT12        $25         digikey.com
+Roving          RN-42       $15.72      microchipdirect.com
+KCwirefree      WC-21       $36         kcwirefree.com
+Adafruit        bluefruit   $19.95      adafruit.com
+
+
+
+Reverse Plolarity Protection
+----------------------------
+<http://www.ti.com/lit/an/slva139/slva139.pdf>
+
+
+### MOS FET
+Low loss comparing with diode.
+
+LTC4054 datasheet Fig6
+
+         PMOS FET
+    VIN----->|-----VOUT
+            ^
+            |
+           GND
+
+    VIN-----+------VOUT
+            |
+            V
+    GND----|<------GND
+         NMOS FET
+
+FET's body diode is oriented in the direction of normal current flow.
+
+Example of FET DS resistance. Less than 100mOhm at normal operational voltage.
+- 80mR at 2.7V
+- 51mR at 1.8V
+
+### Schottky diode
+Cost is not low as normal diode.
+
+    VIN----->|-----VOUT
+
+
+Voltage Shifter
+---------------
+         3.3V        5V
+         |           |
+         +------+    |
+         R 10K  |    R 10K
+   3.3V  |     ___   |
+   IN----+-----^ ----+------OUT 5V
+              BSS138 N-Ch
+
