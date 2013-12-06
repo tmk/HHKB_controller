@@ -1,26 +1,34 @@
-update=Thu 11 Jul 2013 10:16:17 JST
+update=Fri 06 Dec 2013 17:55:43 JST
 version=1
-last_client=kicad
+last_client=eeschema
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[general]
+version=1
 [pcbnew]
 version=1
 LastNetListRead=HHKB_controller.net
 UseCmpFile=1
-PadDrill="    0.000000"
-PadDrillOvalY="    0.000000"
-PadSizeH="    1.100000"
-PadSizeV="    1.100000"
-PcbTextSizeV="    1.500000"
-PcbTextSizeH="    1.500000"
-PcbTextThickness="    0.300000"
-ModuleTextSizeV="    1.000000"
-ModuleTextSizeH="    1.000000"
+PadDrill="    0.700000"
+PadDrillOvalY="    0.700000"
+PadSizeH="    1.200000"
+PadSizeV="    1.200000"
+PcbTextSizeV="    0.800000"
+PcbTextSizeH="    0.800000"
+PcbTextThickness="    0.150000"
+ModuleTextSizeV="    0.800000"
+ModuleTextSizeH="    0.800000"
 ModuleTextSizeThickness="    0.150000"
 SolderMaskClearance="    0.000000"
 SolderMaskMinWidth="    0.000000"
 DrawSegmentWidth="    0.100000"
 BoardOutlineThickness="    0.100000"
-ModuleOutlineThickness="    0.160000"
+ModuleOutlineThickness="    0.200000"
 [pcbnew/libraries]
+LibDir=../HHKB_controller;../../../tmp/kicadlibrary
 LibName1=keyboard_parts
 LibName2=sockets
 LibName3=connect
@@ -36,10 +44,10 @@ LibName12=led
 LibName13=dip_sockets
 LibName14=pga_sockets
 LibName15=valves
-LibDir=../HHKB_controller
+LibName16=open-project
 [eeschema]
 version=1
-LibDir=../HHKB_controller
+LibDir=../HHKB_controller;../../../tmp/kicadlibrary
 NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100
@@ -78,10 +86,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
-[general]
-version=1
+LibName33=open-project
