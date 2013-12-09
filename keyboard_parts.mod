@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  2013年06月17日 15時36分51秒
+PCBNEW-LibModule-V1  Sun 08 Dec 2013 04:19:34 JST
 # encoding utf-8
 Units mm
 $INDEX
@@ -24,6 +24,7 @@ MOS_FET_SOT23-3_HSOL
 PIN_1
 PIN_1_SQUARE
 PTC_3225
+RN42
 R_1608
 R_2012
 SM_3216_POL
@@ -1065,6 +1066,247 @@ Ne 0 ""
 Po -1.5 0
 $EndPAD
 $EndMODULE PTC_3225
+$MODULE RN42
+Po 0 0 0 15 52A37305 00000000 ~~
+Li RN42
+Sc 0
+AR 
+Op 0 0 0
+T0 6.3 7.5 1.2 1.2 0 0.2 N V 21 N "RN42"
+T1 6.858 17.78 0.762 0.762 0 0.127 N V 21 N "VAL**"
+DS 13.4 16 0 16 0.2 21
+DS 0 16 0 -9.6 0.2 21
+DS 0 -9.6 13.4 -9.6 0.2 21
+DS 13.4 -9.6 13.4 16 0.2 21
+$PAD
+Sh "11" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 12.0
+$EndPAD
+$PAD
+Sh "12" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 13.2
+$EndPAD
+$PAD
+Sh "10" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 10.8
+$EndPAD
+$PAD
+Sh "9" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 9.6
+$EndPAD
+$PAD
+Sh "5" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 4.8
+$EndPAD
+$PAD
+Sh "6" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 6.0
+$EndPAD
+$PAD
+Sh "8" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 8.4
+$EndPAD
+$PAD
+Sh "7" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 7.2
+$EndPAD
+$PAD
+Sh "3" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 2.4
+$EndPAD
+$PAD
+Sh "4" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 3.6
+$EndPAD
+$PAD
+Sh "2" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 1.2
+$EndPAD
+$PAD
+Sh "1" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "13" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 13.2
+$EndPAD
+$PAD
+Sh "14" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 12.0
+$EndPAD
+$PAD
+Sh "15" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 10.8
+$EndPAD
+$PAD
+Sh "16" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 9.6
+$EndPAD
+$PAD
+Sh "17" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 8.4
+$EndPAD
+$PAD
+Sh "18" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 7.2
+$EndPAD
+$PAD
+Sh "19" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 6.0
+$EndPAD
+$PAD
+Sh "20" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 4.8
+$EndPAD
+$PAD
+Sh "21" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 3.6
+$EndPAD
+$PAD
+Sh "22" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 2.4
+$EndPAD
+$PAD
+Sh "23" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 1.2
+$EndPAD
+$PAD
+Sh "24" R 1.5 0.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.4 0
+$EndPAD
+$PAD
+Sh "35" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.6 16.0
+.LocalClearance 0.1778
+$EndPAD
+$PAD
+Sh "29" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.6 16.0
+.LocalClearance 0.1778
+$EndPAD
+$PAD
+Sh "34" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.9 16.0
+$EndPAD
+$PAD
+Sh "33" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 6.1 16.0
+$EndPAD
+$PAD
+Sh "32" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 7.3 16.0
+$EndPAD
+$PAD
+Sh "31" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 8.5 16.0
+$EndPAD
+$PAD
+Sh "28" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 9.8 16.0
+.LocalClearance 0.1778
+$EndPAD
+$PAD
+Sh "30" R 0.8 1.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 10.8 16.0
+.LocalClearance 0.1778
+$EndPAD
+$EndMODULE RN42
 $MODULE R_1608
 Po 0 0 0 15 51BEAE66 00000000 ~~
 Li R_1608
