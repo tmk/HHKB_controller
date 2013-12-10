@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Tue 10 Dec 2013 15:05:23 JST
+PCBNEW-LibModule-V1  Tue 10 Dec 2013 15:52:02 JST
 # encoding utf-8
 Units mm
 $INDEX
@@ -8,6 +8,7 @@ C_3225
 C_3228
 D_SC79
 FA-238
+HHKB_JP_HRS_DF14_15P
 HHKB_PRO2_ZH13
 HHKB_PRO2_ZH13_TH
 HHKB_PRO_PH15
@@ -291,6 +292,134 @@ Ne 0 ""
 Po 1.09982 0.8001
 $EndPAD
 $EndMODULE FA-238
+$MODULE HHKB_JP_HRS_DF14_15P
+Po 0 0 0 15 52A6B988 00000000 ~~
+Li HHKB_JP_HRS_DF14_15P
+Sc 0
+AR 
+Op 0 0 0
+T0 9.3 -3 0.8 0.8 0 0.15 N V 21 N "HHKB_JP_HRS_DF14_15P"
+T1 9.4 2.6 0.8 0.8 0 0.15 N V 21 N "VAL**"
+$PAD
+Sh "17" R 2 2.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 19.9 -5.1
+$EndPAD
+$PAD
+Sh "9" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 20 0
+$EndPAD
+$PAD
+Sh "10" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 22.5 0
+$EndPAD
+$PAD
+Sh "12" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 27.5 0
+$EndPAD
+$PAD
+Sh "11" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 25 0
+$EndPAD
+$PAD
+Sh "15" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 35 0
+$EndPAD
+$PAD
+Sh "14" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 32.5 0
+$EndPAD
+$PAD
+Sh "13" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 30 0
+$EndPAD
+$PAD
+Sh "5" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "6" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 12.5 0
+$EndPAD
+$PAD
+Sh "8" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 8.75 0
+$EndPAD
+$PAD
+Sh "7" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 15 0
+$EndPAD
+$PAD
+Sh "3" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "4" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 7.5 0
+$EndPAD
+$PAD
+Sh "2" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.25 0
+$EndPAD
+$PAD
+Sh "1" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "16" R 2 2.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.4 -5.1
+$EndPAD
+$EndMODULE HHKB_JP_HRS_DF14_15P
 $MODULE HHKB_PRO2_ZH13
 Po 0 0 0 15 52A6AEBF 00000000 ~~
 Li HHKB_PRO2_ZH13
