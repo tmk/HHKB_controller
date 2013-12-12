@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Thu 12 Dec 2013 11:31:49 JST
+PCBNEW-LibModule-V1  Thu 12 Dec 2013 11:46:58 JST
 # encoding utf-8
 Units mm
 $INDEX
@@ -868,7 +868,7 @@ Po 0 0
 $EndPAD
 $EndMODULE JST_PH2_SMT
 $MODULE JST_PH2_TH
-Po 0 0 0 15 51B4D478 00000000 ~~
+Po 0 0 0 15 52A92354 00000000 ~~
 Li JST_PH2_TH
 Kw JST, PH2, Lipo
 Sc 0
@@ -881,14 +881,14 @@ DS -2.95 -6.25 -2.95 1.6 0.16 21
 DS -2.95 1.6 2.95 1.6 0.16 21
 DS 2.95 1.6 2.95 -6.25 0.16 21
 $PAD
-Sh "2" O 1.2 1.7 0 0 0
+Sh "1" O 1.2 1.7 0 0 0
 Dr 0.7 0 0 O 0.7 0.7
 At STD N 00E0FFFF
 Ne 0 ""
 Po 1 0
 $EndPAD
 $PAD
-Sh "3" O 1.2 1.7 0 0 0
+Sh "2" O 1.2 1.7 0 0 0
 Dr 0.7 0 0 O 0.7 0.7
 At STD N 00E0FFFF
 Ne 0 ""
