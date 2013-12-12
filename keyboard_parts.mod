@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Thu 12 Dec 2013 09:02:40 JST
+PCBNEW-LibModule-V1  Thu 12 Dec 2013 11:31:49 JST
 # encoding utf-8
 Units mm
 $INDEX
@@ -15,6 +15,7 @@ HHKB_PRO2_ZH13_TH
 HHKB_PRO_PH15
 HOLE_M2.6
 HOLE_M3
+JST_PH2_SMT
 JST_PH2_TH
 LED_0805
 LED_2012_HSOL
@@ -823,6 +824,49 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE HOLE_M3
+$MODULE JST_PH2_SMT
+Po 0 0 0 15 52A91DB4 00000000 ~~
+Li JST_PH2_SMT
+Cd http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+Kw JST, PH, Lipo, battery
+Sc 0
+AR 
+Op 0 0 0
+T0 1.2 2.9 0.8 0.8 0 0.15 N V 21 N "JST_PH2_SMT"
+T1 1.4 -3.6 0.8 0.8 0 0.15 N V 21 N "VAL**"
+DS -2.9 -0.4 -2.9 4 0.2 21
+DS -2.9 -0.4 4.9 -0.4 0.2 21
+DS 4.9 -0.4 4.9 4 0.2 21
+DS 3.6 7.2 -1.6 7.2 0.2 21
+$PAD
+Sh "3" R 1.5 3.4 0 0 0
+Dr 0 -0.75 -0.2
+At SMD N 00888000
+Ne 0 ""
+Po 5.1 5.9
+$EndPAD
+$PAD
+Sh "2" R 1 3.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2 0
+$EndPAD
+$PAD
+Sh "3" R 1.5 3.4 0 0 0
+Dr 0 -0.75 -0.2
+At SMD N 00888000
+Ne 0 ""
+Po -1.6 5.9
+$EndPAD
+$PAD
+Sh "1" R 1 3.6 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE JST_PH2_SMT
 $MODULE JST_PH2_TH
 Po 0 0 0 15 51B4D478 00000000 ~~
 Li JST_PH2_TH
