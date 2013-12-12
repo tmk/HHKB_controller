@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = 2013年06月17日 14時59分02秒
+Cmp-Mod V01 Created by PcbNew date = Thu 12 Dec 2013 11:33:01 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -347,7 +347,7 @@ BeginCmp
 TimeStamp = /51AFD396/51AFD4A8;
 Reference = P16;
 ValeurCmp = CONN_2;
-IdModule  = JST_PH2_TH;
+IdModule  = JST_PH2_SMT;
 EndCmp
 
 BeginCmp

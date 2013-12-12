@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:open-project
 LIBS:HHKB_controller-cache
 EELAYER 24 0
 EELAYER END
@@ -81,7 +82,7 @@ F 1 "CONN_2" V 6500 6150 40  0000 C CNN
 F 2 "" H 6450 6150 60  0000 C CNN
 F 3 "" H 6450 6150 60  0000 C CNN
 	1    6450 6150
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Text Notes 5700 6200 0    60   ~ 0
 Lipo Battery\nJST connector

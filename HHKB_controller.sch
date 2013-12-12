@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:open-project
 LIBS:HHKB_controller-cache
 EELAYER 24 0
 EELAYER END
