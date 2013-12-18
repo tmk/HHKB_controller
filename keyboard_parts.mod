@@ -1,7 +1,8 @@
-PCBNEW-LibModule-V1  Thu 12 Dec 2013 11:46:58 JST
+PCBNEW-LibModule-V1  Tue 17 Dec 2013 15:19:34 JST
 # encoding utf-8
 Units mm
 $INDEX
+AVR_ICSP_3x2
 C_1608
 C_3216
 C_3225
@@ -32,6 +33,7 @@ R_1608
 R_2012
 SM_3216_POL
 SOLDER_JUMPER_2
+SOLDER_JUMPER_2_WIRED
 SOLDER_JUMPER_3
 SOT23-3_HSOL
 SOT23-5_HSOL
@@ -47,6 +49,72 @@ USB_miniB_hirose_new
 WT12_bluegiga
 XTAL_HC_49_TH
 $EndINDEX
+$MODULE AVR_ICSP_3x2
+Po 0 0 0 15 52AFEB3A 00000000 ~~
+Li AVR_ICSP_3x2
+Cd Double rangee de contacts 2 x 4 pins
+Kw CONN
+Sc 0
+AR /51A80544
+Op 0 0 0
+T0 4.195 3.596 1.016 1.016 0 0.2032 N I 21 N "P15"
+T1 -0.06096 0.03048 1.016 1.016 0 0.2032 N I 21 N "CONN_3X2"
+DS -1.25 2.55 -1.25 3.35 0.2 21
+DS -1.25 3.35 1.3 3.35 0.2 21
+DS 1.3 3.35 1.3 2.55 0.2 21
+DS 3.81 2.54 -3.81 2.54 0.2032 21
+DS -3.81 -2.54 3.81 -2.54 0.2032 21
+DS 3.81 -2.54 3.81 2.54 0.2032 21
+DS -3.81 2.54 -3.81 -2.54 0.2032 21
+$PAD
+Sh "1" R 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 3 "/PB3"
+Po -2.54 1.27
+$EndPAD
+$PAD
+Sh "2" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 6 "VIN"
+Po -2.54 -1.27
+$EndPAD
+$PAD
+Sh "3" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 1 "/PB1"
+Po 0 1.27
+$EndPAD
+$PAD
+Sh "4" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 2 "/PB2"
+Po 0 -1.27
+$EndPAD
+$PAD
+Sh "5" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 4 "/~RESET"
+Po 2.54 1.27
+$EndPAD
+$PAD
+Sh "6" C 1.524 1.524 0 0 0
+Dr 1.016 0 0
+At STD N 00E0FFFF
+Ne 5 "GND"
+Po 2.54 -1.27
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_3x2.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE AVR_ICSP_3x2
 $MODULE C_1608
 Po 0 0 0 15 51AC294F 00000000 ~~
 Li C_1608
@@ -322,7 +390,7 @@ Po 4.75 0
 $EndPAD
 $EndMODULE HC-49_SMT
 $MODULE HHKB_JP_HRS_DF14_15P
-Po 0 0 0 15 52A6B988 00000000 ~~
+Po 0 0 0 15 52AB2FA4 00000000 ~~
 Li HHKB_JP_HRS_DF14_15P
 Cd http://www.mouser.com/ds/2/185/e53800017-12550.pdf
 Kw HHKB JP, HRS, Hirose, DF14, 15P
@@ -339,67 +407,67 @@ Ne 0 ""
 Po 19.9 -5.1
 $EndPAD
 $PAD
-Sh "9" R 0.7 1.8 0 0 0
+Sh "7" R 0.7 1.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 20 0
-$EndPAD
-$PAD
-Sh "10" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 22.5 0
-$EndPAD
-$PAD
-Sh "12" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 27.5 0
-$EndPAD
-$PAD
-Sh "11" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 25 0
-$EndPAD
-$PAD
-Sh "15" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 35 0
-$EndPAD
-$PAD
-Sh "14" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 32.5 0
-$EndPAD
-$PAD
-Sh "13" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 30 0
-$EndPAD
-$PAD
-Sh "5" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 5 0
+Po 10 0
 $EndPAD
 $PAD
 Sh "6" R 0.7 1.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
+Po 11.25 0
+$EndPAD
+$PAD
+Sh "4" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 13.75 0
+$EndPAD
+$PAD
+Sh "5" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
 Po 12.5 0
+$EndPAD
+$PAD
+Sh "1" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 17.5 0
+$EndPAD
+$PAD
+Sh "2" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 16.25 0
+$EndPAD
+$PAD
+Sh "3" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 15 0
+$EndPAD
+$PAD
+Sh "11" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "10" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 6.25 0
 $EndPAD
 $PAD
 Sh "8" R 0.7 1.8 0 0 0
@@ -409,35 +477,35 @@ Ne 0 ""
 Po 8.75 0
 $EndPAD
 $PAD
-Sh "7" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 15 0
-$EndPAD
-$PAD
-Sh "3" R 0.7 1.8 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 5 0
-$EndPAD
-$PAD
-Sh "4" R 0.7 1.8 0 0 0
+Sh "9" R 0.7 1.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 7.5 0
 $EndPAD
 $PAD
-Sh "2" R 0.7 1.8 0 0 0
+Sh "13" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.5 0
+$EndPAD
+$PAD
+Sh "12" R 0.7 1.8 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.75 0
+$EndPAD
+$PAD
+Sh "14" R 0.7 1.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 1.25 0
 $EndPAD
 $PAD
-Sh "1" R 0.7 1.8 0 0 0
+Sh "15" R 0.7 1.8 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
@@ -1659,6 +1727,48 @@ Po -0.4 0
 .LocalClearance 0.1
 $EndPAD
 $EndMODULE SOLDER_JUMPER_2
+$MODULE SOLDER_JUMPER_2_WIRED
+Po 0 0 0 15 52AAA434 00000000 ~~
+Li SOLDER_JUMPER_2_WIRED
+Kw solder jumper bridge configuration
+Sc 0
+AR /51BC02F3
+Op 0 0 0
+At VIRTUAL
+T0 1.8 0.1 0.8 0.8 900 0.15 N V 21 N "JP4"
+T1 0 1.65 0.8 0.8 0 0.15 N I 21 N "JUMPER"
+DS 0.95 -0.6 0.95 0.55 0.2 21
+DS -0.7 -0.85 0.7 -0.85 0.2 21
+DS -0.95 0.6 -0.95 -0.6 0.2 21
+DS -0.65 0.85 0.65 0.85 0.2 21
+DA -0.7 0.6 -0.7 0.85 900 0.2 21
+DA -0.7 -0.6 -0.95 -0.6 900 0.2 21
+DA 0.7 -0.6 0.7 -0.85 900 0.2 21
+DA 0.7 0.6 0.95 0.6 900 0.2 21
+$PAD
+Sh "2" R 0.6 1.2 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 1 "/HHKB_GND"
+Po 0.4 0
+.LocalClearance 0.1
+$EndPAD
+$PAD
+Sh "1" R 0.6 1.2 0 0 0
+Dr 0 0 0
+At SMD N 00808000
+Ne 2 "GND"
+Po -0.4 0
+.LocalClearance 0.1
+$EndPAD
+$PAD
+Sh "3" R 0.5 0.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE SOLDER_JUMPER_2_WIRED
 $MODULE SOLDER_JUMPER_3
 Po 0 0 0 15 51BB535D 00000000 ~~
 Li SOLDER_JUMPER_3

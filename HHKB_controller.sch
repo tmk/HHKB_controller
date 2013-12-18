@@ -537,32 +537,6 @@ F 3 "" H 1150 2825 60  0000 C CNN
 	1    1150 2825
 	-1   0    0    1   
 $EndComp
-$Comp
-L R R1
-U 1 1 517F6E00
-P 3550 6250
-F 0 "R1" V 3630 6250 50  0000 C CNN
-F 1 "1K" V 3550 6250 50  0000 C CNN
-F 2 "" H 3550 6250 60  0000 C CNN
-F 3 "" H 3550 6250 60  0000 C CNN
-	1    3550 6250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L +5V #PWR018
-U 1 1 517F6E08
-P 3000 6100
-F 0 "#PWR018" H 3000 6190 20  0001 C CNN
-F 1 "+5V" H 3000 6190 30  0000 C CNN
-F 2 "" H 3000 6100 60  0000 C CNN
-F 3 "" H 3000 6100 60  0000 C CNN
-	1    3000 6100
-	1    0    0    -1  
-$EndComp
-Text Label 3900 6250 0    60   ~ 0
-PD7
-Text Notes 2950 6600 0    60   Italic 0
-Optional Pullup Resistors
 Text Notes 900  3000 0    60   Italic 0
 USB pins for external connector
 Text Notes 4350 2200 0    60   Italic 0
@@ -618,7 +592,7 @@ F 3 "" H 1950 4800 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 1800 5900 0    60   Italic 0
-Hirose ZH for Pro2
+JST ZH for Pro2
 Text Label 2550 4600 0    60   Italic 0
 PB0
 Text Label 2550 4700 0    60   Italic 0
@@ -681,23 +655,23 @@ F 3 "" H 900 4850 60  0000 C CNN
 	1    900  4800
 	-1   0    0    -1  
 $EndComp
-Text Label 1500 4600 0    60   Italic 0
-PB0
-Text Label 1500 4700 0    60   Italic 0
-PB1
-Text Label 1500 4800 0    60   Italic 0
-PB2
-Text Label 1500 4900 0    60   Italic 0
-PB3
-Text Label 1500 5000 0    60   Italic 0
-PB4
-Text Label 1500 5100 0    60   Italic 0
-PB5
-Text Label 1500 5200 0    60   Italic 0
-PB6
 Text Label 1500 4500 0    60   Italic 0
-PB7
+PB0
+Text Label 1500 4600 0    60   Italic 0
+PB1
+Text Label 1500 4700 0    60   Italic 0
+PB2
+Text Label 1500 4800 0    60   Italic 0
+PB3
+Text Label 1500 4900 0    60   Italic 0
+PB4
+Text Label 1500 5000 0    60   Italic 0
+PB5
+Text Label 1500 5100 0    60   Italic 0
+PB6
 Text Label 1500 4400 0    60   Italic 0
+PB7
+Text Label 1500 4300 0    60   Italic 0
 PD7
 $Comp
 L +5V #PWR020
@@ -710,8 +684,8 @@ F 3 "" H 3300 3800 60  0000 C CNN
 	1    3300 3800
 	1    0    0    -1  
 $EndComp
-Text Notes 750  5900 0    60   Italic 0
-Hirose PH for Pro
+Text Notes 650  5900 0    60   Italic 0
+Hirose DF14A for JP
 $Comp
 L +5V #PWR021
 U 1 1 519EBD1D
@@ -732,17 +706,6 @@ F 1 "CONN_1" H 7100 5155 30  0001 C CNN
 F 2 "" H 7100 5100 60  0000 C CNN
 F 3 "" H 7100 5100 60  0000 C CNN
 	1    7100 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_1 P5
-U 1 1 519EBF68
-P 7100 5000
-F 0 "P5" H 7180 5000 40  0000 L CNN
-F 1 "CONN_1" H 7100 5055 30  0001 C CNN
-F 2 "" H 7100 5000 60  0000 C CNN
-F 3 "" H 7100 5000 60  0000 C CNN
-	1    7100 5000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -778,8 +741,6 @@ F 3 "" H 7100 5400 60  0000 C CNN
 	1    7100 5400
 	-1   0    0    1   
 $EndComp
-Text Label 7300 5000 0    60   ~ 0
-VBUS
 Text Label 7300 5200 0    60   ~ 0
 PD2
 Text Label 7300 5300 0    60   ~ 0
@@ -864,8 +825,8 @@ F 3 "" H 2200 1950 60  0000 C CNN
 	1    2200 1950
 	1    0    0    -1  
 $EndComp
-Text Notes 9850 7050 0    60   Italic 0
-ISP pins
+Text Notes 9950 6850 0    60   Italic 0
+ICSP
 $Comp
 L CONN_3X2 P15
 U 1 1 51A80544
@@ -965,8 +926,6 @@ For Power Control
 Text Notes 7950 5700 2    60   ~ 0
 For Bluetooth via UART
 NoConn ~ 5650 3500
-NoConn ~ 7800 2700
-NoConn ~ 7800 2600
 NoConn ~ 7800 2200
 NoConn ~ 7800 2100
 NoConn ~ 7800 2000
@@ -1077,19 +1036,6 @@ $EndComp
 Text Notes 2450 3500 0    60   ~ 0
 AMP MEASURE POINT
 $Comp
-L CONN_1 P30
-U 1 1 51BB5FB5
-P 1150 3250
-F 0 "P30" H 1230 3250 40  0000 L CNN
-F 1 "CONN_1" H 1150 3305 30  0001 C CNN
-F 2 "" H 1150 3250 60  0000 C CNN
-F 3 "" H 1150 3250 60  0000 C CNN
-	1    1150 3250
-	-1   0    0    1   
-$EndComp
-Text Notes 900  3450 0    60   Italic 0
-AMP MEASURE POINT
-$Comp
 L JUMPER JP4
 U 1 1 51BC02F3
 P 2500 6900
@@ -1099,17 +1045,6 @@ F 2 "" H 2500 6900 60  0000 C CNN
 F 3 "" H 2500 6900 60  0000 C CNN
 	1    2500 6900
 	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR029
-U 1 1 51BC03C8
-P 2500 7250
-F 0 "#PWR029" H 2500 7250 30  0001 C CNN
-F 1 "GND" H 2500 7180 30  0001 C CNN
-F 2 "" H 2500 7250 60  0000 C CNN
-F 3 "" H 2500 7250 60  0000 C CNN
-	1    2500 7250
-	1    0    0    -1  
 $EndComp
 Text GLabel 5600 5550 2    60   Input ~ 0
 BT_INDICATOR
@@ -1121,8 +1056,6 @@ Text Label 5200 5350 0    60   ~ 0
 PF0
 Text Label 1600 1050 0    60   ~ 0
 VBUS
-Wire Wire Line
-	3300 6250 3000 6250
 Wire Wire Line
 	1300 2825 1600 2825
 Wire Wire Line
@@ -1273,8 +1206,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 5200 9000 5200
 Wire Wire Line
-	3800 6250 4100 6250
-Wire Wire Line
 	9850 3300 9850 3200
 Wire Wire Line
 	9850 2800 9850 2700
@@ -1317,6 +1248,8 @@ Wire Wire Line
 Wire Wire Line
 	9800 5300 10100 5300
 Wire Wire Line
+	1250 4300 1700 4300
+Wire Wire Line
 	1250 4400 1700 4400
 Wire Wire Line
 	1250 4500 1700 4500
@@ -1333,27 +1266,14 @@ Wire Wire Line
 Wire Wire Line
 	1250 5100 1700 5100
 Wire Wire Line
-	1250 5200 1700 5200
-Wire Wire Line
-	1450 3950 1450 4300
-Wire Wire Line
 	1250 4100 1450 4100
 Connection ~ 1450 4100
 Wire Wire Line
 	1250 4200 1450 4200
-Connection ~ 1450 4200
 Wire Wire Line
-	1450 4300 1250 4300
-Wire Wire Line
-	1450 5300 1450 5650
+	1450 5200 1450 5650
 Wire Wire Line
 	1250 5300 1450 5300
-Wire Wire Line
-	1250 5400 1450 5400
-Connection ~ 1450 5400
-Wire Wire Line
-	1250 5500 1450 5500
-Connection ~ 1450 5500
 Wire Wire Line
 	5200 1000 5200 1500
 Wire Wire Line
@@ -1364,10 +1284,6 @@ Wire Wire Line
 	7250 5300 7550 5300
 Wire Wire Line
 	7250 5400 7550 5400
-Wire Wire Line
-	7250 5000 7550 5000
-Wire Wire Line
-	3000 6250 3000 6100
 Wire Wire Line
 	3400 6900 3400 6850
 Wire Wire Line
@@ -1451,8 +1367,6 @@ Wire Wire Line
 	2500 6600 2500 6550
 Connection ~ 2500 6550
 Wire Wire Line
-	2500 7200 2500 7250
-Wire Wire Line
 	5600 5550 5200 5550
 Wire Wire Line
 	1600 1500 3400 1500
@@ -1462,19 +1376,32 @@ Wire Wire Line
 	5400 2000 5650 2000
 Wire Wire Line
 	2200 900  2450 900 
-$Comp
-L +5V #PWR030
-U 1 1 51BEA767
-P 1500 3250
-F 0 "#PWR030" H 1500 3340 20  0001 C CNN
-F 1 "+5V" H 1500 3340 30  0000 C CNN
-F 2 "" H 1500 3250 60  0000 C CNN
-F 3 "" H 1500 3250 60  0000 C CNN
-	1    1500 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1500 3250 1300 3250
 Wire Wire Line
 	1950 1050 1550 1050
+$Comp
+L GND #PWR030
+U 1 1 52AACE12
+P 2500 7250
+F 0 "#PWR030" H 2500 7250 30  0001 C CNN
+F 1 "GND" H 2500 7180 30  0001 C CNN
+F 2 "" H 2500 7250 60  0000 C CNN
+F 3 "" H 2500 7250 60  0000 C CNN
+	1    2500 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 7200 2500 7250
+Wire Wire Line
+	1450 4200 1450 3950
+Wire Wire Line
+	1250 5200 1450 5200
+Connection ~ 1450 5300
+Wire Wire Line
+	1250 5400 1700 5400
+Wire Wire Line
+	1250 5500 1700 5500
+Text Label 1500 5400 0    60   ~ 0
+PC6
+Text Label 1500 5500 0    60   ~ 0
+PC7
 $EndSCHEMATC

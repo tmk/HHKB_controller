@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Thu 12 Dec 2013 11:33:01 JST
+Cmp-Mod V01 Created by PcbNew date = Tue 17 Dec 2013 16:25:38 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -130,14 +130,14 @@ BeginCmp
 TimeStamp = /51979D97;
 Reference = CN1;
 ValeurCmp = CONN_15;
-IdModule  = HHKB_PRO_PH15;
+IdModule  = HHKB_JP_HRS_DF14_15P;
 EndCmp
 
 BeginCmp
 TimeStamp = /51978C41;
 Reference = CN2;
 ValeurCmp = CONN_13;
-IdModule  = HHKB_PRO2_ZH13_TH;
+IdModule  = HHKB_PRO2_ZH13;
 EndCmp
 
 BeginCmp
@@ -340,7 +340,7 @@ BeginCmp
 TimeStamp = /51A80544;
 Reference = P15;
 ValeurCmp = CONN_3X2;
-IdModule  = ;
+IdModule  = AVR_ICSP_3x2;
 EndCmp
 
 BeginCmp
@@ -449,13 +449,6 @@ IdModule  = PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51BE8CA2;
-Reference = PTC1;
-ValeurCmp = PTC;
-IdModule  = PTC_3225;
-EndCmp
-
-BeginCmp
 TimeStamp = /51AFD396/51BB5234;
 Reference = Q1;
 ValeurCmp = MOSFET_N;
@@ -467,13 +460,6 @@ TimeStamp = /51BB4B25;
 Reference = Q2;
 ValeurCmp = MOSFET_N;
 IdModule  = MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = /517F6E00;
-Reference = R1;
-ValeurCmp = 1K;
-IdModule  = R_1608;
 EndCmp
 
 BeginCmp
@@ -648,7 +634,7 @@ BeginCmp
 TimeStamp = /4EB8BB56;
 Reference = X1;
 ValeurCmp = 16MHz;
-IdModule  = XTAL_HC_49_TH;
+IdModule  = HC-49_SMT;
 EndCmp
 
 EndListe
