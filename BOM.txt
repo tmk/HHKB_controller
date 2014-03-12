@@ -36,6 +36,7 @@ Resistor
 Switch
 Tactile SW  lead            sengoku     \150/10     10      for converter reset button
 Tactile SW  lead side       aitendo     \100/2      4       for HHKB reset button
+Tactile SW  SKHH            Alps        $0.30               for HHKB reset button
 
 
 Xtal        16MHZ           akizuki     \200/5      10      SMD             *
@@ -48,6 +49,8 @@ LED         1608 green      akizuki     \150/10     10
 
 
 JST         ZR 13p                      \45         4       TH              ****
+            ZH 13p SMT                  \112                S13B-ZR-SM4A-TF http://www.digikey.jp/short/38d7m
+            PH 2p SMT                   \61                 SMT S2B-PH-SM4-TB http://www.digikey.jp/short/38n2c
 
 
 ATMega32U4                              \328        12      TQFP            **      \540/10, \400/25
