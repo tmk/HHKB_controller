@@ -1,58 +1,48 @@
+Bill of Matrials - HHKB Alt controller Rev.B
+=============================================
 
-
-Capacitor
-22pF        1608            sengoku                  40     for Xtal
-
-0.1uF       1608 50V    Z   akizuki     \100/200    300     for decoupling  GRM188F11H104ZA
-1uF         1608 16V  10%   akizuki     \200/100    150     for USB Vreg
-18pF        1608 50V   5%   akizuki     \200/100    100     for Xtal
-47uF        3225 16V        akizuki     \200/5      4       for DC-DC power
-22uF        3528            akizuki     \100/10     8       for DC-DC power Tantalium
-
-1uF         1608 16V  80%   akizuki     \200/100    200     Not Used        GRM188F11C105ZA
-0.01uF      1608 50V  10%   akizuki     \100/100    100     Not Used
-0.1uF       2012            akizuki     \100/25     20      Not Used
-
-10uF        2012 6.3V 10%   akizuki     \100/20     30      for Power decoupling
-            3216 16V  10%   akizuki     \250/20     0
-            3225 50V        akizuki     \250/10     0
-            3216 10V  10%   akizuki     \250/20     0       GRM31CR71A106KA01
-            3216 10V  10%   akizuki     \250/20     0       GRM31MB31A106KE18
-1uF         3016                                    6       for Power decoupling
+USB configuration
+-----------------
+USB-mini connector          1       Hirose
+ATMega32U4-AU               1       TQFP
+Xtal-16MHz                  1       HC49 SMT
+C22p                        2
+C1u                         1       +-10%
+C0.1u                       5
+R22                         2       1608
+R1K                         2       1608
+LED                         1
+SW-PUSH                     1       Alps Right-angle
+PPTC500mA                   1               optional
+R10K                        1       1608    optional
+FET-NMOS                    1       SOT23   optional
 
 
 
-Resistor
-68R                                                 20
-1.5KR                                               20
-2.2KR                                               20
-3.3KR                                               20
-4.7KR                                               20
-22R                                                 40
-10KR                                                4       ****
-1KR                                                 25      ****
+Optional Bluetooth configuration
+--------------------------------
+RN42                        1       Roving Networks
+R10K                        9
+R1K                         3
+R470                        2
+R15K                        2       or 20K?
+FET-NMOS                    2
+FET-PMOS                    2
+LED                         3       Charger, Indicator and Status
 
+LTC4054                     1       SOT23   Lipo Charger
+C1u                         1
+JST PH2                     1       Lipo connector
 
-Switch
-Tactile SW  lead            sengoku     \150/10     10      for converter reset button
-Tactile SW  lead side       aitendo     \100/2      4       for HHKB reset button
-Tactile SW  SKHH            Alps        $0.30               for HHKB reset button
+TAR5SB33                    1       SOT23   3.3V Regulator
+C0.1u                       1
+C1u                         1
+C10u                        1
 
+HT7750A                     1       5V Boost converter
+L100u                       1
+DSchottky                   1
+C22u                        1
+C47u                        1
 
-Xtal        16MHZ           akizuki     \200/5      10      SMD             *
-Xtal        16MHZ           akizuki     \400/10      0      TH 
-Xtal        16MHZ           digikey     \25          3      TH 
-
-
-LED         1608 red        akizuki     \200/40     40
-LED         1608 green      akizuki     \150/10     10
-
-
-JST         ZR 13p                      \45         4       TH              ****
-            ZH 13p SMT                  \112                S13B-ZR-SM4A-TF http://www.digikey.jp/short/38d7m
-            PH 2p SMT                   \61                 SMT S2B-PH-SM4-TB http://www.digikey.jp/short/38n2c
-
-
-ATMega32U4                              \328        12      TQFP            **      \540/10, \400/25
-ATMega32U2                  akizuki     \400        0       TQFP            **      \400/10, \300/25
-AT90USB162                  akizuki     \300        0       TQFP            **      \330/10, \250/25
+SW-SLIDE                    1       DPDT
