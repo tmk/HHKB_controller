@@ -6,14 +6,17 @@ USB configuration
 USB-mini connector          1       Hirose
 ATMega32U4-AU               1       TQFP
 Xtal-16MHz                  1       HC49 SMT
-C22p                        2
-C1u                         1       +-10%
-C0.1u                       5
+C22p                        2       1608    or 18pF
+C1u                         1       1608 +-10%
+C0.1u                       5       1608 for decoupling
+C10u                        2       3216 for decoupling
 R22                         2       1608
 R1K                         2       1608
-LED                         1
-SW-PUSH                     1       Alps Right-angle
-PPTC500mA                   1               optional
+LED                         1       2012
+SW-PUSH                     1       Alps Right-angle    SKHH or SKHL
+JST ZH                      1       HHKB pro2 Connector     S13B-ZR-SM4A-TF
+Hirose DF14A                1       HHKB JP Connector       DF14A-15P-1.25H
+PPTC500mA                   1               optional    TYCO nano
 R10K                        1       1608    optional
 FET-NMOS                    1       SOT23   optional
 
@@ -41,8 +44,8 @@ C10u                        1
 
 HT7750A                     1       5V Boost converter
 L100u                       1
-DSchottky                   1
-C22u                        1
-C47u                        1
+DSchottky                   1       SOD123
+C22u                        1       3225 or 3528 or 3216
+C47u                        1       3225 or 3528 or 3216
 
 SW-SLIDE                    1       DPDT
