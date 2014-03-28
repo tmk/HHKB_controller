@@ -3,7 +3,7 @@ Bill of Matrials - HHKB Alt controller Rev.B
 
 USB configuration
 -----------------
-USB-mini connector          1       Hirose
+USB-mini connector          1       Hirose UX60SC-MB-5ST
 ATMega32U4-AU               1       TQFP
 Xtal-16MHz                  1       HC49 SMT
 C22p                        2       1608    or 18pF
@@ -13,13 +13,17 @@ C10u                        2       3216 for decoupling
 R22                         2       1608
 R1K                         2       1608
 LED                         1       2012
-SW-PUSH                     1       Alps Right-angle    SKHH or SKHL
-JST ZH                      1       HHKB pro2 Connector     S13B-ZR-SM4A-TF
-Hirose DF14A                1       HHKB JP Connector       DF14A-15P-1.25H
-PPTC500mA                   1               optional    TYCO nano
-R10K                        1       1608    optional
-FET-NMOS                    1       SOT23   optional
+SW-PUSH                     1       Alps SKHH or SKHL
+Connector for Pro2          1       S13B-ZR-SM4A-TF
+Connector for JP            1       DF14A-15P-1.25H
+PPTC500mA                   1       Optional    TYCO nano
 
+
+
+Power control
+-------------
+R10K                        1       1608    Optional
+FET-NMOS                    1       SOT23   Optional
 
 
 Optional Bluetooth configuration
