@@ -1,4 +1,4 @@
-update=Fri 06 Dec 2013 17:55:43 JST
+update=Sat 12 Apr 2014 06:22:13 JST
 version=1
 last_client=eeschema
 [cvpcb]
@@ -47,7 +47,10 @@ LibName15=valves
 LibName16=open-project
 [eeschema]
 version=1
-LibDir=../HHKB_controller;../../../tmp/kicadlibrary
+PageLayoutDescrFile=
+SubpartIdSeparator=0
+SubpartFirstId=65
+LibDir=../HHKB_controller
 NetFmtName=PcbnewAdvanced
 RptD_X=0
 RptD_Y=100
@@ -86,4 +89,3 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=open-project
