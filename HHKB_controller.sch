@@ -1,46 +1,15 @@
 EESchema Schematic File Version 2
 LIBS:keyboard_parts
 LIBS:HHKB_controller-cache
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:open-project
 LIBS:HHKB_controller-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "HHKB Alt Controller"
-Date "2014/03"
-Rev "B"
+Title "HHKB Alt Controller/Bluetooth"
+Date "2014/07"
+Rev "C"
 Comp "TMK"
 Comment1 ""
 Comment2 ""
@@ -237,12 +206,12 @@ $EndComp
 $Comp
 L +5V #PWR011
 U 1 1 4EB8CC7B
-P 2750 3450
-F 0 "#PWR011" H 2750 3420 20  0001 C CNN
-F 1 "+5V" H 2750 3560 30  0000 C CNN
-F 2 "" H 2750 3450 60  0001 C CNN
-F 3 "" H 2750 3450 60  0001 C CNN
-	1    2750 3450
+P 2375 3525
+F 0 "#PWR011" H 2375 3495 20  0001 C CNN
+F 1 "+5V" H 2375 3635 30  0000 C CNN
+F 2 "" H 2375 3525 60  0001 C CNN
+F 3 "" H 2375 3525 60  0001 C CNN
+	1    2375 3525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -304,7 +273,7 @@ $Comp
 L R R2
 U 1 1 4EB8BB62
 P 2700 1600
-F 0 "R2" V 2780 1600 50  0000 C CNN
+F 0 "R2" V 2750 1800 50  0000 C CNN
 F 1 "22" V 2700 1600 50  0000 C CNN
 F 2 "" H 2700 1600 60  0001 C CNN
 F 3 "" H 2700 1600 60  0001 C CNN
@@ -315,7 +284,7 @@ $Comp
 L R R3
 U 1 1 4EB8BB61
 P 2700 1700
-F 0 "R3" V 2780 1700 50  0000 C CNN
+F 0 "R3" V 2750 1900 50  0000 C CNN
 F 1 "22" V 2700 1700 50  0000 C CNN
 F 2 "" H 2700 1700 60  0001 C CNN
 F 3 "" H 2700 1700 60  0001 C CNN
@@ -437,12 +406,12 @@ $EndComp
 $Comp
 L CONN_1 P5
 U 1 1 517F61E2
-P 10500 5750
-F 0 "P5" H 10580 5750 40  0000 L CNN
-F 1 "CONN_1" H 10500 5805 30  0001 C CNN
-F 2 "" H 10500 5750 60  0000 C CNN
-F 3 "" H 10500 5750 60  0000 C CNN
-	1    10500 5750
+P 10450 5250
+F 0 "P5" H 10530 5250 40  0000 L CNN
+F 1 "CONN_1" H 10450 5305 30  0001 C CNN
+F 2 "" H 10450 5250 60  0000 C CNN
+F 3 "" H 10450 5250 60  0000 C CNN
+	1    10450 5250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -493,7 +462,7 @@ Text Notes 900  3000 0    60   Italic 0
 USB pinouts for external connector
 Text Notes 4350 2200 0    60   Italic 0
 Ucap +/-10%
-Text Notes 2500 1900 0    60   Italic 0
+Text Notes 2550 1850 0    60   Italic 0
 +/-5%
 $Comp
 L LED D1
@@ -535,108 +504,108 @@ Optional\nTeensy compatible LED
 $Comp
 L CONN_13 CN2
 U 1 1 51978C41
-P 1950 6450
-F 0 "CN2" V 1910 6450 60  0000 C CNN
-F 1 "CONN_13" V 2020 6450 60  0000 C CNN
-F 2 "" H 1950 6450 60  0000 C CNN
-F 3 "" H 1950 6450 60  0000 C CNN
-	1    1950 6450
+P 1925 6450
+F 0 "CN2" V 1885 6450 60  0000 C CNN
+F 1 "CONN_13" V 1995 6450 60  0000 C CNN
+F 2 "" H 1925 6450 60  0000 C CNN
+F 3 "" H 1925 6450 60  0000 C CNN
+	1    1925 6450
 	-1   0    0    -1  
 $EndComp
-Text Notes 1800 7550 0    60   Italic 0
+Text Notes 1775 7550 0    60   Italic 0
 JST ZH for Pro2
-Text Label 2550 6250 0    60   Italic 0
+Text Label 2525 6250 0    60   Italic 0
 PB0
-Text Label 2550 6350 0    60   Italic 0
+Text Label 2525 6350 0    60   Italic 0
 PB1
-Text Label 2550 6450 0    60   Italic 0
+Text Label 2525 6450 0    60   Italic 0
 PB2
-Text Label 2550 6550 0    60   Italic 0
+Text Label 2525 6550 0    60   Italic 0
 PB3
-Text Label 2550 6650 0    60   Italic 0
+Text Label 2525 6650 0    60   Italic 0
 PB4
-Text Label 2550 6750 0    60   Italic 0
+Text Label 2525 6750 0    60   Italic 0
 PB5
-Text Label 2550 6850 0    60   Italic 0
+Text Label 2525 6850 0    60   Italic 0
 PB6
-Text Label 2550 6150 0    60   Italic 0
+Text Label 2525 6150 0    60   Italic 0
 PB7
-Text Label 2550 6050 0    60   Italic 0
+Text Label 2525 6050 0    60   Italic 0
 PD7
-Text Notes 2850 6050 0    60   Italic 0
+Text Notes 2825 6050 0    60   Italic 0
 KEY state
-Text Notes 2850 6150 0    60   Italic 0
+Text Notes 2825 6150 0    60   Italic 0
 HYSTERESIS
-Text Notes 2850 6250 0    60   Italic 0
+Text Notes 2825 6250 0    60   Italic 0
 ROW bit0
-Text Notes 2850 6350 0    60   Italic 0
+Text Notes 2825 6350 0    60   Italic 0
 ROW bit1
-Text Notes 2850 6450 0    60   Italic 0
+Text Notes 2825 6450 0    60   Italic 0
 ROW bit2
-Text Notes 2850 6550 0    60   Italic 0
+Text Notes 2825 6550 0    60   Italic 0
 COL bit0
-Text Notes 2850 6650 0    60   Italic 0
+Text Notes 2825 6650 0    60   Italic 0
 COL bit1
-Text Notes 2850 6750 0    60   Italic 0
+Text Notes 2825 6750 0    60   Italic 0
 COL bit2
-Text Notes 2850 6850 0    60   Italic 0
+Text Notes 2825 6850 0    60   Italic 0
 COL enable
-Text Label 10950 5750 2    60   ~ 0
+Text Label 10900 5250 2    60   ~ 0
 PD1
 $Comp
 L CONN_1 P6
 U 1 1 517F61D5
-P 10500 5850
-F 0 "P6" H 10580 5850 40  0000 L CNN
-F 1 "CONN_1" H 10500 5905 30  0001 C CNN
-F 2 "" H 10500 5850 60  0000 C CNN
-F 3 "" H 10500 5850 60  0000 C CNN
-	1    10500 5850
+P 10450 5350
+F 0 "P6" H 10530 5350 40  0000 L CNN
+F 1 "CONN_1" H 10450 5405 30  0001 C CNN
+F 2 "" H 10450 5350 60  0000 C CNN
+F 3 "" H 10450 5350 60  0000 C CNN
+	1    10450 5350
 	-1   0    0    1   
 $EndComp
-Text Label 10950 5850 2    60   ~ 0
+Text Label 10900 5350 2    60   ~ 0
 PD0
 $Comp
 L CONN_15 CN1
 U 1 1 51979D97
-P 900 6450
-F 0 "CN1" V 870 6500 60  0000 C CNN
-F 1 "CONN_15" V 980 6500 60  0000 C CNN
-F 2 "" H 900 6500 60  0000 C CNN
-F 3 "" H 900 6500 60  0000 C CNN
-	1    900  6450
+P 875 6450
+F 0 "CN1" V 845 6500 60  0000 C CNN
+F 1 "CONN_15" V 955 6500 60  0000 C CNN
+F 2 "" H 875 6500 60  0000 C CNN
+F 3 "" H 875 6500 60  0000 C CNN
+	1    875  6450
 	-1   0    0    -1  
 $EndComp
-Text Label 1500 6150 0    60   Italic 0
+Text Label 1475 6150 0    60   Italic 0
 PB0
-Text Label 1500 6250 0    60   Italic 0
+Text Label 1475 6250 0    60   Italic 0
 PB1
-Text Label 1500 6350 0    60   Italic 0
+Text Label 1475 6350 0    60   Italic 0
 PB2
-Text Label 1500 6450 0    60   Italic 0
+Text Label 1475 6450 0    60   Italic 0
 PB3
-Text Label 1500 6550 0    60   Italic 0
+Text Label 1475 6550 0    60   Italic 0
 PB4
-Text Label 1500 6650 0    60   Italic 0
+Text Label 1475 6650 0    60   Italic 0
 PB5
-Text Label 1500 6750 0    60   Italic 0
+Text Label 1475 6750 0    60   Italic 0
 PB6
-Text Label 1500 6050 0    60   Italic 0
+Text Label 1475 6050 0    60   Italic 0
 PB7
-Text Label 1500 5950 0    60   Italic 0
+Text Label 1475 5950 0    60   Italic 0
 PD7
 $Comp
 L +5V #PWR017
 U 1 1 51979DCA
-P 3300 5450
-F 0 "#PWR017" H 3300 5420 20  0001 C CNN
-F 1 "+5V" H 3300 5560 30  0000 C CNN
-F 2 "" H 3300 5450 60  0000 C CNN
-F 3 "" H 3300 5450 60  0000 C CNN
-	1    3300 5450
+P 3275 5450
+F 0 "#PWR017" H 3275 5420 20  0001 C CNN
+F 1 "+5V" H 3275 5560 30  0000 C CNN
+F 2 "" H 3275 5450 60  0000 C CNN
+F 3 "" H 3275 5450 60  0000 C CNN
+	1    3275 5450
 	1    0    0    -1  
 $EndComp
-Text Notes 650  7550 0    60   Italic 0
+Text Notes 625  7550 0    60   Italic 0
 Hirose DF14A for JP
 $Comp
 L +5V #PWR018
@@ -652,37 +621,37 @@ $EndComp
 $Comp
 L +5V #PWR019
 U 1 1 51A7ECC5
-P 3750 6900
-F 0 "#PWR019" H 3750 6990 20  0001 C CNN
-F 1 "+5V" H 3750 6990 30  0000 C CNN
-F 2 "" H 3750 6900 60  0000 C CNN
-F 3 "" H 3750 6900 60  0000 C CNN
-	1    3750 6900
+P 3725 6900
+F 0 "#PWR019" H 3725 6990 20  0001 C CNN
+F 1 "+5V" H 3725 6990 30  0000 C CNN
+F 2 "" H 3725 6900 60  0000 C CNN
+F 3 "" H 3725 6900 60  0000 C CNN
+	1    3725 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR020
 U 1 1 51A7ECD4
-P 3750 7400
-F 0 "#PWR020" H 3750 7400 30  0001 C CNN
-F 1 "GND" H 3750 7330 30  0001 C CNN
-F 2 "" H 3750 7400 60  0000 C CNN
-F 3 "" H 3750 7400 60  0000 C CNN
-	1    3750 7400
+P 3725 7400
+F 0 "#PWR020" H 3725 7400 30  0001 C CNN
+F 1 "GND" H 3725 7330 30  0001 C CNN
+F 2 "" H 3725 7400 60  0000 C CNN
+F 3 "" H 3725 7400 60  0000 C CNN
+	1    3725 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C2
 U 1 1 51A7ECF4
-P 3750 7150
-F 0 "C2" H 3750 7250 40  0000 L CNN
-F 1 "10u" H 3756 7065 40  0000 L CNN
-F 2 "" H 3788 7000 30  0000 C CNN
-F 3 "" H 3750 7150 60  0000 C CNN
-	1    3750 7150
+P 3725 7150
+F 0 "C2" H 3725 7250 40  0000 L CNN
+F 1 "10u" H 3731 7065 40  0000 L CNN
+F 2 "" H 3763 7000 30  0000 C CNN
+F 3 "" H 3725 7150 60  0000 C CNN
+	1    3725 7150
 	1    0    0    -1  
 $EndComp
-Text Notes 3550 7600 0    60   Italic 0
+Text Notes 3525 7600 0    60   Italic 0
 Optional
 Text Label 5400 2000 0    60   Italic 0
 VUSB
@@ -710,42 +679,42 @@ F 3 "" H 2200 1950 60  0000 C CNN
 	1    2200 1950
 	1    0    0    -1  
 $EndComp
-Text Notes 9950 7000 0    60   Italic 0
+Text Notes 9900 6500 0    60   Italic 0
 ICSP
 $Comp
 L CONN_3X2 P8
 U 1 1 51A80544
-P 10050 6700
-F 0 "P8" H 10050 6900 50  0000 C CNN
-F 1 "CONN_3X2" V 10050 6700 40  0000 C CNN
-F 2 "" H 10050 6650 60  0000 C CNN
-F 3 "" H 10050 6650 60  0000 C CNN
-	1    10050 6700
+P 10000 6200
+F 0 "P8" H 10000 6400 50  0000 C CNN
+F 1 "CONN_3X2" V 10000 6200 40  0000 C CNN
+F 2 "" H 10000 6150 60  0000 C CNN
+F 3 "" H 10000 6150 60  0000 C CNN
+	1    10000 6200
 	1    0    0    -1  
 $EndComp
-Text Label 9350 6600 0    60   Italic 0
+Text Label 9300 6100 0    60   Italic 0
 PB3
-Text Label 9350 6700 0    60   Italic 0
+Text Label 9300 6200 0    60   Italic 0
 PB1
-Text Label 9350 6800 0    60   Italic 0
+Text Label 9300 6300 0    60   Italic 0
 ~RESET
-Text Label 10550 6700 0    60   Italic 0
+Text Label 10500 6200 0    60   Italic 0
 PB2
-Text Label 10550 6800 0    60   Italic 0
+Text Label 10500 6300 0    60   Italic 0
 GND
-Text Label 10550 6600 0    60   Italic 0
+Text Label 10500 6100 0    60   Italic 0
 +5V
-Text Notes 10800 6600 0    60   ~ 0
+Text Notes 10750 6100 0    60   ~ 0
 VTG
-Text Notes 10800 6700 0    60   ~ 0
+Text Notes 10750 6200 0    60   ~ 0
 MOSI
-Text Notes 9100 6600 0    60   ~ 0
+Text Notes 9050 6100 0    60   ~ 0
 MISO
-Text Notes 9100 6700 0    60   ~ 0
+Text Notes 9050 6200 0    60   ~ 0
 SCK
-Text Notes 9100 6800 0    60   ~ 0
+Text Notes 9050 6300 0    60   ~ 0
 RST
-Text Notes 10800 6800 0    60   ~ 0
+Text Notes 10750 6300 0    60   ~ 0
 GND
 $Comp
 L C C10
@@ -772,7 +741,7 @@ $EndComp
 Text Label 9250 1550 0    60   ~ 0
 AREF
 $Sheet
-S 5850 6850 1150 850 
+S 5775 6825 1150 850 
 U 51AFD396
 F0 "bluetooth" 50
 F1 "bluetooth.sch" 50
@@ -781,158 +750,157 @@ Text GLabel 4050 1500 2    60   Input ~ 0
 VUSB
 Text GLabel 4050 1200 2    60   Input ~ 0
 5V_BOOST
-Text GLabel 6650 6150 2    60   Input ~ 0
+Text GLabel 6650 5550 2    60   Input ~ 0
 BT_RX
-Text GLabel 6650 6000 2    60   Input ~ 0
+Text GLabel 6650 5400 2    60   Input ~ 0
 BT_TX
-Text Label 6450 6150 2    60   ~ 0
+Text Label 6450 5550 2    60   ~ 0
 PD3
-Text Label 6450 6000 2    60   ~ 0
+Text Label 6450 5400 2    60   ~ 0
 PD2
-Text Notes 6800 5750 2    60   ~ 0
+Text Notes 6800 5150 2    60   ~ 0
 Bluetooth Extension
 $Comp
 L CONN_1 P7
 U 1 1 51B4469E
-P 10500 5950
-F 0 "P7" H 10580 5950 40  0000 L CNN
-F 1 "CONN_1" H 10500 6005 30  0001 C CNN
-F 2 "" H 10500 5950 60  0000 C CNN
-F 3 "" H 10500 5950 60  0000 C CNN
-	1    10500 5950
+P 10450 5450
+F 0 "P7" H 10530 5450 40  0000 L CNN
+F 1 "CONN_1" H 10450 5505 30  0001 C CNN
+F 2 "" H 10450 5450 60  0000 C CNN
+F 3 "" H 10450 5450 60  0000 C CNN
+	1    10450 5450
 	-1   0    0    1   
 $EndComp
-Text Label 10950 5950 2    60   ~ 0
+Text Label 10900 5450 2    60   ~ 0
 GND
-Text Notes 10900 6150 2    60   ~ 0
+Text Notes 10850 5650 2    60   ~ 0
 For Debug
-NoConn ~ 7800 2200
 NoConn ~ 7800 2100
 NoConn ~ 7800 2000
 NoConn ~ 7800 1900
-Text GLabel 6650 6500 2    60   Input ~ 0
+Text GLabel 6650 5900 2    60   Input ~ 0
 BT_RTS
-Text Label 6450 6650 2    60   ~ 0
+Text Label 6450 6050 2    60   ~ 0
 PD5
 NoConn ~ 1600 1800
 $Comp
 L MOSFET_N Q2
 U 1 1 51BB4B25
-P 4700 5900
-F 0 "Q2" H 4710 6070 60  0000 R CNN
-F 1 "MOSFET_N" H 4710 5750 60  0000 R CNN
-F 2 "" H 4700 5900 60  0000 C CNN
-F 3 "" H 4700 5900 60  0000 C CNN
-	1    4700 5900
+P 4675 5900
+F 0 "Q2" H 4685 6070 60  0000 R CNN
+F 1 "MOSFET_N" H 4685 5750 60  0000 R CNN
+F 2 "" H 4675 5900 60  0000 C CNN
+F 3 "" H 4675 5900 60  0000 C CNN
+	1    4675 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR024
 U 1 1 51BB4B45
-P 4800 6250
-F 0 "#PWR024" H 4800 6250 30  0001 C CNN
-F 1 "GND" H 4800 6180 30  0001 C CNN
-F 2 "" H 4800 6250 60  0000 C CNN
-F 3 "" H 4800 6250 60  0000 C CNN
-	1    4800 6250
+P 4775 6250
+F 0 "#PWR024" H 4775 6250 30  0001 C CNN
+F 1 "GND" H 4775 6180 30  0001 C CNN
+F 2 "" H 4775 6250 60  0000 C CNN
+F 3 "" H 4775 6250 60  0000 C CNN
+	1    4775 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R15
 U 1 1 51BB4BFA
-P 4300 5650
-F 0 "R15" V 4380 5650 50  0000 C CNN
-F 1 "10K" V 4300 5650 50  0000 C CNN
-F 2 "" H 4300 5650 60  0000 C CNN
-F 3 "" H 4300 5650 60  0000 C CNN
-	1    4300 5650
+P 4275 5650
+F 0 "R15" V 4355 5650 50  0000 C CNN
+F 1 "10K" V 4275 5650 50  0000 C CNN
+F 2 "" H 4275 5650 60  0000 C CNN
+F 3 "" H 4275 5650 60  0000 C CNN
+	1    4275 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR025
 U 1 1 51BB4C0E
-P 4300 5300
-F 0 "#PWR025" H 4300 5390 20  0001 C CNN
-F 1 "+5V" H 4300 5390 30  0000 C CNN
-F 2 "" H 4300 5300 60  0000 C CNN
-F 3 "" H 4300 5300 60  0000 C CNN
-	1    4300 5300
+P 4275 5300
+F 0 "#PWR025" H 4275 5390 20  0001 C CNN
+F 1 "+5V" H 4275 5390 30  0000 C CNN
+F 2 "" H 4275 5300 60  0000 C CNN
+F 3 "" H 4275 5300 60  0000 C CNN
+	1    4275 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 3750 6400 0    60   ~ 0
+Text Notes 3725 6400 0    60   ~ 0
 HHKB Matrix Power Control
-Text Label 4850 5550 0    60   ~ 0
+Text Label 4825 5550 0    60   ~ 0
 HHKB_GND
-Text Label 3600 5900 0    60   ~ 0
+Text Label 3575 5900 0    60   ~ 0
 PD4
-Text Label 2900 7300 0    60   ~ 0
+Text Label 2875 7300 0    60   ~ 0
 HHKB_GND
-Text Notes 3650 5650 0    60   Italic 0
+Text Notes 3625 5650 0    60   Italic 0
 Normally On\nLow = Off
 $Comp
 L JUMPER JP11
 U 1 1 51BB5493
-P 2900 5600
-F 0 "JP11" H 2900 5750 60  0000 C CNN
-F 1 "JUMPER" H 2900 5520 40  0000 C CNN
-F 2 "" H 2900 5600 60  0000 C CNN
-F 3 "" H 2900 5600 60  0000 C CNN
-	1    2900 5600
+P 2875 5600
+F 0 "JP11" H 2875 5750 60  0000 C CNN
+F 1 "JUMPER" H 2875 5520 40  0000 C CNN
+F 2 "" H 2875 5600 60  0000 C CNN
+F 3 "" H 2875 5600 60  0000 C CNN
+	1    2875 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_1 P9
 U 1 1 51BB5A44
-P 2600 5450
-F 0 "P9" H 2680 5450 40  0000 L CNN
-F 1 "CONN_1" H 2600 5505 30  0001 C CNN
-F 2 "" H 2600 5450 60  0000 C CNN
-F 3 "" H 2600 5450 60  0000 C CNN
-	1    2600 5450
+P 2575 5450
+F 0 "P9" H 2655 5450 40  0000 L CNN
+F 1 "CONN_1" H 2575 5505 30  0001 C CNN
+F 2 "" H 2575 5450 60  0000 C CNN
+F 3 "" H 2575 5450 60  0000 C CNN
+	1    2575 5450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L CONN_1 P10
 U 1 1 51BB5A53
-P 3200 5450
-F 0 "P10" H 3280 5450 40  0000 L CNN
-F 1 "CONN_1" H 3200 5505 30  0001 C CNN
-F 2 "" H 3200 5450 60  0000 C CNN
-F 3 "" H 3200 5450 60  0000 C CNN
-	1    3200 5450
+P 3175 5450
+F 0 "P10" H 3255 5450 40  0000 L CNN
+F 1 "CONN_1" H 3175 5505 30  0001 C CNN
+F 2 "" H 3175 5450 60  0000 C CNN
+F 3 "" H 3175 5450 60  0000 C CNN
+	1    3175 5450
 	0    -1   -1   0   
 $EndComp
-Text Notes 2600 5850 0    60   ~ 0
+Text Notes 2575 5850 0    60   ~ 0
 Amp Measure
 $Comp
 L JUMPER JP3
 U 1 1 51BC02F3
-P 5100 5900
-F 0 "JP3" H 5100 6050 60  0000 C CNN
-F 1 "JUMPER" H 5100 5820 40  0000 C CNN
-F 2 "" H 5100 5900 60  0000 C CNN
-F 3 "" H 5100 5900 60  0000 C CNN
-	1    5100 5900
+P 5075 5900
+F 0 "JP3" H 5075 6050 60  0000 C CNN
+F 1 "JUMPER" H 5075 5820 40  0000 C CNN
+F 2 "" H 5075 5900 60  0000 C CNN
+F 3 "" H 5075 5900 60  0000 C CNN
+	1    5075 5900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7900 6150 2    60   Input ~ 0
+Text GLabel 7900 5550 2    60   Input ~ 0
 LIPO_SENSE
-Text Label 7700 6150 2    60   ~ 0
+Text Label 7700 5550 2    60   ~ 0
 PF0
 $Comp
 L GND #PWR026
 U 1 1 52AACE12
-P 5100 6250
-F 0 "#PWR026" H 5100 6250 30  0001 C CNN
-F 1 "GND" H 5100 6180 30  0001 C CNN
-F 2 "" H 5100 6250 60  0000 C CNN
-F 3 "" H 5100 6250 60  0000 C CNN
-	1    5100 6250
+P 5075 6250
+F 0 "#PWR026" H 5075 6250 30  0001 C CNN
+F 1 "GND" H 5075 6180 30  0001 C CNN
+F 2 "" H 5075 6250 60  0000 C CNN
+F 3 "" H 5075 6250 60  0000 C CNN
+	1    5075 6250
 	1    0    0    -1  
 $EndComp
-Text Label 1500 7050 0    60   ~ 0
+Text Label 1475 7050 0    60   ~ 0
 PC6
-Text Label 1500 7150 0    60   ~ 0
+Text Label 1475 7150 0    60   ~ 0
 PC7
 $Comp
 L JUMPER JP1
@@ -1000,25 +968,25 @@ F 3 "" V 2300 1500 60  0000 C CNN
 	1    2300 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 6650 6650 2    60   Input ~ 0
+Text GLabel 6650 6050 2    60   Input ~ 0
 BT_CTS
-Text Label 6450 6500 2    60   ~ 0
+Text Label 6450 5900 2    60   ~ 0
 PF1
-Text GLabel 7900 5950 2    60   Input ~ 0
+Text GLabel 7900 5350 2    60   Input ~ 0
 BT_INDICATOR
-Text Label 7700 5950 2    60   ~ 0
+Text Label 7700 5350 2    60   ~ 0
 PE6
-Text Notes 4850 6100 0    60   ~ 0
+Text Notes 4825 6100 0    60   ~ 0
 No Power Control
 Text Notes 2150 950  0    60   ~ 0
 No PPTC
 Text Notes 3050 950  0    60   ~ 0
 No Boost
-Text Notes 650  4200 0    60   ~ 0
-USB keyboard configurations:\n  1)Close "No Power Control" and\n  3)close "No Boost" jumper to use raw USB power.\n  Optionally you can boost into 5V\n  with making "No Boost" open and "No LIPO" closed.
-Text Notes 650  5150 0    60   ~ 0
+Text Notes 625  4900 0    60   ~ 0
+USB keyboard configurations:\n  1)close "No Power Control" and\n  2)close "No Boost" jumper to use raw USB power.
+Text Notes 625  5150 0    60   ~ 0
 HHKB Matrix Interface
-Text Notes 9050 5650 0    60   ~ 0
+Text Notes 9000 5150 0    60   ~ 0
 Program and Debug
 Text Label 3850 1000 0    60   ~ 0
 5V_SOURCE
@@ -1027,12 +995,12 @@ VUSB_RAW
 $Comp
 L JUMPER JP10
 U 1 1 531E82DA
-P 2200 3550
-F 0 "JP10" H 2200 3700 60  0000 C CNN
-F 1 "JUMPER" H 2200 3470 40  0000 C CNN
-F 2 "" H 2200 3550 60  0000 C CNN
-F 3 "" H 2200 3550 60  0000 C CNN
-	1    2200 3550
+P 1825 3625
+F 0 "JP10" H 1825 3775 60  0000 C CNN
+F 1 "JUMPER" H 1825 3545 40  0000 C CNN
+F 2 "" H 1825 3625 60  0000 C CNN
+F 3 "" H 1825 3625 60  0000 C CNN
+	1    1825 3625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1044,7 +1012,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 2525 1600 2525
 Wire Wire Line
-	10650 5750 10950 5750
+	10600 5250 10900 5250
 Wire Wire Line
 	5650 1400 5400 1400
 Wire Wire Line
@@ -1187,74 +1155,74 @@ Wire Wire Line
 Wire Wire Line
 	9450 3850 9450 3800
 Wire Wire Line
-	2300 6950 2500 6950
+	2275 6950 2475 6950
 Wire Wire Line
-	2500 6950 2500 7300
+	2475 6950 2475 7300
 Wire Wire Line
-	2300 7050 2500 7050
-Connection ~ 2500 7050
+	2275 7050 2475 7050
+Connection ~ 2475 7050
 Wire Wire Line
-	2500 5950 2300 5950
+	2475 5950 2275 5950
 Wire Wire Line
-	2500 5600 2500 5950
+	2475 5600 2475 5950
 Wire Wire Line
-	2300 5850 2500 5850
-Connection ~ 2500 5850
+	2275 5850 2475 5850
+Connection ~ 2475 5850
 Wire Wire Line
-	2300 6050 2750 6050
+	2275 6050 2725 6050
 Wire Wire Line
-	2300 6150 2750 6150
+	2275 6150 2725 6150
 Wire Wire Line
-	2300 6250 2750 6250
+	2275 6250 2725 6250
 Wire Wire Line
-	2300 6350 2750 6350
+	2275 6350 2725 6350
 Wire Wire Line
-	2300 6450 2750 6450
+	2275 6450 2725 6450
 Wire Wire Line
-	2300 6550 2750 6550
+	2275 6550 2725 6550
 Wire Wire Line
-	2300 6650 2750 6650
+	2275 6650 2725 6650
 Wire Wire Line
-	2300 6750 2750 6750
+	2275 6750 2725 6750
 Wire Wire Line
-	2300 6850 2750 6850
+	2275 6850 2725 6850
 Wire Wire Line
-	10650 5850 10950 5850
+	10600 5350 10900 5350
 Wire Wire Line
-	1250 5950 1700 5950
+	1225 5950 1675 5950
 Wire Wire Line
-	1250 6050 1700 6050
+	1225 6050 1675 6050
 Wire Wire Line
-	1250 6150 1700 6150
+	1225 6150 1675 6150
 Wire Wire Line
-	1250 6250 1700 6250
+	1225 6250 1675 6250
 Wire Wire Line
-	1250 6350 1700 6350
+	1225 6350 1675 6350
 Wire Wire Line
-	1250 6450 1700 6450
+	1225 6450 1675 6450
 Wire Wire Line
-	1250 6550 1700 6550
+	1225 6550 1675 6550
 Wire Wire Line
-	1250 6650 1700 6650
+	1225 6650 1675 6650
 Wire Wire Line
-	1250 6750 1700 6750
+	1225 6750 1675 6750
 Wire Wire Line
-	1250 5750 1450 5750
-Connection ~ 1450 5750
+	1225 5750 1425 5750
+Connection ~ 1425 5750
 Wire Wire Line
-	1250 5850 1450 5850
+	1425 5850 1225 5850
 Wire Wire Line
-	1450 6850 1450 7300
+	1425 6850 1425 7300
 Wire Wire Line
-	1250 6950 1450 6950
+	1225 6950 1425 6950
 Wire Wire Line
 	5200 1000 5200 1500
 Wire Wire Line
 	5200 1500 5650 1500
 Wire Wire Line
-	3750 6950 3750 6900
+	3725 6950 3725 6900
 Wire Wire Line
-	3750 7350 3750 7400
+	3725 7350 3725 7400
 Wire Wire Line
 	1600 1900 1900 1900
 Wire Wire Line
@@ -1264,17 +1232,17 @@ Wire Wire Line
 Wire Wire Line
 	2200 2400 2200 2450
 Wire Wire Line
-	10450 6600 10750 6600
+	10400 6100 10700 6100
 Wire Wire Line
-	10450 6700 10750 6700
+	10400 6200 10700 6200
 Wire Wire Line
-	10450 6800 10750 6800
+	10400 6300 10700 6300
 Wire Wire Line
-	9650 6600 9350 6600
+	9600 6100 9300 6100
 Wire Wire Line
-	9650 6700 9350 6700
+	9600 6200 9300 6200
 Wire Wire Line
-	9650 6800 9350 6800
+	9600 6300 9300 6300
 Wire Wire Line
 	9250 1550 9450 1550
 Wire Wire Line
@@ -1282,63 +1250,63 @@ Wire Wire Line
 Wire Wire Line
 	9450 2100 9450 2200
 Wire Wire Line
-	6650 6150 6250 6150
+	6650 5550 6250 5550
 Wire Wire Line
-	6650 6000 6250 6000
+	6650 5400 6250 5400
 Wire Wire Line
-	10650 5950 10950 5950
+	10600 5450 10900 5450
 Wire Wire Line
-	6650 6500 6250 6500
+	6650 5900 6250 5900
 Wire Wire Line
 	1600 2000 1900 2000
 Connection ~ 1900 2000
 Wire Wire Line
-	4800 6250 4800 6100
+	4775 6250 4775 6100
 Wire Wire Line
-	4300 5300 4300 5400
-Connection ~ 4300 5900
+	4275 5300 4275 5400
+Connection ~ 4275 5900
 Wire Wire Line
-	4800 5700 4800 5550
+	4775 5700 4775 5550
 Wire Wire Line
-	4800 5550 5300 5550
+	4775 5550 5275 5550
 Wire Wire Line
-	3600 5900 4500 5900
+	3575 5900 4475 5900
 Wire Wire Line
-	1450 7300 3400 7300
-Connection ~ 2500 7300
-Connection ~ 2500 5600
+	1425 7300 3375 7300
+Connection ~ 2475 7300
+Connection ~ 2475 5600
 Wire Wire Line
-	3300 5450 3300 5600
+	3275 5450 3275 5600
 Wire Wire Line
-	3300 5600 3200 5600
+	3275 5600 3175 5600
 Wire Wire Line
-	1450 5600 2600 5600
+	1425 5600 2575 5600
 Wire Wire Line
-	3200 5600 3200 5750
+	3175 5600 3175 5750
 Wire Wire Line
-	3200 5750 2600 5750
-Connection ~ 3200 5600
-Connection ~ 2600 5600
+	3175 5750 2575 5750
+Connection ~ 3175 5600
+Connection ~ 2575 5600
 Wire Wire Line
-	2600 5750 2600 5600
+	2575 5750 2575 5600
 Wire Wire Line
-	5100 5600 5100 5550
-Connection ~ 5100 5550
+	5075 5600 5075 5550
+Connection ~ 5075 5550
 Wire Wire Line
-	7900 6150 7500 6150
+	7900 5550 7500 5550
 Wire Wire Line
 	5400 2000 5650 2000
 Wire Wire Line
-	5100 6200 5100 6250
+	5075 6200 5075 6250
 Wire Wire Line
-	1450 5850 1450 5600
+	1425 5600 1425 5850
 Wire Wire Line
-	1250 6850 1450 6850
-Connection ~ 1450 6950
+	1225 6850 1425 6850
+Connection ~ 1425 6950
 Wire Wire Line
-	1250 7050 1700 7050
+	1225 7050 1675 7050
 Wire Wire Line
-	1250 7150 1700 7150
+	1225 7150 1675 7150
 Wire Wire Line
 	2000 1200 2000 1500
 Connection ~ 2000 1500
@@ -1365,55 +1333,55 @@ Wire Wire Line
 	3850 1450 3850 1500
 Connection ~ 3850 1500
 Wire Wire Line
-	6650 6650 6250 6650
+	6650 6050 6250 6050
 Wire Wire Line
-	7500 5950 7900 5950
+	7500 5350 7900 5350
 Wire Notes Line
-	600  5000 5750 5000
+	575  5000 5725 5000
 Wire Notes Line
-	5750 5000 5750 7650
+	5725 5000 5725 7650
 Wire Notes Line
-	9000 6950 9000 5500
+	8950 6450 8950 5000
 Wire Notes Line
-	9000 5500 11100 5500
+	8950 5000 11050 5000
 Wire Wire Line
-	2750 3550 2500 3550
+	2375 3625 2125 3625
 Wire Wire Line
-	2750 3450 2750 3550
+	2375 3525 2375 3625
 Wire Wire Line
 	3850 1000 4350 1000
-Text Label 1300 3550 0    60   ~ 0
+Text Label 925  3625 0    60   ~ 0
 5V_SOURCE
 Wire Wire Line
-	1900 3700 2500 3700
-Connection ~ 2500 3550
-Connection ~ 1900 3550
+	1525 3775 2125 3775
+Connection ~ 2125 3625
+Connection ~ 1525 3625
 $Comp
 L CONN_1 P11
 U 1 1 531E8B36
-P 1900 3400
-F 0 "P11" H 1980 3400 40  0000 L CNN
-F 1 "CONN_1" H 1900 3455 30  0001 C CNN
-F 2 "" H 1900 3400 60  0000 C CNN
-F 3 "" H 1900 3400 60  0000 C CNN
-	1    1900 3400
+P 1525 3475
+F 0 "P11" H 1605 3475 40  0000 L CNN
+F 1 "CONN_1" H 1525 3530 30  0001 C CNN
+F 2 "" H 1525 3475 60  0000 C CNN
+F 3 "" H 1525 3475 60  0000 C CNN
+	1    1525 3475
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1300 3550 1900 3550
+	925  3625 1525 3625
 Wire Wire Line
-	1900 3550 1900 3700
+	1525 3625 1525 3775
 Wire Wire Line
-	2500 3700 2500 3550
+	2125 3775 2125 3625
 $Comp
 L CONN_1 P12
 U 1 1 531E8D87
-P 2500 3400
-F 0 "P12" H 2580 3400 40  0000 L CNN
-F 1 "CONN_1" H 2500 3455 30  0001 C CNN
-F 2 "" H 2500 3400 60  0000 C CNN
-F 3 "" H 2500 3400 60  0000 C CNN
-	1    2500 3400
+P 2125 3475
+F 0 "P12" H 2205 3475 40  0000 L CNN
+F 1 "CONN_1" H 2125 3530 30  0001 C CNN
+F 2 "" H 2125 3475 60  0000 C CNN
+F 3 "" H 2125 3475 60  0000 C CNN
+	1    2125 3475
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1427,4 +1395,10 @@ F 3 "" H 1400 1650 60  0000 C CNN
 	1    1450 1650
 	1    0    0    -1  
 $EndComp
+Text GLabel 7900 5850 2    60   Input ~ 0
+BT_CONN
+Wire Wire Line
+	7900 5850 7500 5850
+Text Label 7500 5850 0    60   ~ 0
+PF7
 $EndSCHEMATC
