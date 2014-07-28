@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-05-31 BZR 4905)-product   date = Fri 04 Jul 2014 00:02:49 JST
+Cmp-Mod V01 Created by Cvpcb (2014-05-31 BZR 4905)-product   date = Sat 26 Jul 2014 00:59:13 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -115,7 +115,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B8BF5C;
 Reference = C18;
-ValeurCmp = 1u;
+ValeurCmp = 4.7u;
 IdModule  = keyboard_parts:C_3216;
 EndCmp
 
@@ -169,13 +169,6 @@ IdModule  = keyboard_parts:LED_2012_HSOL;
 EndCmp
 
 BeginCmp
-TimeStamp = /51AFD396/51BC0DCE;
-Reference = D6;
-ValeurCmp = LED;
-IdModule  = keyboard_parts:LED_TH;
-EndCmp
-
-BeginCmp
 TimeStamp = /51AFD396/531B36C0;
 Reference = D9;
 ValeurCmp = LED;
@@ -225,13 +218,6 @@ IdModule  = keyboard_parts:SOLDER_JUMPER_2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51AFD396/53175240;
-Reference = JP4;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
-EndCmp
-
-BeginCmp
 TimeStamp = /531E82DA;
 Reference = JP10;
 ValeurCmp = JUMPER;
@@ -262,49 +248,49 @@ EndCmp
 BeginCmp
 TimeStamp = /517F625F;
 Reference = P1;
-ValeurCmp = CONN_1;
+ValeurCmp = GND;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F6275;
 Reference = P2;
-ValeurCmp = CONN_1;
+ValeurCmp = D+;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F6290;
 Reference = P3;
-ValeurCmp = CONN_1;
+ValeurCmp = D-;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F629F;
 Reference = P4;
-ValeurCmp = CONN_1;
+ValeurCmp = VUSB;
 IdModule  = keyboard_parts:PIN_1_SQUARE;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F61E2;
 Reference = P5;
-ValeurCmp = CONN_1;
+ValeurCmp = PD1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /517F61D5;
 Reference = P6;
-ValeurCmp = CONN_1;
+ValeurCmp = PD0;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
 TimeStamp = /51B4469E;
 Reference = P7;
-ValeurCmp = CONN_1;
+ValeurCmp = GND;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
@@ -388,48 +374,6 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B8ABD3;
 Reference = P115;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B8F18B;
-Reference = P120;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1_SQUARE;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B8F17C;
-Reference = P121;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B8F16D;
-Reference = P122;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B8F1A4;
-Reference = P123;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B8F15E;
-Reference = P124;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/52B91DE3;
-Reference = P125;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
@@ -612,8 +556,15 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/52B7F2CE;
 Reference = R19;
-ValeurCmp = 0;
+ValeurCmp = F.RST;
 IdModule  = keyboard_parts:R_1608_NOGUIDE;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/53C6B426;
+Reference = R20;
+ValeurCmp = 15K;
+IdModule  = keyboard_parts:R_1608;
 EndCmp
 
 BeginCmp
@@ -669,7 +620,7 @@ BeginCmp
 TimeStamp = /4EB8BB68;
 Reference = U1;
 ValeurCmp = ATMEGA32U4;
-IdModule  = TQFP44;
+IdModule  = keyboard_parts:QFP44;
 EndCmp
 
 BeginCmp
@@ -689,7 +640,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51AFDC54;
 Reference = U4;
-ValeurCmp = LTC4054;
+ValeurCmp = MCP73831;
 IdModule  = keyboard_parts:SOT23-5_HSOL;
 EndCmp
 
