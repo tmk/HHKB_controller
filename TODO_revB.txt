@@ -1,0 +1,129 @@
+Rev.B Errata and TODO
+=====================
+2014/07/29  Done for Rev.C
+
+
+
+
+PENDING: future revision
+--------
+- voltage shifter   -- Another revision PCB?    -- Pending
+    using RS-232C driver is better? ussable for 5V-3.3V shifter?
+    power consumption?(in comparison with MOSFET shifter)
+
+- UVCC should be connected directly to VUSB? like as VBUS.  -- no harm. Pending
+    UVCC is needed only when USB is plugged.
+    But it seems to be no harm even if UVCC is powered when not plugged in.
+
+
+
+
+DONE:
+-----
+- Change drill size of LED and switch to 1.0mm -- Done 07/29
+
+- Placement of USB receptacle    --- move Top right hole 0.2mm to the right -- Done 07/29
+    USB MiniB connector should be left to around 0.3mm
+    And Top right hole size should be a bit smaller
+
+- Battery cut-off of Lipo protect circuit   -- OK 07/03
+    http://www.adafruit.com/datasheets/Li-poly%20085060-2400mAh.pdf
+    Charge cut-off: 4.2V
+    Discharge cut-off: 2.75V
+
+- Xtal: too far from pins. may cause EMI problem. -- Done
+
+- Inductor is too small? -- change footprint bigger. Done
+    **With NCP1402 inductor(TOKO D63LCB 100uH) whines when step-up converter is working.
+    NCP1402 needs 47uH instead of 100uH.
+    Sumida 47uH(6x6mm, CDRH5D28NP) doesn't whine and very calm.(07/07)
+    TODO: How about TOKO D63LCB 47uH? TOKO is very cheap while Sumida one is expensive(250yen).
+          Need bigger one? Sumida CDRH6D38NP 7x7mm.
+
+    NCP1402 uses Sumida CD54-470L 47uH 0.72A
+    http://www.sumida.com/products/pdf/CD54.pdf
+
+    TOKO D63LCB 0.89A(0.43A?) marutsu
+    https://www.marutsu.co.jp/data/A921CY.pdf
+
+    Sumida CDRH5D28NP-470NC 47uH 0.62A  sengoku
+    Sumida CDRH6D38NP-470NC 47uH 0.95A  sengoku
+    http://www.mouser.com/ds/2/390/CDRH5D28RH125-4194.pdf
+    http://www.sumida.com/products/pdf/CDRH6D38.pdf
+
+    Datasheet of HT7750 uses ABC SR0602 inductor 47-100uH which has around Isat 0.75A-0.55A
+
+- NCP1402 capacitor/inductor configuration -- changed values 07/03 Done
+    47uH, 10uF/16V and 68uF/10V
+    instead of HT7750
+
+- schottky land pattern is too small for SOD123 -- Done 06/24
+    NCP1402 uses MBR0520LT1 20V/0.5A SOD123
+        Vf 0.38V
+    RB521S-30   30V/0.2A                NG
+    RB160M-30   30V/1A    SOD123        OK
+
+- Capacitor polarity marking of dcdc converter -- Done 07/28
+    NCP1402 may use tantalum
+
+- R14,D7,D8 are removed -- remove from Schematic 07/03
+    RN-42 LED_ACT
+
+- R8,R9 values are reversed -- fix values on PCB 07/03
+    voltage shifter 10k 15k
+
+- RTS, CTS -- Done
+    NOTE: PD5(CTS) is used as RTS and connected to CTS of RN-42. Confusing? YES.
+    PD5: RTS->CTS
+    PF1: CTS<-RTS
+    *CTS of the module is needed to wake up from deep sleep.
+- RN-42 GPIO6 for connection control    -- Done
+    use PF7
+    SM,4 Master mode can be controled with this port. This seems to be critical.
+
+- Power selector doesn't work; Q4 MOSFET leaks from Lipo to USB power line. -- removed Q4 and added D11 07/03 --Done
+    Schottky diode can solve simply at the expence of forward voltage drop.
+    Q4 is on both USB and Lipo actually
+    Q4 is on and leak when Lipo turns on; Vgs = Gnd(g) - Lipo(s)
+
+- MCP73831  -- Done
+    Add capacitor C16 on BAT  -- 07/03
+
+- Jumper "No Lipo" remove -- 07/04  -- Done
+    Not needed.
+
+- Fix Ground fill of back side of USB receptacle -- 07/04   -- Done
+    back side should be  filled
+
+- Add JST PH-2 thourough hole pattern -- 07/04  -- Done
+    JST PH-2 SMT is hard to find
+
+- Remove ISP of RN-42 headers -- 07/04  -- Done
+
+
+
+CANCELED:
+--------
+- Xtal: both TH and SMT components should be applied -- Cancel
+    Not possible? bottom case touches SMT lands.
+
+- ?current measure point should be closed by default?   -- Cancel
+    YES.
+    closed solder jumper cannot be created in KiCAD.
+
+- 5V UART interface is preferable?  -- NO. 3.3V is better to connect with the module directly.
+    3.3V RX_33 can not be shared between AVR and external serial adapter. -- R9 is too high and can not sink adapter hi output?
+
+- RN-42 GPIO9 *optional     -- Not needed. iOS is not supported.(Apple authenticate co-processor is not available)
+    to toggle virtual keyboard on iOS
+
+- RN-42 GPIO11 *optional    -- Not needed. can be done with configuration
+    to force HID profile
+
+- Step-up converter(UVLO Under voltage lock out) -- misunderstood 07/04
+    FACT: UVLO is a function to stop converting when charge source(not Lipo) gets to low voltage.
+    FACT: Lipo has protection circuit for over discharge/charge
+    NOT: HT7750A exhausts battery to voltage as 0.9V which is too low for Lipo.
+    NOT: While other converter which works with Lipo UVLO is 2.1V. This is also still not save for Lipo.
+    NOT: UVLO is not for Lipo protection? HT7750A should be used with normal dry battery.
+
