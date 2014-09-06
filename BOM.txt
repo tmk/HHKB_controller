@@ -1,55 +1,48 @@
-Bill of Matrials - HHKB Alt controller Rev.B
-=============================================
+Bill of Matrials - HHKB Alt controller Rev.C
+============================================
 
 USB configuration
 -----------------
-USB-mini connector          1       Hirose UX60SC-MB-5ST
-ATMega32U4-AU               1       TQFP
-Xtal-16MHz                  1       HC49 SMT
-C22p                        2       1608    or 18pF
-C1u                         1       1608 +-10%
-C0.1u                       5       1608 for decoupling
-C10u                        2       3216 for decoupling
-R22                         2       1608
-R1K                         2       1608
-LED                         1       2012
-SW-PUSH                     1       Alps SKHH or SKHL
-Connector for Pro2          1       S13B-ZR-SM4A-TF
-Connector for JP            1       DF14A-15P-1.25H
-PPTC500mA                   1       Optional    TYCO nano
+USB-mini connector          1   Hirose UX60SC-MB-5ST
+ATMega32U4-AU               1   TQFP
+Xtal-16MHz                  1   HC49 SMT
+C22p(18p)                   2   1608    or 18pF
+C1u                         1   1608 +-10% EMK107BJ105KA-T
+C0.1u                       5   1608    for decoupling
+C4.7u(10u)                  1   3216    for decoupling  GRM31MF11C475ZA01
+R22                         2   1608
+R1K                         2   1608
+LED                         1   2012 or any    SML-012WT
+SW-PUSH                     1   Alps Right-angle    SKHH
+JST ZH                      1   S13B-ZR-SM4A-TF for HHKB Pro2
+Hirose DF14A                1   DF14A-15P-1.25H for HHKB JP
 
 
 
-Power control
--------------
-R10K                        1       1608    Optional
-FET-NMOS                    1       SOT23   Optional
-
-
-Optional Bluetooth configuration
---------------------------------
-RN42                        1       Roving Networks
-R10K                        9
-R1K                         3
-R470                        2
-R15K                        2       or 20K?
-FET-NMOS                    2
-FET-PMOS                    2
-LED                         3       Charger, Indicator and Status
-
-LTC4054                     1       SOT23   Lipo Charger
-C1u                         1
-JST PH2                     1       Lipo connector
-
-TAR5SB33                    1       SOT23   3.3V Regulator
-C0.1u                       1
-C1u                         1
-C10u                        1
-
-HT7750A                     1       5V Boost converter
-L100u                       1
-DSchottky                   1       SOD123
-C22u                        1       3225 or 3528 or 3216
-C47u                        1       3225 or 3528 or 3216
-
-SW-SLIDE                    1       DPDT
+Bluetooth configuration
+-----------------------
+RN-42                       1   Roving Networks
+PPTC500mA                   1   optional
+R10K                        8   1608
+R1K                         3   1608
+R470                        2   1608
+R15K                        2   1608
+FET-NMOS                    3   SOT23   BS138 or any
+FET-PMOS                    1   SOT23   IRLML6402 or any
+LED                         3   SML-012WT or any
+MCP73831                    1   SOT23   Lipo Charger
+C4.7u                       2   GRM31CB31H457K
+R2.2K                       1   1608    Rprog: 2K-10K
+JST PH2                     1   Lipo connector
+TAR5SB33                    1   SOT23   3.3V Regulator
+C0.1u                       1   1608
+C1u                         1   3216, 3225 or any
+C10u                        1   3216, 3225 or any
+NCP1402                     1   5V Boost converter(or NCP1400)
+L47u                        1   Power inductor(or 22u)
+DSchottky                   2   SOD123 RB160M-30TR
+C10u                        1   tantalum/low ESR
+C68u                        1   tantalum/low ESR
+SW-SLIDE                    1   DPDT SS22SDH2
+FET-NMOS                    1   SOT23   Optional for power control of HHKB
+R10K                        1   1608    Optional for power control of HHKB

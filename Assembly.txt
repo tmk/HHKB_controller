@@ -1,0 +1,36 @@
+USB HHKB Alt controller assembly
+================================
+20014/08/21 Rev.C
+
+U1          ATMega32U4
+R2,R3       22Ohm
+C4          1uF
+C1          4.7uF(instead of 10uF)
+C3,C7-10    0.1uF(for decoupling)
+R4          1KOhm
+C5,C6       18pF(or 22pF)
+X1          16MHz
+R5          1KOhm
+D1          LED
+CN2         JST ZH connector
+J1          USB mini B receptacle
+SW1         Alps tactile swtich
+
+Following solder jumpers should be closed.
+- 'amp' below C2
+- 'No PWCTL'
+- 'amp' marked as JP10
+- 'No BT'
+- 'No PPTC'
+
+
+PPTC        not installed
+C2          not installed
+Q2_N        not installed(N-ch FET)
+R15         not installed
+ICSP        not installed(for debug)
+PD1,PD0,GND not installed(for debug)
+R17,R18     not installed(for battery monitor)
+CN1         not installed(for HHKB JP)
+
+Other components on right side part of board are also not installed.
