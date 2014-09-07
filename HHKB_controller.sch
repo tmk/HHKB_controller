@@ -50,7 +50,7 @@ Text Label 1650 1700 0    60   ~ 0
 D+
 Text Label 1650 1600 0    60   ~ 0
 D-
-Text Label 3400 1500 0    60   ~ 0
+Text Label 1625 1500 0    60   ~ 0
 VUSB
 Text Label 1400 2525 0    60   ~ 0
 GND
@@ -59,7 +59,7 @@ D+
 Text Label 1450 2725 0    60   ~ 0
 D-
 Text Label 1350 2825 0    60   ~ 0
-VUSB_RAW
+VUSB
 Text Label 5400 1400 0    60   ~ 0
 PE6
 Text Label 5400 2400 0    60   ~ 0
@@ -236,12 +236,12 @@ $EndComp
 $Comp
 L +5V #PWR011
 U 1 1 4EB8CC7B
-P 3850 1000
-F 0 "#PWR011" H 3850 970 20  0001 C CNN
-F 1 "+5V" H 3850 1110 30  0000 C CNN
-F 2 "" H 3850 1000 60  0001 C CNN
-F 3 "" H 3850 1000 60  0001 C CNN
-	1    3850 1000
+P 2275 3500
+F 0 "#PWR011" H 2275 3470 20  0001 C CNN
+F 1 "+5V" H 2275 3610 30  0000 C CNN
+F 2 "" H 2275 3500 60  0001 C CNN
+F 3 "" H 2275 3500 60  0001 C CNN
+	1    2275 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -741,9 +741,9 @@ U 51AFD396
 F0 "bluetooth" 50
 F1 "bluetooth.sch" 50
 $EndSheet
-Text GLabel 4050 1500 2    60   Input ~ 0
+Text GLabel 4675 1500 2    60   Input ~ 0
 VUSB
-Text GLabel 4050 1200 2    60   Input ~ 0
+Text GLabel 2475 3700 2    60   Input ~ 0
 5V_BOOST
 Text GLabel 6650 5550 2    60   Input ~ 0
 BT_RX
@@ -861,43 +861,21 @@ PC6
 Text Label 1475 7250 0    60   ~ 0
 PC7
 $Comp
-L JUMPER JP1
-U 1 1 53101A26
-P 2300 1200
-F 0 "JP1" H 2300 1350 60  0000 C CNN
-F 1 "JUMPER" H 2300 1120 40  0000 C CNN
-F 2 "" H 2300 1200 60  0000 C CNN
-F 3 "" H 2300 1200 60  0000 C CNN
-	1    2300 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L JUMPER JP2
 U 1 1 5310256F
-P 3200 1200
-F 0 "JP2" H 3200 1350 60  0000 C CNN
-F 1 "JUMPER" H 3200 1120 40  0000 C CNN
-F 2 "" H 3200 1200 60  0000 C CNN
-F 3 "" H 3200 1200 60  0000 C CNN
-	1    3200 1200
+P 1625 3700
+F 0 "JP2" H 1625 3850 60  0000 C CNN
+F 1 "JUMPER" H 1625 3620 40  0000 C CNN
+F 2 "" H 1625 3700 60  0000 C CNN
+F 3 "" H 1625 3700 60  0000 C CNN
+	1    1625 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG025
-U 1 1 53142972
-P 3850 1450
-F 0 "#FLG025" H 3850 1545 30  0001 C CNN
-F 1 "PWR_FLAG" H 3850 1630 30  0000 C CNN
-F 2 "" H 3850 1450 60  0000 C CNN
-F 3 "" H 3850 1450 60  0000 C CNN
-	1    3850 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR026
+L GND #PWR025
 U 1 1 4EBBEF66
 P 10950 3900
-F 0 "#PWR026" H 10950 3900 30  0001 C CNN
+F 0 "#PWR025" H 10950 3900 30  0001 C CNN
 F 1 "GND" H 10950 3830 30  0001 C CNN
 F 2 "" H 10950 3900 60  0001 C CNN
 F 3 "" H 10950 3900 60  0001 C CNN
@@ -905,25 +883,14 @@ F 3 "" H 10950 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG027
+L PWR_FLAG #FLG026
 U 1 1 4EBBEFCE
 P 10950 3900
-F 0 "#FLG027" H 10950 4170 30  0001 C CNN
+F 0 "#FLG026" H 10950 4170 30  0001 C CNN
 F 1 "PWR_FLAG" H 10950 4130 30  0000 C CNN
 F 2 "" H 10950 3900 60  0001 C CNN
 F 3 "" H 10950 3900 60  0001 C CNN
 	1    10950 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L PPTC PPTC1
-U 1 1 53153E30
-P 2300 1500
-F 0 "PPTC1" H 2250 1600 50  0000 C CNN
-F 1 "PPTC" H 2300 1400 50  0000 C CNN
-F 2 "" V 2300 1500 60  0000 C CNN
-F 3 "" V 2300 1500 60  0000 C CNN
-	1    2300 1500
 	1    0    0    -1  
 $EndComp
 Text GLabel 6650 6050 2    60   Input ~ 0
@@ -936,9 +903,7 @@ Text Label 7700 5350 2    60   ~ 0
 PE6
 Text Notes 4825 6100 0    60   ~ 0
 No Power Control
-Text Notes 2150 950  0    60   ~ 0
-No PPTC
-Text Notes 3050 950  0    60   ~ 0
+Text Notes 1475 3450 0    60   ~ 0
 No Boost
 Text Notes 625  4900 0    60   ~ 0
 USB keyboard configurations:\n  1)close "No Power Control" and\n  2)close "No Boost" jumper to use raw USB power.
@@ -946,8 +911,6 @@ Text Notes 625  5150 0    60   ~ 0
 HHKB Matrix Interface
 Text Notes 9000 5150 0    60   ~ 0
 Program and Debug
-Text Label 1650 1500 0    60   ~ 0
-VUSB_RAW
 Wire Wire Line
 	1300 2825 1600 2825
 Wire Wire Line
@@ -1222,8 +1185,6 @@ Connection ~ 5075 5550
 Wire Wire Line
 	7900 5550 7500 5550
 Wire Wire Line
-	5400 2000 5650 2000
-Wire Wire Line
 	5075 6200 5075 6250
 Wire Wire Line
 	1225 6950 1425 6950
@@ -1233,30 +1194,13 @@ Wire Wire Line
 Wire Wire Line
 	1225 7250 1675 7250
 Wire Wire Line
-	2000 1200 2000 1500
-Connection ~ 2000 1500
-Wire Wire Line
-	2550 1500 4050 1500
-Wire Wire Line
-	2600 1200 2600 1500
-Connection ~ 2600 1500
-Wire Wire Line
-	1600 1500 2050 1500
-Wire Wire Line
-	3500 1200 4050 1200
+	1925 3700 2475 3700
 Wire Wire Line
 	3700 2300 3700 3400
-Wire Wire Line
-	2700 1200 2700 1500
 Connection ~ 2700 1500
+Connection ~ 2275 3700
 Wire Wire Line
-	2700 1200 2900 1200
-Connection ~ 3850 1200
-Wire Wire Line
-	3850 1200 3850 1000
-Wire Wire Line
-	3850 1450 3850 1500
-Connection ~ 3850 1500
+	2275 3700 2275 3500
 Wire Wire Line
 	6650 6050 6250 6050
 Wire Wire Line
@@ -1306,4 +1250,17 @@ Wire Wire Line
 	1425 7300 3350 7300
 Wire Wire Line
 	1425 6950 1425 7300
+Wire Wire Line
+	1600 1500 4675 1500
+Wire Wire Line
+	5650 2000 4450 2000
+Wire Wire Line
+	4450 2000 4450 1500
+Connection ~ 4450 1500
+Wire Wire Line
+	1325 3700 925  3700
+Text Label 925  3700 0    60   ~ 0
+VUSB
+Text Notes 1175 4025 0    60   ~ 0
+5V Power Source Select
 $EndSCHEMATC
