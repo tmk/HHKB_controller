@@ -7,8 +7,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "HHKB Alt Controller/Bluetooth"
-Date "2014/07"
-Rev "C"
+Date "2014/09"
+Rev "D"
 Comp "TMK"
 Comment1 ""
 Comment2 ""
@@ -840,28 +840,6 @@ F 3 "" H 1625 3700 60  0000 C CNN
 	1    1625 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR025
-U 1 1 4EBBEF66
-P 10950 3900
-F 0 "#PWR025" H 10950 3900 30  0001 C CNN
-F 1 "GND" H 10950 3830 30  0001 C CNN
-F 2 "" H 10950 3900 60  0001 C CNN
-F 3 "" H 10950 3900 60  0001 C CNN
-	1    10950 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L PWR_FLAG #FLG026
-U 1 1 4EBBEFCE
-P 10950 3900
-F 0 "#FLG026" H 10950 4170 30  0001 C CNN
-F 1 "PWR_FLAG" H 10950 4130 30  0000 C CNN
-F 2 "" H 10950 3900 60  0001 C CNN
-F 3 "" H 10950 3900 60  0001 C CNN
-	1    10950 3900
-	1    0    0    -1  
-$EndComp
 Text GLabel 6650 6050 2    60   Input ~ 0
 BT_CTS
 Text Label 6450 5900 2    60   ~ 0
@@ -1232,4 +1210,17 @@ Text Label 925  3700 0    60   ~ 0
 VUSB
 Text Notes 1175 4025 0    60   ~ 0
 5V Power Source Select
+Wire Wire Line
+	4650 3550 4650 3850
+$Comp
+L GND #PWR025
+U 1 1 540DEB0D
+P 4650 3850
+F 0 "#PWR025" H 4650 3850 30  0001 C CNN
+F 1 "GND" H 4650 3780 30  0001 C CNN
+F 2 "" H 4650 3850 60  0001 C CNN
+F 3 "" H 4650 3850 60  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
