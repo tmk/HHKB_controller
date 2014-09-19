@@ -1,15 +1,8 @@
-Cmp-Mod V01 Created by Cvpcb (2014-05-31 BZR 4905)-product   date = Sat 26 Jul 2014 00:59:13 JST
+Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Tue 16 Sep 2014 15:39:56 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
 Reference = C1;
-ValeurCmp = 10u;
-IdModule  = keyboard_parts:C_3216;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A7ECF4;
-Reference = C2;
 ValeurCmp = 10u;
 IdModule  = keyboard_parts:C_3216;
 EndCmp
@@ -80,7 +73,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B35F61;
 Reference = C12;
-ValeurCmp = 10u;
+ValeurCmp = 68u;
 IdModule  = keyboard_parts:C_3228;
 EndCmp
 
@@ -101,7 +94,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B35F52;
 Reference = C15;
-ValeurCmp = 68u;
+ValeurCmp = 10u;
 IdModule  = keyboard_parts:C_3225;
 EndCmp
 
@@ -122,14 +115,14 @@ EndCmp
 BeginCmp
 TimeStamp = /51979D97;
 Reference = CN1;
-ValeurCmp = CONN_15;
+ValeurCmp = JP;
 IdModule  = keyboard_parts:HHKB_JP_HRS_DF14_15P;
 EndCmp
 
 BeginCmp
 TimeStamp = /51978C41;
 Reference = CN2;
-ValeurCmp = CONN_13;
+ValeurCmp = PRO2;
 IdModule  = keyboard_parts:HHKB_PRO2_ZH13;
 EndCmp
 
@@ -148,10 +141,10 @@ IdModule  = keyboard_parts:D_SOD123;
 EndCmp
 
 BeginCmp
-TimeStamp = /51AFD396/51B997A0;
+TimeStamp = /51AFD396/540E541B;
 Reference = D3;
-ValeurCmp = LED;
-IdModule  = keyboard_parts:LED_2012_HSOL;
+ValeurCmp = LED_DUAL;
+IdModule  = keyboard_parts:LED_3025_DUAL;
 EndCmp
 
 BeginCmp
@@ -162,17 +155,10 @@ IdModule  = keyboard_parts:LED_TH;
 EndCmp
 
 BeginCmp
-TimeStamp = /51AFD396/51BC0B79;
-Reference = D5;
-ValeurCmp = LED;
-IdModule  = keyboard_parts:LED_2012_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/531B36C0;
+TimeStamp = /51AFD396/540D8D13;
 Reference = D9;
-ValeurCmp = LED;
-IdModule  = keyboard_parts:LED_2012_HSOL;
+ValeurCmp = LED_DUAL;
+IdModule  = keyboard_parts:LED_3025_DUAL;
 EndCmp
 
 BeginCmp
@@ -197,7 +183,7 @@ IdModule  = keyboard_parts:USB_miniB_hirose_new;
 EndCmp
 
 BeginCmp
-TimeStamp = /53101A26;
+TimeStamp = /5417AF56;
 Reference = JP1;
 ValeurCmp = JUMPER;
 IdModule  = keyboard_parts:SOLDER_JUMPER_2;
@@ -218,31 +204,10 @@ IdModule  = keyboard_parts:SOLDER_JUMPER_2;
 EndCmp
 
 BeginCmp
-TimeStamp = /531E82DA;
-Reference = JP10;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
-EndCmp
-
-BeginCmp
-TimeStamp = /51BB5493;
-Reference = JP11;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/51BB5CF3;
-Reference = JP12;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
-EndCmp
-
-BeginCmp
 TimeStamp = /51AFD396/51B35FB0;
 Reference = L1;
 ValeurCmp = 47u;
-IdModule  = keyboard_parts:L_6x6MM;
+IdModule  = keyboard_parts:L_7x7MM;
 EndCmp
 
 BeginCmp
@@ -302,38 +267,10 @@ IdModule  = keyboard_parts:AVR_ICSP_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51BB5A44;
-Reference = P9;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51BB5A53;
-Reference = P10;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /531E8B36;
-Reference = P11;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /531E8D87;
-Reference = P12;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
 TimeStamp = /51AFD396/51AFD4A8;
 Reference = P100;
 ValeurCmp = CONN_2;
-IdModule  = keyboard_parts:JST_PH2_SMT;
+IdModule  = keyboard_parts:JST_PH2_SMT_TH;
 EndCmp
 
 BeginCmp
@@ -379,21 +316,7 @@ IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51AFD396/51BB5CD5;
-Reference = P130;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/51BB5CE4;
-Reference = P131;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = /53153E30;
+TimeStamp = /5417AF4F;
 Reference = PPTC1;
 ValeurCmp = PPTC;
 IdModule  = keyboard_parts:PPTC_nano;
@@ -402,21 +325,21 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51BB5234;
 Reference = Q1;
-ValeurCmp = MOSFET_N;
+ValeurCmp = MOS_N;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51BB4B25;
 Reference = Q2;
-ValeurCmp = MOSFET_N;
+ValeurCmp = MOS_N;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51AFD396/52B840EC;
 Reference = Q3;
-ValeurCmp = MOSFET_N;
+ValeurCmp = MOS_N;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
@@ -424,6 +347,13 @@ BeginCmp
 TimeStamp = /51AFD396/5310CAAE;
 Reference = Q5;
 ValeurCmp = MOS_P;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/54111581;
+Reference = Q10;
+ValeurCmp = MOS_N;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
@@ -500,7 +430,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B43EF8;
 Reference = R11;
-ValeurCmp = 10K;
+ValeurCmp = Rprog;
 IdModule  = keyboard_parts:R_1608;
 EndCmp
 
@@ -514,7 +444,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/52B7F726;
 Reference = R13;
-ValeurCmp = 470;
+ValeurCmp = 1K;
 IdModule  = keyboard_parts:R_1608;
 EndCmp
 
@@ -603,6 +533,20 @@ IdModule  = keyboard_parts:R_1608;
 EndCmp
 
 BeginCmp
+TimeStamp = /51AFD396/540E7519;
+Reference = R26;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/541122C6;
+Reference = R30;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
 TimeStamp = /4EB8BB5F;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
@@ -633,7 +577,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B35E76;
 Reference = U3;
-ValeurCmp = NCP1402;
+ValeurCmp = NCP1402SN50;
 IdModule  = keyboard_parts:SOT23-5_HSOL;
 EndCmp
 

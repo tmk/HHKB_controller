@@ -8,6 +8,7 @@ This controller makes your HHKB fully programmable. You can use this with [tmk_k
 
 Update
 ------
+- 2014/09/19: Rev.D
 - 2014/07/28: Rev.C
 
 

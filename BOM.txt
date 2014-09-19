@@ -1,4 +1,4 @@
-Bill of Matrials - HHKB Alt controller Rev.C
+Bill of Matrials - HHKB Alt controller Rev.D
 ============================================
 
 USB configuration
@@ -6,14 +6,14 @@ USB configuration
 USB-mini connector          1   Hirose UX60SC-MB-5ST
 ATMega32U4-AU               1   TQFP
 Xtal-16MHz                  1   HC49 SMT
-C22p(18p)                   2   1608    or 18pF
+C22p                        2   1608    or 18pF
 C1u                         1   1608 +-10% EMK107BJ105KA-T
 C0.1u                       5   1608    for decoupling
-C4.7u(10u)                  1   3216    for decoupling  GRM31MF11C475ZA01
+C4.7u                       1   3216    for decoupling  GRM31MF11C475ZA01
 R22                         2   1608
 R1K                         2   1608
-LED                         1   2012 or any    SML-012WT
-SW-PUSH                     1   Alps Right-angle    SKHH
+LED                         1   2012 or any    SML-012WT(3020)
+SW-PUSH                     1   Alps Right-angle    SKHHLPA010
 JST ZH                      1   S13B-ZR-SM4A-TF for HHKB Pro2
 Hirose DF14A                1   DF14A-15P-1.25H for HHKB JP
 
@@ -23,18 +23,17 @@ Bluetooth configuration
 -----------------------
 RN-42                       1   Roving Networks
 PPTC500mA                   1   optional
-R10K                        8   1608
-R1K                         3   1608
-R470                        2   1608
-R15K                        2   1608
-FET-NMOS                    3   SOT23   BS138 or any
+R10K                       13   1608
+R1K                         5   1608
+R15K                        3   1608
+FET-NMOS                    4   SOT23   BS138 or any
 FET-PMOS                    1   SOT23   IRLML6402 or any
-LED                         3   SML-012WT or any
+LED                         2   dual color LED 3025/3225    SEC2764C    
 MCP73831                    1   SOT23   Lipo Charger
 C4.7u                       2   GRM31CB31H457K
-R2.2K                       1   1608    Rprog: 2K-10K
+R2K                         1   1608    Rprog: 2K-10K
 JST PH2                     1   Lipo connector
-TAR5SB33                    1   SOT23   3.3V Regulator
+LDO3.3V                     1   SOT23   MIC5504-3.3YMTR TAR5SB33
 C0.1u                       1   1608
 C1u                         1   3216, 3225 or any
 C10u                        1   3216, 3225 or any
@@ -44,5 +43,3 @@ DSchottky                   2   SOD123 RB160M-30TR
 C10u                        1   tantalum/low ESR
 C68u                        1   tantalum/low ESR
 SW-SLIDE                    1   DPDT SS22SDH2
-FET-NMOS                    1   SOT23   Optional for power control of HHKB
-R10K                        1   1608    Optional for power control of HHKB
