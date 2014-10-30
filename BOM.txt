@@ -1,45 +1,53 @@
-Bill of Matrials - HHKB Alt controller Rev.D
+Bill of Matrials - HHKB Alt controller Rev.E
 ============================================
 
 USB configuration
 -----------------
 USB-mini connector          1   Hirose UX60SC-MB-5ST
-ATMega32U4-AU               1   TQFP
+ATMega32U4-AU               1   TQFP44
 Xtal-16MHz                  1   HC49 SMT
 C22p                        2   1608    or 18pF
-C1u                         1   1608 +-10% EMK107BJ105KA-T
+C1u                         1   1608 +-10%  EMK107BJ105KA-T
 C0.1u                       5   1608    for decoupling
 C4.7u                       1   3216    for decoupling  GRM31MF11C475ZA01
 R22                         2   1608
 R1K                         2   1608
 LED                         1   2012 or any    SML-012WT(3020)
 SW-PUSH                     1   Alps Right-angle    SKHHLPA010
-JST ZH                      1   S13B-ZR-SM4A-TF for HHKB Pro2
-Hirose DF14A                1   DF14A-15P-1.25H for HHKB JP
+JST-ZH                      1   S13B-ZR-SM4A-TF for HHKB Pro2
+Hirose-DF14A                1   DF14A-15P-1.25H for HHKB JP
 
 
 
 Bluetooth configuration
 -----------------------
-RN-42                       1   Roving Networks
-PPTC500mA                   1   optional
+RN-42                       1   Roving Networks RN42-I/RM615 version 6.15   https://www.sparkfun.com/products/12574
 R10K                       13   1608
 R1K                         5   1608
 R15K                        3   1608
-FET-NMOS                    4   SOT23   BS138 or any
-FET-PMOS                    1   SOT23   IRLML6402 or any
-LED                         2   dual color LED 3025/3225    SEC2764C    
+MOSFET-N                    4   SOT23   BS138 or any
+MOSFET-P                    2   SOT23   IRLML6402 or any
+TR-NPN                      1   SOT23   any
+LED                         2   3025/3225   Dual color LED  SEC2764C
+LDO3.3V                     1   SOT23   MIC5504-3.3YMTR
+C1u                         2   3216    1uF X7R/B(JIS)  GRM31MR71H105KA88
+NCP1402                     1   SOT23   5V Boost converter 200mA    NCP1402SN50T1G
+DSchottky                   3   SOD123  Schottky diode   RB160M-30TR, PMEG2010ER
+L47u                        1   6mm     Power inductor 47uH CLF6045T-470M-CA, NR6045T470M
+C10u                        1   3528    tantalum/low ESR 16V 10uF or MLCC(3525)
+C68u                        1   3528    tantalum/low ESR 10V 47-68uF
 MCP73831                    1   SOT23   Lipo Charger
-C4.7u                       2   GRM31CB31H457K
+C4.7u                       2   3216    4.7uF X7R/B(JIS)    GRM31CB31H475KA12
 R2K                         1   1608    Rprog: 2K-10K
-JST PH2                     1   Lipo connector
-LDO3.3V                     1   SOT23   MIC5504-3.3YMTR TAR5SB33
-C0.1u                       1   1608
-C1u                         1   3216, 3225 or any
-C10u                        1   3216, 3225 or any
-NCP1402                     1   5V Boost converter(or NCP1400)
-L47u                        1   Power inductor(or 22u)
-DSchottky                   2   SOD123 RB160M-30TR
-C10u                        1   tantalum/low ESR
-C68u                        1   tantalum/low ESR
-SW-SLIDE                    1   DPDT SS22SDH2
+Lipo-connector              1   JST PH2 S2B-PH-SM4-TB(LF)(SN), S2B-PH-K-S(LF)(SN)
+Lipo                        1   3.7V Lipo Battery   https://www.sparkfun.com/products/339
+SW-SLIDE                    1   DPDT    NKK switch SS22SDH2 http://www.mouser.jp/ProductDetail/NKK-Switches/SS22SDH2/?qs=Av7JdS0MGqKOtKhiygVtuQ%3D%3D
+PPTC500mA                   1   optional
+
+
+Alternatives:
+3.3V Voltage Regulator:
+LDO3.3V*                    1   SOT23   TAR5SB33
+C0.1u*                      1   1608                0.1uF
+C1u*                        1   3216, 3225 or any   1uF X7R B(JIS)
+C10u*                       1   3216, 3225 or any   10uF X7R B(JIS)

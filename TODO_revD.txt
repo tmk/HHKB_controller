@@ -1,0 +1,99 @@
+Rev.D Errata
+============
+2014/09/22
+2014/10/22
+2014/10/29
+
+- Light pipe position align
+    - right one should be closer to edge
+    - third LED and light pipe on middle between two?
+
+- Loose light pipe hole
+    - smaller holes for LEDs
+    - check datasheet of light pipe again
+
+- Power control of HHKB
+    - pull up or down resistor? normally on or off?
+    - difference in power consumption between them?
+    
+- MCP73832 test
+    - charge LED is ok? should not light when not charging
+    - power LED shoul not light when not powered(need schotky diode on vdd of charger?)
+
+- Lipo voltage divider: leak current
+    - Lipo -> R17 -> PF0, about 1.3V is supplied even when it turns off
+    - high side FET switch is needed
+
+- Idea: Solder jumper inside of PPTC and schotky diode
+    - to save PCB space jumper can place between lands of the components
+    - concern of an accidental short circuit?
+
+- MCP73831 leak voltage? from Vdd when not powered
+    - it will need a schotky diode there.
+    - VBUS of ATMega32U4 pin fails to detect of USB plug in/off event
+    - LTC4054 doesn't have this problem
+    - schotky also resolves charge LED problem*
+
+- MCP73831 charge LED dim lights up when not charging
+    - MCP73832 has no upside MOSFET: may resolve this?
+    - schotky diode on vdd of MCP73831 resolve this problem*
+
+- Pull-down resistor of MOSFET switch instead of pull-up
+    - for HHKB key switch board power control
+    - good when power down mode
+    - curretnt flows to IO port through pull-up is needed to disable switch(0.5mA wht 10KOhm pull-up)
+
+- Paste layer for stencil
+    need to add paste layers on modules
+
+- UVCC should be connected directly to VUSB? like as VBUS.  -- no harm. Pending
+    UVCC is needed only when USB is plugged.
+    But it seems to be no harm even if UVCC is powered when not plugged in.
+
+- extension pins output
+    - in addition to PD0 and PD1 for external
+    - other pins used for BT for internal?
+    - PD6(LED), PC6,7(JP), PD2,3,4,5,PE6,PF0,1,4,5,6,7(BT)
+    - and 5V, GND
+
+- LED for non BT(USB controller)
+    - using USB hub holes is preferable
+    - for lock key and layer status
+    - BT indicators can be used?
+
+
+PATCH for Rev.D PCB
+===================
+With Rev.D to implements Bluetooth components you better have these fixes. It will work whitout fixes but these will make battery life a little bit longer.
+
+Charger leak Fix
+----------------
+Without this MCU is powered with leakage current of Lipo charger MCP73831 even when swich is off.
+
+Cut trace which runs from 'NoPPTC' solder jumper to 'PPTC' and place schottky diode on 'PPTC' lands with direction presented in picture.
+
+ADC Switch Fix
+--------------
+Without this MCU is powered through ADC pin from Lipo battery.
+Place components as located in picture.
+
+http://i.imgur.com/EJhoeVUl.jpg
+http://i.imgur.com/4MWi1xql.jpg
+http://i.imgur.com/sklO4KDl.jpg
+http://i.imgur.com/ExQrgwzl.jpg
+
+
+
+
+PENDING
+-------
+- MCU at 3.3V(or directly from Lipo)
+    - Voltage shifter between MCU and switch board
+    - 5V booster controlled by firmware
+- 3.3V regulator controlled by firmware
+    - use reglator with enable pin
+    - power saving controlled by firmware
+- Xtal 8MHz
+    - confirmed: USART doesn't work at baud rate 115200
+    - default buad rate of RN-42 is 115200(factory setting)
+    - power saving effect on MCU is not so drastic
