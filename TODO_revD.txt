@@ -7,6 +7,7 @@ Rev.D Errata
 - Light pipe position align
     - right one should be closer to edge
     - third LED and light pipe on middle between two?
+    # CANCEL 10/30: They were aligned correctly in Rev.D
 
 - Loose light pipe hole
     - smaller holes for LEDs
@@ -15,40 +16,47 @@ Rev.D Errata
 - Power control of HHKB
     - pull up or down resistor? normally on or off?
     - difference in power consumption between them?
-    
-- MCP73832 test
-    - charge LED is ok? should not light when not charging
-    - power LED shoul not light when not powered(need schotky diode on vdd of charger?)
 
+- Pull-down resistor of MOSFET switch instead of pull-up
+    - for HHKB key switch board power control
+    - good when power down mode
+    - curretnt flows to IO port through pull-up is needed to disable switch(0.5mA wht 10KOhm pull-up)
+    
 - Lipo voltage divider: leak current
     - Lipo -> R17 -> PF0, about 1.3V is supplied even when it turns off
     - high side FET switch is needed
 
+
 - Idea: Solder jumper inside of PPTC and schotky diode
     - to save PCB space jumper can place between lands of the components
     - concern of an accidental short circuit?
+    # DONE 10/30
 
 - MCP73831 leak voltage? from Vdd when not powered
     - it will need a schotky diode there.
     - VBUS of ATMega32U4 pin fails to detect of USB plug in/off event
     - LTC4054 doesn't have this problem
     - schotky also resolves charge LED problem*
+    # DONE 10/30
 
 - MCP73831 charge LED dim lights up when not charging
     - MCP73832 has no upside MOSFET: may resolve this?
     - schotky diode on vdd of MCP73831 resolve this problem*
+    # DONE 10/30    use MCP73831 with schottky diode
 
-- Pull-down resistor of MOSFET switch instead of pull-up
-    - for HHKB key switch board power control
-    - good when power down mode
-    - curretnt flows to IO port through pull-up is needed to disable switch(0.5mA wht 10KOhm pull-up)
+- MCP73832 test
+    - charge LED is ok? should not light when not charging
+    - power LED should not light when not powered(need schotky diode on vdd of charger?)
+    # DONE 10/30
+
 
 - Paste layer for stencil
     need to add paste layers on modules
 
-- UVCC should be connected directly to VUSB? like as VBUS.  -- no harm. Pending
-    UVCC is needed only when USB is plugged.
-    But it seems to be no harm even if UVCC is powered when not plugged in.
+- UVCC should be connected directly to VUSB? like as VBUS.
+    - no harm. how about *power consumption*?
+    - UVCC is needed only when USB is plugged.
+    - But it seems to be no harm even if UVCC is powered when not plugged in.
 
 - extension pins output
     - in addition to PD0 and PD1 for external
@@ -60,6 +68,7 @@ Rev.D Errata
     - using USB hub holes is preferable
     - for lock key and layer status
     - BT indicators can be used?
+    # CANCELED 10/30: HHKB users never mind LED indicators for lock keys.
 
 
 PATCH for Rev.D PCB

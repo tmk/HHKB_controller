@@ -1,9 +1,9 @@
-Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Tue 16 Sep 2014 15:39:56 JST
+Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Thu 30 Oct 2014 23:03:09 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
 Reference = C1;
-ValeurCmp = 10u;
+ValeurCmp = 4.7u;
 IdModule  = keyboard_parts:C_3216;
 EndCmp
 
@@ -74,7 +74,7 @@ BeginCmp
 TimeStamp = /51AFD396/51B35F61;
 Reference = C12;
 ValeurCmp = 68u;
-IdModule  = keyboard_parts:C_3228;
+IdModule  = keyboard_parts:C_3528;
 EndCmp
 
 BeginCmp
@@ -87,7 +87,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B35F42;
 Reference = C14;
-ValeurCmp = 10u;
+ValeurCmp = 1u;
 IdModule  = keyboard_parts:C_3216;
 EndCmp
 
@@ -95,7 +95,7 @@ BeginCmp
 TimeStamp = /51AFD396/51B35F52;
 Reference = C15;
 ValeurCmp = 10u;
-IdModule  = keyboard_parts:C_3225;
+IdModule  = keyboard_parts:C_3528;
 EndCmp
 
 BeginCmp
@@ -155,6 +155,13 @@ IdModule  = keyboard_parts:LED_TH;
 EndCmp
 
 BeginCmp
+TimeStamp = /51AFD396/545237C3;
+Reference = D5;
+ValeurCmp = Schottky diode;
+IdModule  = keyboard_parts:D_SOD123;
+EndCmp
+
+BeginCmp
 TimeStamp = /51AFD396/540D8D13;
 Reference = D9;
 ValeurCmp = LED_DUAL;
@@ -207,7 +214,7 @@ BeginCmp
 TimeStamp = /51AFD396/51B35FB0;
 Reference = L1;
 ValeurCmp = 47u;
-IdModule  = keyboard_parts:L_7x7MM;
+IdModule  = keyboard_parts:L_6x6MM;
 EndCmp
 
 BeginCmp
@@ -269,7 +276,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51AFD4A8;
 Reference = P100;
-ValeurCmp = CONN_2;
+ValeurCmp = LIPO;
 IdModule  = keyboard_parts:JST_PH2_SMT_TH;
 EndCmp
 
@@ -325,35 +332,35 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51BB5234;
 Reference = Q1;
-ValeurCmp = MOS_N;
+ValeurCmp = Nch;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51BB4B25;
 Reference = Q2;
-ValeurCmp = MOS_N;
+ValeurCmp = Nch;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51AFD396/52B840EC;
 Reference = Q3;
-ValeurCmp = MOS_N;
+ValeurCmp = Nch;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51AFD396/5310CAAE;
 Reference = Q5;
-ValeurCmp = MOS_P;
+ValeurCmp = Pch;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
 TimeStamp = /51AFD396/54111581;
 Reference = Q10;
-ValeurCmp = MOS_N;
+ValeurCmp = Nch;
 IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
@@ -570,7 +577,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B41FD3;
 Reference = U2;
-ValeurCmp = TAR5SB33;
+ValeurCmp = MIC5504-3.3YMTR;
 IdModule  = keyboard_parts:SOT23-5_HSOL;
 EndCmp
 
