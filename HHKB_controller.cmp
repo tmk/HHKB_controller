@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Fri 31 Oct 2014 03:09:38 JST
+Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Fri 31 Oct 2014 23:29:24 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -617,7 +617,7 @@ IdModule  = keyboard_parts:RN42;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EB8BB56;
+TimeStamp = /5453AC44;
 Reference = X1;
 ValeurCmp = 16MHz;
 IdModule  = keyboard_parts:HC-49_SMT;
