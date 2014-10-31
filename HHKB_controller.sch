@@ -7,8 +7,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "HHKB Alt Controller/Bluetooth"
-Date "2014/09"
-Rev "D"
+Date "2014/11"
+Rev "E"
 Comp "TMK"
 Comment1 ""
 Comment2 ""

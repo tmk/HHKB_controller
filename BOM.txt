@@ -29,6 +29,7 @@ MOSFET-N                    4   SOT23   BS138 or any
 MOSFET-P                    2   SOT23   IRLML6402 or any
 TR-NPN                      1   SOT23   any
 LED                         2   3025/3225   Dual color LED  SEC2764C
+LightPipe                   2   BIVAR SLP3-150-100-R/F
 LDO3.3V                     1   SOT23   MIC5504-3.3YMTR
 C1u                         2   3216    1uF X7R/B(JIS)  GRM31MR71H105KA88
 NCP1402                     1   SOT23   5V Boost converter 200mA    NCP1402SN50T1G

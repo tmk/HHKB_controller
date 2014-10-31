@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Thu 30 Oct 2014 23:03:09 JST
+Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Fri 31 Oct 2014 03:09:38 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -351,6 +351,13 @@ IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
 EndCmp
 
 BeginCmp
+TimeStamp = /51AFD396/5452928D;
+Reference = Q4;
+ValeurCmp = Pch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
 TimeStamp = /51AFD396/5310CAAE;
 Reference = Q5;
 ValeurCmp = Pch;
@@ -479,14 +486,14 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51BE9662;
 Reference = R17;
-ValeurCmp = R;
+ValeurCmp = 10K;
 IdModule  = keyboard_parts:R_1608;
 EndCmp
 
 BeginCmp
 TimeStamp = /51AFD396/51BE9671;
 Reference = R18;
-ValeurCmp = R;
+ValeurCmp = 10K;
 IdModule  = keyboard_parts:R_1608;
 EndCmp
 
@@ -543,6 +550,13 @@ BeginCmp
 TimeStamp = /51AFD396/540E7519;
 Reference = R26;
 ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5452E6B7;
+Reference = R27;
+ValeurCmp = 10K;
 IdModule  = keyboard_parts:R_1608;
 EndCmp
 
