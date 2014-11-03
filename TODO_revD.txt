@@ -8,6 +8,15 @@ Rev.D Errata
 
 TODO
 ----
+- Solder mask clearance
+    - Seeed:                0.1mm min width/0.13mm clearance
+    - Elecrow 5/10pcs:      0.2mm/0.2mm  http://www.elecrow.com/2-layer-10cm-10cm-max-pcb-510pcs-color-free-p-328.html
+    - Elecrow small batch:  0.1mm/0.13mm http://www.elecrow.com/small-batch-of-2-layer-pcbs-50pcs-p-330.html
+    - OSHPark:              not specified https://oshpark.com/guidelines
+
+- Logo
+    - TMK logo
+
 - Paste layer for stencil
     - need to add paste layers on modules
     - need to retouch all SMT modules
