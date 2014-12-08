@@ -25,9 +25,8 @@ RN-42                       1   Roving Networks RN42-I/RM615 version 6.15   http
 R10K                       13   1608
 R1K                         5   1608
 R15K                        3   1608
-MOSFET-N                    4   SOT23   BS138 or any
+MOSFET-N                    4   SOT23   IRLML6344, BS138 or any
 MOSFET-P                    2   SOT23   IRLML6402 or any
-TR-NPN                      1   SOT23   any
 LED                         2   3025/3225   Dual color LED  SEC2764C
 LightPipe                   2   BIVAR SLP3-150-100-R/F
 LDO3.3V                     1   SOT23   MIC5504-3.3YMTR
@@ -37,7 +36,7 @@ DSchottky                   3   SOD123  Schottky diode   RB160M-30TR, PMEG2010ER
 L47u                        1   6mm     Power inductor 47uH CLF6045T-470M-CA, NR6045T470M
 C10u                        1   3528    tantalum/low ESR 16V 10uF or MLCC(3525)
 C68u                        1   3528    tantalum/low ESR 10V 47-68uF
-MCP73831                    1   SOT23   Lipo Charger
+Lipo-charger                1   SOT23   MCP73832T-2ACI/OT(NOT MCP73831)
 C4.7u                       2   3216    4.7uF X7R/B(JIS)    GRM31CB31H475KA12
 R2K                         1   1608    Rprog: 2K-10K
 Lipo-connector              1   JST PH2 S2B-PH-SM4-TB(LF)(SN), S2B-PH-K-S(LF)(SN)
