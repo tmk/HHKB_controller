@@ -44,7 +44,7 @@ L LTC4054 U4
 U 1 1 51AFDC54
 P 5525 6625
 F 0 "U4" H 5525 6425 60  0000 C CNN
-F 1 "MCP73831" H 5525 6825 60  0000 C CNN
+F 1 "MCP73832" H 5525 6825 60  0000 C CNN
 F 2 "keyboard_parts:SOT23-5_HSOL" H 5525 6625 60  0001 C CNN
 F 3 "" H 5525 6625 60  0000 C CNN
 	1    5525 6625
@@ -366,8 +366,6 @@ F 3 "" H 6175 7275 60  0000 C CNN
 $EndComp
 Text Notes 6550 7475 2    60   ~ 0
 Charge current: Ichg = 1000V/Rprog
-Text Notes 6000 6475 0    60   ~ 0
-block leak current from VCC\nwhen not charging
 Text Notes 750  4250 0    60   ~ 0
 5V Output
 $Comp
@@ -1072,7 +1070,7 @@ Text Label 7525 5100 0    60   ~ 0
 VUSB_IN
 Text Notes 7550 4850 0    60   ~ 0
 Power Indicator
-Text Label 5500 6175 0    60   ~ 0
+Text Label 5900 6350 0    60   ~ 0
 VUSB_IN
 $Comp
 L MOSFET_N Q10
@@ -1111,28 +1109,6 @@ Text GLabel 5200 3325 0    60   Input ~ 0
 ADC_CTRL
 Text Notes 5450 4175 0    60   ~ 0
 Z<=10KOhm
-$Comp
-L PWR_FLAG #FLG056
-U 1 1 541843B8
-P 6475 6150
-F 0 "#FLG056" H 6475 6245 30  0001 C CNN
-F 1 "PWR_FLAG" H 6475 6330 30  0000 C CNN
-F 2 "" H 6475 6150 60  0000 C CNN
-F 3 "" H 6475 6150 60  0000 C CNN
-	1    6475 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L DIODESCH D5
-U 1 1 545237C3
-P 6125 6175
-F 0 "D5" H 6125 6275 40  0000 C CNN
-F 1 "Schottky diode" H 6125 6075 40  0000 C CNN
-F 2 "keyboard_parts:D_SOD123" H 6125 6175 60  0001 C CNN
-F 3 "" H 6125 6175 60  0000 C CNN
-	1    6125 6175
-	1    0    0    -1  
-$EndComp
 Text Notes 2600 3300 0    60   ~ 0
 Optional\nFor TAR5SB33
 Text Notes 3400 3075 0    60   ~ 0
@@ -1140,10 +1116,10 @@ X5R
 Text Notes 1350 3075 0    60   ~ 0
 X5R
 $Comp
-L GND #PWR057
+L GND #PWR056
 U 1 1 51BE968F
 P 6200 4375
-F 0 "#PWR057" H 6200 4375 30  0001 C CNN
+F 0 "#PWR056" H 6200 4375 30  0001 C CNN
 F 1 "GND" H 6200 4305 30  0001 C CNN
 F 2 "" H 6200 4375 60  0000 C CNN
 F 3 "" H 6200 4375 60  0000 C CNN
@@ -1162,10 +1138,10 @@ F 3 "" H 6100 2950 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR058
+L GND #PWR057
 U 1 1 5452B28D
 P 5700 3575
-F 0 "#PWR058" H 5700 3575 30  0001 C CNN
+F 0 "#PWR057" H 5700 3575 30  0001 C CNN
 F 1 "GND" H 5700 3505 30  0001 C CNN
 F 2 "" H 5700 3575 60  0000 C CNN
 F 3 "" H 5700 3575 60  0000 C CNN
@@ -1216,7 +1192,7 @@ Wire Wire Line
 	7500 3075 7500 2975
 Connection ~ 6475 6525
 Wire Wire Line
-	6475 6150 6475 6825
+	6475 6350 6475 6825
 Wire Wire Line
 	4525 6175 4525 6825
 Wire Notes Line
@@ -1226,11 +1202,11 @@ Wire Notes Line
 Wire Wire Line
 	2475 1875 3125 1875
 Wire Wire Line
-	1200 1875 600  1875
+	600  1875 1200 1875
 Wire Wire Line
-	2000 1875 1600 1875
+	1600 1875 2000 1875
 Wire Wire Line
-	3925 1875 3525 1875
+	3525 1875 3925 1875
 Wire Wire Line
 	5250 700  5300 700 
 Wire Wire Line
@@ -1491,7 +1467,7 @@ Wire Notes Line
 Wire Wire Line
 	8075 6150 8475 6150
 Wire Wire Line
-	8475 5750 8075 5750
+	8075 5750 8475 5750
 Wire Wire Line
 	8275 5100 8275 5175
 Wire Wire Line
@@ -1517,10 +1493,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 4375 6200 4325
 Wire Wire Line
-	6475 6175 6325 6175
-Wire Wire Line
-	5925 6175 5500 6175
-Connection ~ 6475 6175
+	5900 6350 6475 6350
 Wire Wire Line
 	6200 3775 6075 3775
 Wire Notes Line
@@ -1528,7 +1501,7 @@ Wire Notes Line
 Wire Notes Line
 	4200 3650 675  3650
 Wire Wire Line
-	5400 3325 5200 3325
+	5200 3325 5400 3325
 Wire Wire Line
 	5300 3400 5300 3325
 Connection ~ 5300 3325
@@ -1564,4 +1537,6 @@ Wire Wire Line
 	5300 3900 5300 3950
 Wire Notes Line
 	5050 5600 5050 4525
+Text Notes 4300 7700 0    60   ~ 12
+NOTE: Use 73832. 73831 leaks from VCC\nwhen no USB power
 $EndSCHEMATC
