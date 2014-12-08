@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Fri 31 Oct 2014 23:29:24 JST
+Cmp-Mod V01 Created by Cvpcb (2014-07-31 BZR 5040)-product   date = Mon 08 Dec 2014 17:04:44 JST
 
 BeginCmp
 TimeStamp = /4EB8BB66;
@@ -73,7 +73,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51B35F61;
 Reference = C12;
-ValeurCmp = 68u;
+ValeurCmp = 47u;
 IdModule  = keyboard_parts:C_3528;
 EndCmp
 
@@ -152,13 +152,6 @@ TimeStamp = /51AFD396/51B43D8A;
 Reference = D4;
 ValeurCmp = LED;
 IdModule  = keyboard_parts:LED_TH;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AFD396/545237C3;
-Reference = D5;
-ValeurCmp = Schottky diode;
-IdModule  = keyboard_parts:D_SOD123;
 EndCmp
 
 BeginCmp
@@ -271,6 +264,55 @@ TimeStamp = /51A80544;
 Reference = P8;
 ValeurCmp = CONN_3X2;
 IdModule  = keyboard_parts:AVR_ICSP_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5485F339;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5485F22B;
+Reference = P10;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54865141;
+Reference = P11;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5486436B;
+Reference = P12;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/54862C9E;
+Reference = P13;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/54864365;
+Reference = P14;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/54862C03;
+Reference = P15;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
@@ -605,7 +647,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51AFD396/51AFDC54;
 Reference = U4;
-ValeurCmp = MCP73831;
+ValeurCmp = MCP73832;
 IdModule  = keyboard_parts:SOT23-5_HSOL;
 EndCmp
 

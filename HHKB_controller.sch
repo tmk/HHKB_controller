@@ -446,7 +446,7 @@ F 3 "" H 1150 2825 60  0000 C CNN
 	1    1150 2825
 	-1   0    0    1   
 $EndComp
-Text Notes 900  3000 0    60   Italic 0
+Text Notes 900  3100 0    60   Italic 0
 USB pinouts for external connector
 Text Notes 4350 2200 0    60   Italic 0
 Ucap +/-10%
@@ -1253,4 +1253,48 @@ F 3 "" H 4450 1500 60  0000 C CNN
 	1    4450 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_1 P10
+U 1 1 5485F22B
+P 2875 5450
+F 0 "P10" H 2955 5450 40  0000 L CNN
+F 1 "CONN_1" H 2875 5505 30  0001 C CNN
+F 2 "keyboard_parts:PIN_1" H 2875 5450 60  0001 C CNN
+F 3 "" H 2875 5450 60  0000 C CNN
+	1    2875 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 P9
+U 1 1 5485F339
+P 2775 5450
+F 0 "P9" H 2855 5450 40  0000 L CNN
+F 1 "CONN_1" H 2775 5505 30  0001 C CNN
+F 2 "keyboard_parts:PIN_1" H 2775 5450 60  0001 C CNN
+F 3 "" H 2775 5450 60  0000 C CNN
+	1    2775 5450
+	0    -1   -1   0   
+$EndComp
+Text Notes 2475 5250 0    60   ~ 0
+Current mesure
+Connection ~ 2875 5600
+Connection ~ 2775 5600
+$Comp
+L CONN_1 P11
+U 1 1 54865141
+P 1150 2925
+F 0 "P11" H 1230 2925 40  0000 L CNN
+F 1 "CONN_1" H 1150 2980 30  0001 C CNN
+F 2 "keyboard_parts:PIN_1" H 1150 2925 60  0001 C CNN
+F 3 "" H 1150 2925 60  0000 C CNN
+	1    1150 2925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 2925 1375 2925
+Wire Wire Line
+	1375 2925 1375 2825
+Connection ~ 1375 2825
+Text Notes 1475 2950 0    60   ~ 0
+Current measure
 $EndSCHEMATC
