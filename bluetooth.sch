@@ -1159,7 +1159,7 @@ F 1 "Pch" H 6100 2770 60  0000 R CNN
 F 2 "keyboard_parts:MOS_FET_SOT23-3_HSOL" H 6100 2950 60  0001 C CNN
 F 3 "" H 6100 2950 60  0000 C CNN
 	1    6100 2950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L GND #PWR058
