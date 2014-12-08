@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/noname/Dropbox/KiCAD/HHKB_controller/HHKB_controller.sch)
-    (date "Mon 08 Dec 2014 15:39:26 JST")
+    (date "Mon 08 Dec 2014 15:44:25 JST")
     (tool "Eeschema (2014-07-31 BZR 5040)-product"))
   (components
     (comp (ref U1)
@@ -245,7 +245,7 @@
       (sheetpath (names /bluetooth/) (tstamps /51AFD396/))
       (tstamp 51B35F52))
     (comp (ref C12)
-      (value 68u)
+      (value 47u)
       (footprint keyboard_parts:C_3528)
       (libsource (lib HHKB_controller-cache) (part CAPAPOL))
       (sheetpath (names /bluetooth/) (tstamps /51AFD396/))
