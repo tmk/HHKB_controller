@@ -28,3 +28,12 @@ Rev.E Errata
     - PPTC land pattern: no solder jumper, use 0Ohm resistor instead - CANCEL 12/08
     - Q4 Pch FET: wrong Drain and Source - DONE 12/08
     - D5 can be removed.    - DONE 12/08
+
+
+
+Rev.E Fix
+---------
+Q4 Pch FET drain and source pins are reversed stupidly in schematic and PCB on this revision.
+You need to solder the FET upside down like this, really shame.
+http://i.imgur.com/U6UnzaYl.jpg
+
