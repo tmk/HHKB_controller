@@ -1,0 +1,9 @@
+Rev.F Errata
+============
+
+- Poly FUSE foot print
+    Size up to 3225-3228
+    Recommended pads are used already, not changed. Solder jumper is removed. 03/09
+
+- GND pin should be connected to just one side due to thermal relief
+    thin spoke thermal relief is used for reset button 03/09
