@@ -1,7 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:keyboard_parts
 LIBS:HHKB_controller-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -873,24 +873,13 @@ No PPTC
 $Comp
 L PPTC PPTC1
 U 1 1 5417AF4F
-P 2675 1125
-F 0 "PPTC1" H 2675 1225 50  0000 C CNN
-F 1 "PPTC" H 2675 1025 50  0000 C CNN
-F 2 "keyboard_parts:PPTC_nano" V 2675 1125 60  0001 C CNN
-F 3 "" V 2675 1125 60  0000 C CNN
-	1    2675 1125
-	1    0    0    1   
-$EndComp
-$Comp
-L JUMPER JP1
-U 1 1 5417AF56
 P 2675 1500
-F 0 "JP1" H 2675 1650 60  0000 C CNN
-F 1 "JUMPER" H 2675 1420 40  0000 C CNN
-F 2 "keyboard_parts:SOLDER_JUMPER_2" H 2675 1500 60  0001 C CNN
-F 3 "" H 2675 1500 60  0000 C CNN
+F 0 "PPTC1" H 2675 1600 50  0000 C CNN
+F 1 "PPTC" H 2675 1400 50  0000 C CNN
+F 2 "keyboard_parts:PPTC_nano" V 2675 1500 60  0001 C CNN
+F 3 "" V 2675 1500 60  0000 C CNN
 	1    2675 1500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 3450 1500 0    60   ~ 0
 VUSB
@@ -1215,19 +1204,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 1700 3900 1700
 Wire Wire Line
-	1600 1500 2375 1500
-Wire Wire Line
-	2975 1500 4675 1500
-Wire Wire Line
-	2425 1125 2300 1125
-Wire Wire Line
-	2300 1125 2300 1500
-Connection ~ 2300 1500
-Wire Wire Line
-	2925 1125 3100 1125
-Wire Wire Line
-	3100 1125 3100 1500
-Connection ~ 3100 1500
+	1600 1500 2425 1500
 Wire Wire Line
 	5200 1500 5200 2000
 Connection ~ 5200 2000
@@ -1297,4 +1274,6 @@ Wire Wire Line
 Connection ~ 1375 2825
 Text Notes 1475 2950 0    60   ~ 0
 Current measure
+Wire Wire Line
+	2925 1500 4675 1500
 $EndSCHEMATC
