@@ -1,763 +1,654 @@
-Cmp-Mod V01 Genere par PcbNew le Tue 09 Dec 2014 00:22:55 JST
+Cmp-Mod V01 Created by Cvpcb 0.201504261001+5623~23~ubuntu14.10.1-product   date = 2015年05月28日 16時32分13秒
 
 BeginCmp
-TimeStamp = 540D79F7
-Path = /53485EB0
-Reference = J1;
-ValeurCmp = USB_mini_micro_B;
-IdModule  = keyboard_parts:USB_miniB_hirose_new;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D262F
-Path = /4EB8BB68
-Reference = U1;
-ValeurCmp = ATMEGA32U4;
-IdModule  = keyboard_parts:QFP44;
-EndCmp
-
-BeginCmp
-TimeStamp = 5485C53E
-Path = /51979D97
-Reference = CN1;
-ValeurCmp = JP;
-IdModule  = keyboard_parts:HHKB_JP_HRS_DF14_15P;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A3D
-Path = /517F61E2
-Reference = P5;
-ValeurCmp = PD1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D22FC
-Path = /51AFD396/51B42470
-Reference = R9;
-ValeurCmp = 15K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 5453333D
-Path = /51863512
-Reference = R5;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B6041B
-Path = /51AFD396/51B43D99
-Reference = R10;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 5418F79B
-Path = /51AFD396/5310CA90
-Reference = R21;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D22AE
-Path = /4EB8BB60
-Reference = R4;
-ValeurCmp = 1k;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E81BA
-Path = /51AFD396/531B36B1
-Reference = R25;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 53D1FE0E
-Path = /51AFD396/52B7F726
-Reference = R13;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 541779D2
-Path = /51AFD396/540E7519
-Reference = R26;
-ValeurCmp = 1K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 54854352
-Path = /51AFD396/5452E6B7
-Reference = R27;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E8179
-Path = /51AFD396/52B840D2
-Reference = R1;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 5452864D
-Path = /51AFD396/541122C6
-Reference = R30;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 53D1FE03
-Path = /51AFD396/53C6B426
-Reference = R20;
-ValeurCmp = 15K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 53D1FDF8
-Path = /51AFD396/53B62185
-Reference = R14;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E8186
-Path = /51AFD396/52B840D8
-Reference = R12;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2323
-Path = /51AFD396/51B42452
-Reference = R7;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2330
-Path = /51AFD396/51B42421
-Reference = R6;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 54177A04
-Path = /51AFD396/53177DDD
-Reference = R24;
-ValeurCmp = 15K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E8152
-Path = /51AFD396/53177DD7
-Reference = R23;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E81A0
-Path = /51AFD396/52B7F2BF
-Reference = R16;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D23B2
-Path = /51AFD396/51BE9671
-Reference = R18;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D241A
-Path = /4EB8BB62
-Reference = R2;
-ValeurCmp = 22;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2294
-Path = /4EB8BB61
-Reference = R3;
-ValeurCmp = 22;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D23E6
-Path = /51BB4BFA
-Reference = R15;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531E815F
-Path = /51AFD396/5310CA81
-Reference = R22;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B5E123
-Path = /51AFD396/51B43EF8
-Reference = R11;
-ValeurCmp = Rprog;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 545286A4
-Path = /51AFD396/51BE9662
-Reference = R17;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2316
-Path = /51AFD396/51B42461
-Reference = R8;
-ValeurCmp = 10K;
-IdModule  = keyboard_parts:R_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A06
-Path = /5417AF56
-Reference = JP1;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2547
-Path = /4EB8BB66
+TimeStamp = /4EB8BB66;
 Reference = C1;
 ValeurCmp = 4.7u;
 IdModule  = keyboard_parts:C_3216;
 EndCmp
 
 BeginCmp
-TimeStamp = 531D2287
-Path = /4EB8BB63
-Reference = C9;
-ValeurCmp = 0.1u;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D22A1
-Path = /4EB8BB64
-Reference = C8;
-ValeurCmp = 0.1u;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 54174D20
-Path = /51BB4B25
-Reference = Q2;
-ValeurCmp = Nch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 54524018
-Path = /51AFD396/51B35F42
-Reference = C14;
-ValeurCmp = 1u;
-IdModule  = keyboard_parts:C_3216;
-EndCmp
-
-BeginCmp
-TimeStamp = 5417C40E
-Path = /51AFD396/5310CAAE
-Reference = Q5;
-ValeurCmp = Pch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 531F9B96
-Path = /51AFD396/51BB5234
-Reference = Q1;
-ValeurCmp = Nch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5417C0B1
-Path = /51AFD396/51B973BC
-Reference = D2;
-ValeurCmp = Schottky diode;
-IdModule  = keyboard_parts:D_SOD123;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B6250C
-Path = /51AFD396/53B54501
-Reference = D11;
-ValeurCmp = Schottky diode;
-IdModule  = keyboard_parts:D_SOD123;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B57153
-Path = /517F61D5
-Reference = P6;
-ValeurCmp = PD0;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B57129
-Path = /51AFD396/53B56B73
-Reference = C16;
-ValeurCmp = 4.7u;
-IdModule  = keyboard_parts:C_3216;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2525
-Path = /51AFD396/51B8BF5C
-Reference = C18;
-ValeurCmp = 4.7u;
-IdModule  = keyboard_parts:C_3216;
-EndCmp
-
-BeginCmp
-TimeStamp = 53B5E00F
-Path = /51AFD396/51AFDC54
-Reference = U4;
-ValeurCmp = MCP73832;
-IdModule  = keyboard_parts:SOT23-5_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5417A9AB
-Path = /51AFD396/51B35E76
-Reference = U3;
-ValeurCmp = NCP1402SN50;
-IdModule  = keyboard_parts:SOT23-5_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2456
-Path = /51AFD396/51B41FD3
-Reference = U2;
-ValeurCmp = MIC5504-3.3YMTR;
-IdModule  = keyboard_parts:SOT23-5_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 541A3ABC
-Path = /51AFD396/51AFD4A8
-Reference = P100;
-ValeurCmp = LIPO;
-IdModule  = keyboard_parts:JST_PH2_SMT_TH;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2558
-Path = /51AFD396/51B35F33
-Reference = C11;
-ValeurCmp = 1u;
-IdModule  = keyboard_parts:C_3216;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D233D
-Path = /51AFD396/51B42240
-Reference = C13;
-ValeurCmp = 0.1u;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2309
-Path = /4EB8BB65
-Reference = C7;
-ValeurCmp = 0.1u;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D22C8
-Path = /4EB8BB57
+TimeStamp = /4EB8BB57;
 Reference = C3;
 ValeurCmp = 0.1u;
 IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 531D2364
-Path = /51AD4FB4
-Reference = C10;
-ValeurCmp = 0.1u;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D2357
-Path = /4EB8BB58
-Reference = C6;
-ValeurCmp = 22p;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D234A
-Path = /4EB8BB59
-Reference = C5;
-ValeurCmp = 22p;
-IdModule  = keyboard_parts:C_1608;
-EndCmp
-
-BeginCmp
-TimeStamp = 531D22D5
-Path = /4EB8BB67
+TimeStamp = /4EB8BB67;
 Reference = C4;
 ValeurCmp = 1u;
 IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 531E8232
-Path = /51AFD396/540D8D13
-Reference = D9;
-ValeurCmp = LED_DUAL;
-IdModule  = keyboard_parts:LED_3025_DUAL;
+TimeStamp = /4EB8BB59;
+Reference = C5;
+ValeurCmp = 22p;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 531E7A37
-Path = /51AFD396/540E541B
-Reference = D3;
-ValeurCmp = LED_DUAL;
-IdModule  = keyboard_parts:LED_3025_DUAL;
+TimeStamp = /4EB8BB58;
+Reference = C6;
+ValeurCmp = 22p;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 540D853C
-Path = /51978C41
-Reference = CN2;
-ValeurCmp = PRO2;
-IdModule  = keyboard_parts:HHKB_PRO2_ZH13;
+TimeStamp = /4EB8BB65;
+Reference = C7;
+ValeurCmp = 0.1u;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 540D79DC
-Path = /51863503
-Reference = D1;
-ValeurCmp = LED;
-IdModule  = keyboard_parts:LED_2012_HSOL;
+TimeStamp = /4EB8BB64;
+Reference = C8;
+ValeurCmp = 0.1u;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 5417A3B1
-Path = /5310256F
-Reference = JP2;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
+TimeStamp = /4EB8BB63;
+Reference = C9;
+ValeurCmp = 0.1u;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 54174BE5
-Path = /51BC02F3
-Reference = JP3;
-ValeurCmp = JUMPER;
-IdModule  = keyboard_parts:SOLDER_JUMPER_2;
+TimeStamp = /51AD4FB4;
+Reference = C10;
+ValeurCmp = 0.1u;
+IdModule  = keyboard_parts:C_1608;
 EndCmp
 
 BeginCmp
-TimeStamp = 540D7A41
-Path = /51B4469E
-Reference = P7;
-ValeurCmp = GND;
-IdModule  = keyboard_parts:PIN_1;
+TimeStamp = /51AFD396/51B35F33;
+Reference = C11;
+ValeurCmp = 1u;
+IdModule  = keyboard_parts:C_3216;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855837
-Path = /51A80544
-Reference = P8;
-ValeurCmp = CONN_3X2;
-IdModule  = keyboard_parts:AVR_ICSP_3x2;
-EndCmp
-
-BeginCmp
-TimeStamp = 548558CD
-Path = /51AFD396/51B89658
-Reference = P110;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 5485584F
-Path = /51AFD396/51B89482
-Reference = P111;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 54855849
-Path = /51AFD396/51B89491
-Reference = P112;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 548558D3
-Path = /51AFD396/51B89667
-Reference = P113;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 5485583D
-Path = /51AFD396/531B5A15
-Reference = P114;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 54855843
-Path = /51AFD396/51B8ABD3
-Reference = P115;
-ValeurCmp = CONN_1;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A6D
-Path = /5417AF4F
-Reference = PPTC1;
-ValeurCmp = PPTC;
-IdModule  = keyboard_parts:PPTC_nano;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A76
-Path = /51AFD396/52B7F2CE
-Reference = R19;
-ValeurCmp = F.RST;
-IdModule  = keyboard_parts:R_1608_NOGUIDE;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A7B
-Path = /4EB8BB5F
-Reference = SW1;
-ValeurCmp = SW_PUSH;
-IdModule  = keyboard_parts:SW_TACT_TH_HORIZ_LOW;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A9A
-Path = /51AFD396/52B6CBAC
-Reference = U5;
-ValeurCmp = RN42;
-IdModule  = keyboard_parts:RN42;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7AC1
-Path = /5453AC44
-Reference = X1;
-ValeurCmp = 16MHz;
-IdModule  = keyboard_parts:HC-49_SMT;
-EndCmp
-
-BeginCmp
-TimeStamp = 548558C7
-Path = /517F629F
-Reference = P4;
-ValeurCmp = VUSB;
-IdModule  = keyboard_parts:PIN_1_SQUARE;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A35
-Path = /517F6290
-Reference = P3;
-ValeurCmp = D-;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A31
-Path = /517F6275
-Reference = P2;
-ValeurCmp = D+;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D84C4
-Path = /517F625F
-Reference = P1;
-ValeurCmp = GND;
-IdModule  = keyboard_parts:PIN_1;
-EndCmp
-
-BeginCmp
-TimeStamp = 5452B31A
-Path = /51AFD396/54111581
-Reference = Q10;
-ValeurCmp = Nch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 53D27FFA
-Path = /51AFD396/52B840EC
-Reference = Q3;
-ValeurCmp = Nch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
-EndCmp
-
-BeginCmp
-TimeStamp = 540D7A89
-Path = /51AFD396/531D7FAB
-Reference = SW2;
-ValeurCmp = SW_DPDT;
-IdModule  = keyboard_parts:SW_MINI_SLIDE;
-EndCmp
-
-BeginCmp
-TimeStamp = 5417A381
-Path = /51AFD396/51B35F61
+TimeStamp = /51AFD396/51B35F61;
 Reference = C12;
 ValeurCmp = 47u;
 IdModule  = keyboard_parts:C_3528;
 EndCmp
 
 BeginCmp
-TimeStamp = 545258FE
-Path = /51AFD396/51B35F52
+TimeStamp = /51AFD396/51B42240;
+Reference = C13;
+ValeurCmp = 0.1u;
+IdModule  = keyboard_parts:C_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B35F42;
+Reference = C14;
+ValeurCmp = 1u;
+IdModule  = keyboard_parts:C_3216;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B35F52;
 Reference = C15;
 ValeurCmp = 10u;
 IdModule  = keyboard_parts:C_3528;
 EndCmp
 
 BeginCmp
-TimeStamp = 54525907
-Path = /51AFD396/51B35FB0
-Reference = L1;
-ValeurCmp = 47u;
-IdModule  = keyboard_parts:L_6x6MM;
+TimeStamp = /51AFD396/53B56B73;
+Reference = C16;
+ValeurCmp = 4.7u;
+IdModule  = keyboard_parts:C_3216;
 EndCmp
 
 BeginCmp
-TimeStamp = 54528720
-Path = /51AFD396/5452928D
-Reference = Q4;
-ValeurCmp = Pch;
-IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+TimeStamp = /51AFD396/51B8BF5C;
+Reference = C18;
+ValeurCmp = 4.7u;
+IdModule  = keyboard_parts:C_3216;
 EndCmp
 
 BeginCmp
-TimeStamp = 54533314
-Path = /51AFD396/51B43D8A
+TimeStamp = /51979D97;
+Reference = CN1;
+ValeurCmp = Pro;
+IdModule  = keyboard_parts:HHKB_PRO_PH15;
+EndCmp
+
+BeginCmp
+TimeStamp = /51863503;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = keyboard_parts:LED_2012_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B973BC;
+Reference = D2;
+ValeurCmp = Schottky diode;
+IdModule  = keyboard_parts:D_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/540E541B;
+Reference = D3;
+ValeurCmp = LED_DUAL;
+IdModule  = keyboard_parts:LED_3025_DUAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B43D8A;
 Reference = D4;
 ValeurCmp = LED;
 IdModule  = keyboard_parts:LED_TH_BIVAR;
 EndCmp
 
 BeginCmp
-TimeStamp = 5453331C
-Path = /51AFD396/531B36CF
+TimeStamp = /51AFD396/540D8D13;
+Reference = D9;
+ValeurCmp = LED_DUAL;
+IdModule  = keyboard_parts:LED_3025_DUAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/531B36CF;
 Reference = D10;
 ValeurCmp = LED;
 IdModule  = keyboard_parts:LED_TH_BIVAR;
 EndCmp
 
 BeginCmp
-TimeStamp = 5485573B
-Path = /5485F339
+TimeStamp = /51AFD396/53B54501;
+Reference = D11;
+ValeurCmp = Schottky diode;
+IdModule  = keyboard_parts:D_SOD123;
+EndCmp
+
+BeginCmp
+TimeStamp = /53485EB0;
+Reference = J1;
+ValeurCmp = USB_mini_micro_B;
+IdModule  = keyboard_parts:USB_miniB_hirose_new;
+EndCmp
+
+BeginCmp
+TimeStamp = /5310256F;
+Reference = JP2;
+ValeurCmp = JUMPER;
+IdModule  = keyboard_parts:SOLDER_JUMPER_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BC02F3;
+Reference = JP3;
+ValeurCmp = JUMPER;
+IdModule  = keyboard_parts:SOLDER_JUMPER_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B35FB0;
+Reference = L1;
+ValeurCmp = 47u;
+IdModule  = keyboard_parts:L_6x6MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F625F;
+Reference = P1;
+ValeurCmp = GND;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F6275;
+Reference = P2;
+ValeurCmp = D+;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F6290;
+Reference = P3;
+ValeurCmp = D-;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F629F;
+Reference = P4;
+ValeurCmp = VUSB;
+IdModule  = keyboard_parts:PIN_1_SQUARE;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F61E2;
+Reference = P5;
+ValeurCmp = PD1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /517F61D5;
+Reference = P6;
+ValeurCmp = PD0;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51B4469E;
+Reference = P7;
+ValeurCmp = GND;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A80544;
+Reference = P8;
+ValeurCmp = CONN_3X2;
+IdModule  = keyboard_parts:AVR_ICSP_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5485F339;
 Reference = P9;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855740
-Path = /5485F22B
+TimeStamp = /5485F22B;
 Reference = P10;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855F6C
-Path = /54865141
+TimeStamp = /54865141;
 Reference = P11;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855F71
-Path = /51AFD396/5486436B
+TimeStamp = /51AFD396/5486436B;
 Reference = P12;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855F76
-Path = /51AFD396/54862C9E
+TimeStamp = /51AFD396/54862C9E;
 Reference = P13;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855F7B
-Path = /51AFD396/54864365
+TimeStamp = /51AFD396/54864365;
 Reference = P14;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
 EndCmp
 
 BeginCmp
-TimeStamp = 54855F80
-Path = /51AFD396/54862C03
+TimeStamp = /51AFD396/54862C03;
 Reference = P15;
 ValeurCmp = CONN_1;
 IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51AFD4A8;
+Reference = P100;
+ValeurCmp = LIPO;
+IdModule  = keyboard_parts:JST_PH2_SMT_TH;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B89658;
+Reference = P110;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B89482;
+Reference = P111;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B89491;
+Reference = P112;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B89667;
+Reference = P113;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/531B5A15;
+Reference = P114;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B8ABD3;
+Reference = P115;
+ValeurCmp = CONN_1;
+IdModule  = keyboard_parts:PIN_1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5417AF4F;
+Reference = PPTC1;
+ValeurCmp = PPTC;
+IdModule  = keyboard_parts:PPTC_nano;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51BB5234;
+Reference = Q1;
+ValeurCmp = Nch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BB4B25;
+Reference = Q2;
+ValeurCmp = Nch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B840EC;
+Reference = Q3;
+ValeurCmp = Nch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5452928D;
+Reference = Q4;
+ValeurCmp = Pch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5310CAAE;
+Reference = Q5;
+ValeurCmp = Pch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/54111581;
+Reference = Q10;
+ValeurCmp = Nch;
+IdModule  = keyboard_parts:MOS_FET_SOT23-3_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B840D2;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB8BB62;
+Reference = R2;
+ValeurCmp = 22;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB8BB61;
+Reference = R3;
+ValeurCmp = 22;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB8BB60;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51863512;
+Reference = R5;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B42421;
+Reference = R6;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B42452;
+Reference = R7;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B42461;
+Reference = R8;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B42470;
+Reference = R9;
+ValeurCmp = 15K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B43D99;
+Reference = R10;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B43EF8;
+Reference = R11;
+ValeurCmp = Rprog;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B840D8;
+Reference = R12;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B7F726;
+Reference = R13;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/53B62185;
+Reference = R14;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51BB4BFA;
+Reference = R15;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B7F2BF;
+Reference = R16;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51BE9662;
+Reference = R17;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51BE9671;
+Reference = R18;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B7F2CE;
+Reference = R19;
+ValeurCmp = F.RST;
+IdModule  = keyboard_parts:R_1608_NOGUIDE;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/53C6B426;
+Reference = R20;
+ValeurCmp = 15K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5310CA90;
+Reference = R21;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5310CA81;
+Reference = R22;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/53177DD7;
+Reference = R23;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/53177DDD;
+Reference = R24;
+ValeurCmp = 15K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/531B36B1;
+Reference = R25;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/540E7519;
+Reference = R26;
+ValeurCmp = 1K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/5452E6B7;
+Reference = R27;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/541122C6;
+Reference = R30;
+ValeurCmp = 10K;
+IdModule  = keyboard_parts:R_1608;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB8BB5F;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = keyboard_parts:SW_TACT_TH_HORIZ_LOW;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/531D7FAB;
+Reference = SW2;
+ValeurCmp = SW_DPDT;
+IdModule  = keyboard_parts:SW_MINI_SLIDE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EB8BB68;
+Reference = U1;
+ValeurCmp = ATMEGA32U4;
+IdModule  = keyboard_parts:QFP44;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B41FD3;
+Reference = U2;
+ValeurCmp = MIC5504-3.3YMTR;
+IdModule  = keyboard_parts:SOT23-5_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51B35E76;
+Reference = U3;
+ValeurCmp = NCP1402SN50;
+IdModule  = keyboard_parts:SOT23-5_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/51AFDC54;
+Reference = U4;
+ValeurCmp = MCP73832;
+IdModule  = keyboard_parts:SOT23-5_HSOL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51AFD396/52B6CBAC;
+Reference = U5;
+ValeurCmp = RN42;
+IdModule  = keyboard_parts:RN42;
+EndCmp
+
+BeginCmp
+TimeStamp = /5453AC44;
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = keyboard_parts:HC-49_SMT;
 EndCmp
 
 EndListe

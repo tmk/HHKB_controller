@@ -7,8 +7,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "HHKB Alt Controller"
-Date "2015/03"
-Rev "G"
+Date "2015/05"
+Rev "Hp"
 Comp "TMK"
 Comment1 ""
 Comment2 ""
@@ -326,7 +326,7 @@ U 1 1 51B43D8A
 P 8475 5950
 F 0 "D4" H 8475 6050 50  0000 C CNN
 F 1 "LED" H 8475 5850 50  0000 C CNN
-F 2 "keyboard_parts:LED_TH" H 8475 5950 60  0001 C CNN
+F 2 "keyboard_parts:LED_TH_BIVAR" H 8475 5950 60  0001 C CNN
 F 3 "" H 8475 5950 60  0000 C CNN
 	1    8475 5950
 	0    1    1    0   
@@ -873,7 +873,7 @@ U 1 1 531B36CF
 P 7700 3275
 F 0 "D10" H 7700 3375 50  0000 C CNN
 F 1 "LED" H 7700 3175 50  0000 C CNN
-F 2 "keyboard_parts:LED_TH" H 7700 3275 60  0001 C CNN
+F 2 "keyboard_parts:LED_TH_BIVAR" H 7700 3275 60  0001 C CNN
 F 3 "" H 7700 3275 60  0000 C CNN
 	1    7700 3275
 	0    1    1    0   
