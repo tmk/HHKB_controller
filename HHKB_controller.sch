@@ -5,7 +5,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title "HHKB Alt Controller/Bluetooth for Pro"
 Date "2015/05"
 Rev "Hp"
@@ -19,8 +19,6 @@ Text Label 1650 1700 0    60   ~ 0
 D+
 Text Label 1650 1600 0    60   ~ 0
 D-
-Text Label 1625 1500 0    60   ~ 0
-VUSB_RAW
 Text Label 1400 2525 0    60   ~ 0
 GND
 Text Label 1450 2625 0    60   ~ 0
@@ -28,7 +26,7 @@ D+
 Text Label 1450 2725 0    60   ~ 0
 D-
 Text Label 1350 2825 0    60   ~ 0
-VUSB_RAW
+VUSB
 Text Label 5400 1400 0    60   ~ 0
 PE6
 Text Label 5400 2400 0    60   ~ 0
@@ -196,17 +194,6 @@ F 1 "+5V" H 3700 2410 30  0000 C CNN
 F 2 "" H 3700 2300 60  0001 C CNN
 F 3 "" H 3700 2300 60  0001 C CNN
 	1    3700 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR011
-U 1 1 4EB8CC7B
-P 2275 3500
-F 0 "#PWR011" H 2275 3470 20  0001 C CNN
-F 1 "+5V" H 2275 3610 30  0000 C CNN
-F 2 "" H 2275 3500 60  0001 C CNN
-F 3 "" H 2275 3500 60  0001 C CNN
-	1    2275 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -485,23 +472,23 @@ Text Label 9250 2700 0    60   Italic 0
 PD6
 Text Notes 9250 4100 0    60   Italic 0
 Optional\nTeensy compatible LED
-Text Notes 1875 6150 0    60   Italic 0
+Text Notes 3275 6175 0    60   Italic 0
 KEY state
-Text Notes 1875 6250 0    60   Italic 0
+Text Notes 3275 6275 0    60   Italic 0
 HYSTERESIS
-Text Notes 1875 6350 0    60   Italic 0
+Text Notes 3275 6375 0    60   Italic 0
 ROW bit0
-Text Notes 1875 6450 0    60   Italic 0
+Text Notes 3275 6475 0    60   Italic 0
 ROW bit1
-Text Notes 1875 6550 0    60   Italic 0
+Text Notes 3275 6575 0    60   Italic 0
 ROW bit2
-Text Notes 1875 6650 0    60   Italic 0
+Text Notes 3275 6675 0    60   Italic 0
 COL bit0
-Text Notes 1875 6750 0    60   Italic 0
+Text Notes 3275 6775 0    60   Italic 0
 COL bit1
-Text Notes 1875 6850 0    60   Italic 0
+Text Notes 3275 6875 0    60   Italic 0
 COL bit2
-Text Notes 1875 6950 0    60   Italic 0
+Text Notes 3275 6975 0    60   Italic 0
 COL enable
 Text Label 10900 5250 2    60   ~ 0
 PD1
@@ -521,44 +508,44 @@ PD0
 $Comp
 L CONN_15 CN1
 U 1 1 51979D97
-P 875 6550
-F 0 "CN1" V 845 6600 60  0000 C CNN
-F 1 "Pro" V 955 6600 60  0000 C CNN
-F 2 "keyboard_parts:HHKB_PRO_PH15" H 875 6600 60  0001 C CNN
-F 3 "" H 875 6600 60  0000 C CNN
-	1    875  6550
+P 2275 6575
+F 0 "CN1" V 2245 6625 60  0000 C CNN
+F 1 "Pro" V 2355 6625 60  0000 C CNN
+F 2 "keyboard_parts:HHKB_PRO_PH15" H 2275 6625 60  0001 C CNN
+F 3 "" H 2275 6625 60  0000 C CNN
+	1    2275 6575
 	-1   0    0    -1  
 $EndComp
-Text Label 1475 6350 0    60   Italic 0
+Text Label 2875 6375 0    60   Italic 0
 PB0
-Text Label 1475 6450 0    60   Italic 0
+Text Label 2875 6475 0    60   Italic 0
 PB1
-Text Label 1475 6550 0    60   Italic 0
+Text Label 2875 6575 0    60   Italic 0
 PB2
-Text Label 1475 6650 0    60   Italic 0
+Text Label 2875 6675 0    60   Italic 0
 PB3
-Text Label 1475 6750 0    60   Italic 0
+Text Label 2875 6775 0    60   Italic 0
 PB4
-Text Label 1475 6850 0    60   Italic 0
+Text Label 2875 6875 0    60   Italic 0
 PB5
-Text Label 1475 6950 0    60   Italic 0
+Text Label 2875 6975 0    60   Italic 0
 PB6
-Text Label 1475 6250 0    60   Italic 0
+Text Label 2875 6275 0    60   Italic 0
 PB7
-Text Label 1475 6150 0    60   Italic 0
+Text Label 2875 6175 0    60   Italic 0
 PD7
 $Comp
 L +5V #PWR017
 U 1 1 51979DCA
-P 3275 5450
-F 0 "#PWR017" H 3275 5420 20  0001 C CNN
-F 1 "+5V" H 3275 5560 30  0000 C CNN
-F 2 "" H 3275 5450 60  0000 C CNN
-F 3 "" H 3275 5450 60  0000 C CNN
-	1    3275 5450
+P 2825 5575
+F 0 "#PWR017" H 2825 5545 20  0001 C CNN
+F 1 "+5V" H 2825 5685 30  0000 C CNN
+F 2 "" H 2825 5575 60  0000 C CNN
+F 3 "" H 2825 5575 60  0000 C CNN
+	1    2825 5575
 	1    0    0    -1  
 $EndComp
-Text Notes 625  7550 0    60   Italic 0
+Text Notes 2025 7575 0    60   Italic 0
 JST PH for Pro
 Text Label 5400 2000 0    60   Italic 0
 VUSB
@@ -623,50 +610,8 @@ Text Notes 9050 6300 0    60   ~ 0
 RST
 Text Notes 10750 6300 0    60   ~ 0
 GND
-$Comp
-L C C10
-U 1 1 51AD4FB4
-P 9450 1900
-F 0 "C10" H 9500 2000 50  0000 L CNN
-F 1 "0.1u" H 9500 1800 50  0000 L CNN
-F 2 "keyboard_parts:C_1608" H 9450 1900 60  0001 C CNN
-F 3 "" H 9450 1900 60  0000 C CNN
-	1    9450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR020
-U 1 1 51AD5139
-P 9450 2200
-F 0 "#PWR020" H 9450 2200 30  0001 C CNN
-F 1 "GND" H 9450 2130 30  0001 C CNN
-F 2 "" H 9450 2200 60  0000 C CNN
-F 3 "" H 9450 2200 60  0000 C CNN
-	1    9450 2200
-	1    0    0    -1  
-$EndComp
-Text Label 9250 1550 0    60   ~ 0
-AREF
-$Sheet
-S 5775 6825 1150 850 
-U 51AFD396
-F0 "bluetooth" 50
-F1 "bluetooth.sch" 50
-$EndSheet
 Text GLabel 4675 1500 2    60   Input ~ 0
 VUSB
-Text GLabel 2475 3700 2    60   Input ~ 0
-5V_BOOST
-Text GLabel 6600 5050 2    60   Input ~ 0
-BT_RX
-Text GLabel 6600 4900 2    60   Input ~ 0
-BT_TX
-Text Label 6400 5050 2    60   ~ 0
-PD3
-Text Label 6400 4900 2    60   ~ 0
-PD2
-Text Notes 6750 4650 2    60   ~ 0
-Bluetooth Extension
 $Comp
 L CONN_1 P7
 U 1 1 51B4469E
@@ -682,117 +627,8 @@ Text Label 10900 5450 2    60   ~ 0
 GND
 Text Notes 10850 5650 2    60   ~ 0
 For Debug
-Text GLabel 6600 5250 2    60   Input ~ 0
-BT_RTS
-Text Label 6400 5400 2    60   ~ 0
-PD5
 NoConn ~ 1600 1800
-$Comp
-L MOSFET_N Q2
-U 1 1 51BB4B25
-P 4675 5900
-F 0 "Q2" H 4685 6070 60  0000 R CNN
-F 1 "Nch" H 4685 5750 60  0000 R CNN
-F 2 "keyboard_parts:MOS_FET_SOT23-3_HSOL" H 4675 5900 60  0001 C CNN
-F 3 "" H 4675 5900 60  0000 C CNN
-	1    4675 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR021
-U 1 1 51BB4B45
-P 4775 6250
-F 0 "#PWR021" H 4775 6250 30  0001 C CNN
-F 1 "GND" H 4775 6180 30  0001 C CNN
-F 2 "" H 4775 6250 60  0000 C CNN
-F 3 "" H 4775 6250 60  0000 C CNN
-	1    4775 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R15
-U 1 1 51BB4BFA
-P 4275 5650
-F 0 "R15" V 4355 5650 50  0000 C CNN
-F 1 "10K" V 4275 5650 50  0000 C CNN
-F 2 "keyboard_parts:R_1608" H 4275 5650 60  0001 C CNN
-F 3 "" H 4275 5650 60  0000 C CNN
-	1    4275 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR022
-U 1 1 51BB4C0E
-P 4275 5300
-F 0 "#PWR022" H 4275 5390 20  0001 C CNN
-F 1 "+5V" H 4275 5390 30  0000 C CNN
-F 2 "" H 4275 5300 60  0000 C CNN
-F 3 "" H 4275 5300 60  0000 C CNN
-	1    4275 5300
-	1    0    0    -1  
-$EndComp
-Text Notes 3725 6400 0    60   ~ 0
-HHKB Matrix Power Control
-Text Label 4825 5550 0    60   ~ 0
-HHKB_GND
-Text Label 3575 5900 0    60   ~ 0
-PD4
-Text Label 2875 7300 0    60   ~ 0
-HHKB_GND
-Text Notes 3625 5650 0    60   Italic 0
-Normally On\nLow = Off
-$Comp
-L JUMPER JP3
-U 1 1 51BC02F3
-P 5075 5900
-F 0 "JP3" H 5075 6050 60  0000 C CNN
-F 1 "JUMPER" H 5075 5820 40  0000 C CNN
-F 2 "keyboard_parts:SOLDER_JUMPER_2" H 5075 5900 60  0001 C CNN
-F 3 "" H 5075 5900 60  0000 C CNN
-	1    5075 5900
-	0    -1   -1   0   
-$EndComp
-Text GLabel 7675 4925 2    60   Input ~ 0
-ADC_LIPO
-Text Label 7275 4925 0    60   ~ 0
-PF0
-$Comp
-L GND #PWR023
-U 1 1 52AACE12
-P 5075 6250
-F 0 "#PWR023" H 5075 6250 30  0001 C CNN
-F 1 "GND" H 5075 6180 30  0001 C CNN
-F 2 "" H 5075 6250 60  0000 C CNN
-F 3 "" H 5075 6250 60  0000 C CNN
-	1    5075 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER JP2
-U 1 1 5310256F
-P 1625 3700
-F 0 "JP2" H 1625 3850 60  0000 C CNN
-F 1 "JUMPER" H 1625 3620 40  0000 C CNN
-F 2 "keyboard_parts:SOLDER_JUMPER_2" H 1625 3700 60  0001 C CNN
-F 3 "" H 1625 3700 60  0000 C CNN
-	1    1625 3700
-	1    0    0    -1  
-$EndComp
-Text GLabel 6600 5400 2    60   Input ~ 0
-BT_CTS
-Text Label 6400 5250 2    60   ~ 0
-PF1
-Text GLabel 6600 5675 2    60   Input ~ 0
-BT_INDICATOR
-Text Label 6200 5675 0    60   ~ 0
-PE6
-Text Notes 4825 6100 0    60   ~ 0
-No Power Control
-Text Notes 1475 3450 0    60   ~ 0
-No Boost
-Text Notes 625  4900 0    60   ~ 0
-USB keyboard configurations:\n  1)close "No Power Control" and\n  2)close "No Boost" jumper to use raw USB power.
-Text Notes 625  5150 0    60   ~ 0
+Text Notes 2025 5175 0    60   ~ 0
 HHKB Matrix Interface
 Text Notes 9000 5150 0    60   ~ 0
 Program and Debug
@@ -807,40 +643,7 @@ F 3 "" H 1400 1650 60  0000 C CNN
 	1    1450 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 5875 2    60   Input ~ 0
-BT_CONN
-Text Label 6200 5875 0    60   ~ 0
-PF7
-Text GLabel 6600 6075 2    60   Input ~ 0
-LINKED
-Text Label 6200 6075 0    60   ~ 0
-PF6
-Text GLabel 7675 5225 2    60   Input ~ 0
-~CHRG
-Text Label 7275 5225 0    60   ~ 0
-PF5
-Text Label 925  3700 0    60   ~ 0
-VUSB
-Text Notes 1175 4025 0    60   ~ 0
-5V Power Source Select
-Text GLabel 7675 5075 2    60   Input ~ 0
-ADC_CTRL
-Text Label 7275 5075 0    60   ~ 0
-PF4
-Text Notes 2475 1825 0    60   ~ 0
-No PPTC
-$Comp
-L PPTC PPTC1
-U 1 1 5417AF4F
-P 2675 1500
-F 0 "PPTC1" H 2675 1600 50  0000 C CNN
-F 1 "PPTC" H 2675 1400 50  0000 C CNN
-F 2 "keyboard_parts:PPTC_nano" V 2675 1500 60  0001 C CNN
-F 3 "" V 2675 1500 60  0000 C CNN
-	1    2675 1500
-	1    0    0    1   
-$EndComp
-Text Label 3450 1500 0    60   ~ 0
+Text Label 1625 1500 0    60   ~ 0
 VUSB
 $Comp
 L XTAL X1
@@ -853,106 +656,35 @@ F 3 "" H 4650 3350 60  0000 C CNN
 	1    4650 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L PWR_FLAG #FLG024
-U 1 1 5453B6D9
-P 4450 1500
-F 0 "#FLG024" H 4450 1770 30  0001 C CNN
-F 1 "PWR_FLAG" H 4450 1730 30  0000 C CNN
-F 2 "" H 4450 1500 60  0000 C CNN
-F 3 "" H 4450 1500 60  0000 C CNN
-	1    4450 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_1 P10
-U 1 1 5485F22B
-P 2875 5450
-F 0 "P10" H 2955 5450 40  0000 L CNN
-F 1 "CONN_1" H 2875 5505 30  0001 C CNN
-F 2 "keyboard_parts:PIN_1" H 2875 5450 60  0001 C CNN
-F 3 "" H 2875 5450 60  0000 C CNN
-	1    2875 5450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_1 P9
-U 1 1 5485F339
-P 2775 5450
-F 0 "P9" H 2855 5450 40  0000 L CNN
-F 1 "CONN_1" H 2775 5505 30  0001 C CNN
-F 2 "keyboard_parts:PIN_1" H 2775 5450 60  0001 C CNN
-F 3 "" H 2775 5450 60  0000 C CNN
-	1    2775 5450
-	0    -1   -1   0   
-$EndComp
-Text Notes 2475 5250 0    60   ~ 0
-Current mesure
-$Comp
-L CONN_1 P11
-U 1 1 54865141
-P 1150 2925
-F 0 "P11" H 1230 2925 40  0000 L CNN
-F 1 "CONN_1" H 1150 2980 30  0001 C CNN
-F 2 "keyboard_parts:PIN_1" H 1150 2925 60  0001 C CNN
-F 3 "" H 1150 2925 60  0000 C CNN
-	1    1150 2925
-	-1   0    0    1   
-$EndComp
-Text Notes 1475 2950 0    60   ~ 0
-Current measure
 NoConn ~ 7800 2600
 NoConn ~ 7800 2700
 Wire Wire Line
-	1425 7050 1225 7050
+	2825 7075 2625 7075
 Wire Wire Line
-	1425 7300 1425 7050
-Connection ~ 1425 5950
+	2825 7075 2825 7475
+Connection ~ 2825 5975
 Wire Wire Line
-	1425 6050 1225 6050
-Connection ~ 1425 7150
+	2825 6075 2625 6075
+Connection ~ 2825 7175
 Wire Wire Line
-	1425 7150 1225 7150
-Connection ~ 1425 7250
+	2825 7175 2625 7175
+Connection ~ 2825 7275
 Wire Wire Line
-	1225 7250 1425 7250
-Wire Wire Line
-	2925 1500 4675 1500
-Connection ~ 1375 2825
-Wire Wire Line
-	1375 2925 1375 2825
-Wire Wire Line
-	1300 2925 1375 2925
-Connection ~ 2775 5600
-Connection ~ 2875 5600
+	2625 7275 2825 7275
 Connection ~ 5200 2000
 Wire Wire Line
 	5200 1500 5200 2000
 Wire Wire Line
-	1600 1500 2425 1500
-Wire Wire Line
 	5650 1700 3900 1700
 Wire Wire Line
 	3900 1600 5650 1600
-Wire Wire Line
-	7275 5075 7675 5075
-Wire Wire Line
-	1325 3700 925  3700
 Connection ~ 4450 1500
 Wire Wire Line
-	4450 2000 4450 1500
+	4450 1375 4450 2000
 Wire Wire Line
-	5650 2000 4450 2000
+	4450 2000 5650 2000
 Wire Wire Line
-	1425 7300 3350 7300
-Wire Wire Line
-	1425 5600 1425 6050
-Wire Wire Line
-	7275 5225 7675 5225
-Wire Wire Line
-	6200 6075 6600 6075
-Wire Wire Line
-	6600 5875 6200 5875
+	2825 5575 2825 6075
 Wire Notes Line
 	8950 5000 11050 5000
 Wire Notes Line
@@ -962,55 +694,12 @@ Wire Notes Line
 Wire Notes Line
 	575  5000 5725 5000
 Wire Wire Line
-	6200 5675 6600 5675
-Wire Wire Line
-	6600 5400 6200 5400
-Wire Wire Line
-	2275 3700 2275 3500
-Connection ~ 2275 3700
-Wire Wire Line
 	3700 2300 3700 3400
-Wire Wire Line
-	1925 3700 2475 3700
-Wire Wire Line
-	5075 6200 5075 6250
-Wire Wire Line
-	7675 4925 7275 4925
-Connection ~ 5075 5550
-Wire Wire Line
-	5075 5600 5075 5550
-Wire Wire Line
-	1425 5600 3275 5600
-Wire Wire Line
-	3275 5600 3275 5450
-Wire Wire Line
-	3575 5900 4475 5900
-Wire Wire Line
-	4775 5550 5275 5550
-Wire Wire Line
-	4775 5700 4775 5550
-Connection ~ 4275 5900
-Wire Wire Line
-	4275 5300 4275 5400
-Wire Wire Line
-	4775 6250 4775 6100
 Connection ~ 1900 2000
 Wire Wire Line
 	1600 2000 1900 2000
 Wire Wire Line
-	6600 5250 6200 5250
-Wire Wire Line
 	10600 5450 10900 5450
-Wire Wire Line
-	6600 4900 6200 4900
-Wire Wire Line
-	6600 5050 6200 5050
-Wire Wire Line
-	9450 2100 9450 2200
-Wire Wire Line
-	9450 1550 9450 1700
-Wire Wire Line
-	9250 1550 9450 1550
 Wire Wire Line
 	9600 6300 9300 6300
 Wire Wire Line
@@ -1034,28 +723,28 @@ Wire Wire Line
 Wire Wire Line
 	5200 1500 5650 1500
 Wire Wire Line
-	1425 5950 1225 5950
-Connection ~ 1425 5850
+	2825 5975 2625 5975
+Connection ~ 2825 5875
 Wire Wire Line
-	1225 5850 1425 5850
+	2625 5875 2825 5875
 Wire Wire Line
-	1225 6950 1675 6950
+	2625 6975 3075 6975
 Wire Wire Line
-	1225 6850 1675 6850
+	2625 6875 3075 6875
 Wire Wire Line
-	1225 6750 1675 6750
+	2625 6775 3075 6775
 Wire Wire Line
-	1225 6650 1675 6650
+	2625 6675 3075 6675
 Wire Wire Line
-	1225 6550 1675 6550
+	2625 6575 3075 6575
 Wire Wire Line
-	1225 6450 1675 6450
+	2625 6475 3075 6475
 Wire Wire Line
-	1225 6350 1675 6350
+	2625 6375 3075 6375
 Wire Wire Line
-	1225 6250 1675 6250
+	2625 6275 3075 6275
 Wire Wire Line
-	1225 6150 1675 6150
+	2625 6175 3075 6175
 Wire Wire Line
 	10600 5350 10900 5350
 Wire Wire Line
@@ -1201,4 +890,39 @@ Wire Wire Line
 	1300 2725 1600 2725
 Wire Wire Line
 	1300 2825 1600 2825
+NoConn ~ 7800 1700
+NoConn ~ 7800 1800
+NoConn ~ 7800 1900
+NoConn ~ 7800 2000
+NoConn ~ 7800 2100
+NoConn ~ 7800 2200
+NoConn ~ 5650 3500
+NoConn ~ 5650 3400
+NoConn ~ 5650 3300
+NoConn ~ 5650 1400
+$Comp
+L +5V #PWR021
+U 1 1 55675C7E
+P 4450 1375
+F 0 "#PWR021" H 4450 1345 20  0001 C CNN
+F 1 "+5V" H 4450 1485 30  0000 C CNN
+F 2 "" H 4450 1375 60  0000 C CNN
+F 3 "" H 4450 1375 60  0000 C CNN
+	1    4450 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1500 4675 1500
+NoConn ~ 7800 3300
+$Comp
+L GND #PWR?
+U 1 1 5567790F
+P 2825 7475
+F 0 "#PWR?" H 2825 7475 30  0001 C CNN
+F 1 "GND" H 2825 7405 30  0001 C CNN
+F 2 "" H 2825 7475 60  0000 C CNN
+F 3 "" H 2825 7475 60  0000 C CNN
+	1    2825 7475
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
