@@ -1,0 +1,7 @@
+Rev.G Errata
+============
+
+
+- Reset switch GND pin: remove thermal releif spokes on top side 
+    To make good solder filet
+    DONE 07/05

@@ -8,6 +8,8 @@ This controller makes your HHKB fully programmable. You can use this with [tmk_k
 
 Update
 ------
+- 2015/07/xx: Rev.H
+- 2015/03/xx: Rev.G
 - 2014/12/xx: Rev.F
 - 2014/11/xx: Rev.E
 - 2014/09/19: Rev.D

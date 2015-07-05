@@ -1,6 +1,6 @@
 TODO
 ----
-- alternative connector
+- alternative connector to make component placement easy
     DF14-15P-1.25H      with boss
     UX60SC-MB-5S8       whith through hole pins
 
@@ -17,3 +17,8 @@ TODO
     - need to add paste layers on modules
     - need to retouch all SMT modules
     # PENDING 10/31     will do on future revision :D
+
+
+- Reduce components of BT part
+    - use resistor array?
+    - remove MOSFET
