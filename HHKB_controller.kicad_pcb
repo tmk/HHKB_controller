@@ -35,7 +35,7 @@
   )
 
   (setup
-    (last_trace_width 0.1524)
+    (last_trace_width 0.254)
     (user_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.381)
@@ -62,8 +62,8 @@
     (mod_text_width 0.15)
     (pad_size 1.7 1.7)
     (pad_drill 1)
-    (pad_to_mask_clearance 0.13)
-    (solder_mask_min_width 0.1)
+    (pad_to_mask_clearance 0.075)
+    (solder_mask_min_width 0.15)
     (pad_to_paste_clearance -0.08)
     (aux_axis_origin 76.9 80.8)
     (visible_elements 7FFFFF7F)
@@ -91,7 +91,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory plot/F1/))
+      (outputdirectory plot/I))
   )
 
   (net 0 "")
