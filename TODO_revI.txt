@@ -1,0 +1,6 @@
+Rev.I Errata
+============
+No Errata.
+
+- Remove C13
+    not used anymore.
