@@ -1,6 +1,7 @@
 TODO
 ----
 - Remove C13 pads
+    DONE 2016/01(Rev.J)
 
 - alternative connector to make component placement easy
     UX60SC-MB-5S8       whith through hole pins DONE 2015/12(Rev.I)
