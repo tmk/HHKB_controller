@@ -1,9 +1,0 @@
-Rev.H Errata
-============
-No Errata.
-
-- USB connector pads
-    should be lessened to recoomended size?
-
-- Remove C13
-    not used anymore.

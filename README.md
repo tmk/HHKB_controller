@@ -4,10 +4,14 @@ This controller makes your HHKB fully programmable. You can use this with [tmk_k
 
 [tmk_keyboard]: https://github.com/tmk/tmk_keyboard
 
+You can buy assembled board here. https://geekhack.org/index.php?topic=71517.0
+
 
 
 Update
 ------
+- 2016/07/03: Rev.K     Add reverse polarity protection and change foot print of D1
+- 2016/01/28: Rev.J     Add TMK logo and remove C13
 - 2015/12/01: Rev.I     Changed USB miniB to UX60SC-MB-5S8(through hole)
 - 2015/12/01: Rev.H'    Changed lands of USB miniB to recomended size
 - 2015/07/xx: Rev.H

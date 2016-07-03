@@ -1,0 +1,442 @@
+Rev.B Errata and TODO
+=====================
+2014/07/29  Done for Rev.C
+
+
+
+
+PENDING: future revision
+--------
+- voltage shifter   -- Another revision PCB?    -- Pending
+    using RS-232C driver is better? ussable for 5V-3.3V shifter?
+    power consumption?(in comparison with MOSFET shifter)
+
+- UVCC should be connected directly to VUSB? like as VBUS.  -- no harm. Pending
+    UVCC is needed only when USB is plugged.
+    But it seems to be no harm even if UVCC is powered when not plugged in.
+
+
+
+
+DONE:
+-----
+- Change drill size of LED and switch to 1.0mm -- Done 07/29
+
+- Placement of USB receptacle    --- move Top right hole 0.2mm to the right -- Done 07/29
+    USB MiniB connector should be left to around 0.3mm
+    And Top right hole size should be a bit smaller
+
+- Battery cut-off of Lipo protect circuit   -- OK 07/03
+    http://www.adafruit.com/datasheets/Li-poly%20085060-2400mAh.pdf
+    Charge cut-off: 4.2V
+    Discharge cut-off: 2.75V
+
+- Xtal: too far from pins. may cause EMI problem. -- Done
+
+- Inductor is too small? -- change footprint bigger. Done
+    **With NCP1402 inductor(TOKO D63LCB 100uH) whines when step-up converter is working.
+    NCP1402 needs 47uH instead of 100uH.
+    Sumida 47uH(6x6mm, CDRH5D28NP) doesn't whine and very calm.(07/07)
+    TODO: How about TOKO D63LCB 47uH? TOKO is very cheap while Sumida one is expensive(250yen).
+          Need bigger one? Sumida CDRH6D38NP 7x7mm.
+
+    NCP1402 uses Sumida CD54-470L 47uH 0.72A
+    http://www.sumida.com/products/pdf/CD54.pdf
+
+    TOKO D63LCB 0.89A(0.43A?) marutsu
+    https://www.marutsu.co.jp/data/A921CY.pdf
+
+    Sumida CDRH5D28NP-470NC 47uH 0.62A  sengoku
+    Sumida CDRH6D38NP-470NC 47uH 0.95A  sengoku
+    http://www.mouser.com/ds/2/390/CDRH5D28RH125-4194.pdf
+    http://www.sumida.com/products/pdf/CDRH6D38.pdf
+
+    Datasheet of HT7750 uses ABC SR0602 inductor 47-100uH which has around Isat 0.75A-0.55A
+
+- NCP1402 capacitor/inductor configuration -- changed values 07/03 Done
+    47uH, 10uF/16V and 68uF/10V
+    instead of HT7750
+
+- schottky land pattern is too small for SOD123 -- Done 06/24
+    NCP1402 uses MBR0520LT1 20V/0.5A SOD123
+        Vf 0.38V
+    RB521S-30   30V/0.2A                NG
+    RB160M-30   30V/1A    SOD123        OK
+
+- Capacitor polarity marking of dcdc converter -- Done 07/28
+    NCP1402 may use tantalum
+
+- R14,D7,D8 are removed -- remove from Schematic 07/03
+    RN-42 LED_ACT
+
+- R8,R9 values are reversed -- fix values on PCB 07/03
+    voltage shifter 10k 15k
+
+- RTS, CTS -- Done
+    NOTE: PD5(CTS) is used as RTS and connected to CTS of RN-42. Confusing? YES.
+    PD5: RTS->CTS
+    PF1: CTS<-RTS
+    *CTS of the module is needed to wake up from deep sleep.
+- RN-42 GPIO6 for connection control    -- Done
+    use PF7
+    SM,4 Master mode can be controled with this port. This seems to be critical.
+
+- Power selector doesn't work; Q4 MOSFET leaks from Lipo to USB power line. -- removed Q4 and added D11 07/03 --Done
+    Schottky diode can solve simply at the expence of forward voltage drop.
+    Q4 is on both USB and Lipo actually
+    Q4 is on and leak when Lipo turns on; Vgs = Gnd(g) - Lipo(s)
+
+- MCP73831  -- Done
+    Add capacitor C16 on BAT  -- 07/03
+
+- Jumper "No Lipo" remove -- 07/04  -- Done
+    Not needed.
+
+- Fix Ground fill of back side of USB receptacle -- 07/04   -- Done
+    back side should be  filled
+
+- Add JST PH-2 thourough hole pattern -- 07/04  -- Done
+    JST PH-2 SMT is hard to find
+
+- Remove ISP of RN-42 headers -- 07/04  -- Done
+
+
+
+CANCELED:
+--------
+- Xtal: both TH and SMT components should be applied -- Cancel
+    Not possible? bottom case touches SMT lands.
+
+- ?current measure point should be closed by default?   -- Cancel
+    YES.
+    closed solder jumper cannot be created in KiCAD.
+
+- 5V UART interface is preferable?  -- NO. 3.3V is better to connect with the module directly.
+    3.3V RX_33 can not be shared between AVR and external serial adapter. -- R9 is too high and can not sink adapter hi output?
+
+- RN-42 GPIO9 *optional     -- Not needed. iOS is not supported.(Apple authenticate co-processor is not available)
+    to toggle virtual keyboard on iOS
+
+- RN-42 GPIO11 *optional    -- Not needed. can be done with configuration
+    to force HID profile
+
+- Step-up converter(UVLO Under voltage lock out) -- misunderstood 07/04
+    FACT: UVLO is a function to stop converting when charge source(not Lipo) gets to low voltage.
+    FACT: Lipo has protection circuit for over discharge/charge
+    NOT: HT7750A exhausts battery to voltage as 0.9V which is too low for Lipo.
+    NOT: While other converter which works with Lipo UVLO is 2.1V. This is also still not save for Lipo.
+    NOT: UVLO is not for Lipo protection? HT7750A should be used with normal dry battery.
+
+Rev.C Errata
+============
+2014/08/12
+
+- PTC is used only for BT
+    # schematic Done 09/07
+    # Canceled
+- Capacitor values of NCP1402 should be reversed: 10<->68uF
+    # schematic Done 09/07
+- Rprog of MCP charger: Rp instead of 10K value
+    # schematic Done 09/07
+- C2 is not needed
+    # schematic Done 09/07
+- remove solder jumpers as possible
+    - leave through hole jumpers and cut power line to measure current
+    # remove 5V amp measure
+    # remove HHKB amp measure
+    # remove 3.3V amp measure
+    # schematic Done 09/07
+- Battery LED controlled by firmware.   
+    This can indicate 'charging' status when powered and 'low voltage alart' when battery drived.
+    ~CHRG: Input: read charger state,  Hi-Z: LED off, Low: LED on
+    LED takes power from PSEL line; powered from USB when avaialble or battery when USB is not available and switched.
+    - probably need MCP73832 instead of MCP73831
+      73831 has totem pole upper Pch FET on STAT(CHRG) output and LED current leaks through its body diode when not powered.
+      The leaked current gives VBUS voltage around 1.5V and controller detects USB plug wrongly in the result.
+    # schematic Done 09/07  powered from PSEL
+
+- Dual color LED for battery/power status
+    - connect red to charger status/controller and green to VUSB line/Gnd.
+    - yellow/orange(red+green): charging(red drived by charger)
+    - green:                    powered(full charged)
+    - red:                      low voltage alart(drived by controller)
+    - 3025 red/green LED    http://akizukidenshi.com/catalog/g/gI-02548/
+    # module 09/07
+    # schematic 09/08
+- Dual color LED for BT status and indicator
+    - green:                    BT status is connected to RN-42 GPIO5
+    - yellow:                   indicator is controlled by firmware
+    - 3025 yellow/green LED http://akizukidenshi.com/catalog/g/gI-05678/
+    # schematic 09/08
+
+- Voltage divider switch is needed? its current consumption is critical?
+
+- Solder jumpers to removing wireless function easily even if components are installed
+    # Cancel 09/07     not needed on second thought
+
+- Power control silk
+    - box line around components
+
+- Noise from boost converter
+    Input capacitor 10uF causes whine sound. Removing the 10uF stops the noise.
+    Tantalum 3528 one recuced a bit in comparison with ceramic one.
+    With Taiyo Yuden iductor the noise seems to be reduced.
+    # Use tantalum cap
+
+- No 16MHz silk
+
+- D1 LED footprint revise
+
+- Bivar LED light pipe
+    - TH LED footprint drill size
+
+- use PF4 to switch ADC voltage divider
+    - with Nch MOS-FET
+    - http://www.eevblog.com/forum/beginners/measuring-battery-voltage-without-consuming-current/
+    # schematic 09/11
+
+
+PENDING
+-------
+- UVCC should be connected directly to VUSB? like as VBUS.  -- no harm. Pending
+    UVCC is needed only when USB is plugged.
+    But it seems to be no harm even if UVCC is powered when not plugged in.
+- MCU at 3.3V(or directly from Lipo)
+    - Voltage shifter between MCU and switch board
+    - 5V booster controlled by firmware
+- 3.3V regulator controlled by firmware
+    - use reglator with enable pin
+    - power saving controlled by firmware
+Rev.D Errata
+============
+2014/09/22
+2014/10/22
+2014/10/29
+2014/10/31
+
+
+TODO
+----
+- Solder mask clearance
+    - Seeed:                0.1mm min width/0.13mm clearance
+    - Elecrow 5/10pcs:      0.2mm/0.2mm  http://www.elecrow.com/2-layer-10cm-10cm-max-pcb-510pcs-color-free-p-328.html
+    - Elecrow small batch:  0.1mm/0.13mm http://www.elecrow.com/small-batch-of-2-layer-pcbs-50pcs-p-330.html
+    - OSHPark:              not specified https://oshpark.com/guidelines
+
+- Logo
+    - TMK logo
+
+- Paste layer for stencil
+    - need to add paste layers on modules
+    - need to retouch all SMT modules
+    # PENDING 10/31     will do on future revision :D
+
+- extension pins output
+    - in addition to PD0 and PD1 for external
+    - other pins used for BT for internal?
+    - PD6(LED), PC6,7(JP), PD2,3,4,5,PE6,PF0,1,4,5,6,7(BT)
+    - and 5V, GND
+    - for debug(PD0, PD1), for foot pedal, extra key, LED or such?
+    # PENDING   10/30   not necessity now
+
+
+DONE
+----
+- UVCC should be connected directly to VUSB? like as VBUS.
+    - no harm. how about *power consumption*?
+    - UVCC is needed only when USB is plugged.
+    - But it seems to be no harm even if UVCC is powered when not plugged in.
+    - need patch and test on Rev.D  - OK 10/31
+    # DONE 10/31    With connecting UVCC to VUSB it works without problem
+
+- Light pipe position align
+    - right one should be closer to edge
+    - third LED and light pipe on middle between two?
+    # CANCEL 10/30: They were aligned correctly in Rev.D
+
+- Loose light pipe hole
+    - smaller holes for LEDs
+    - check datasheet of light pipe again
+    # DONE 10/31    use 1.1176/0.044 instead of 0.046
+
+- Pull-down resistor of MOSFET switch instead of pull-up
+    - for HHKB key switch board power control
+    - good when power down mode
+    - curretnt flows to IO port through pull-up is needed to disable switch(0.5mA with 10KOhm pull-up)
+    - pull up or down resistor? normally on or off?
+    - difference in power consumption between them?
+    # CANCEL 10/30    no significant difference
+    
+- Lipo voltage divider: leak current
+    - Lipo -> R17 -> PF0, about 1.3V is supplied even when it turns off
+    - high side Pch MOSFET switch is needed
+    - and needs Nch MOSTFET to control gate of Pch
+    # DONE 10/30:   PCB/shecmatic fix
+
+- Idea: Solder jumper inside of PPTC and schotky diode
+    - to save PCB space jumper can place between lands of the components
+    - concern of an accidental short circuit?
+    # DONE 10/30
+
+- MCP73831 leak current from Vdd pin when not powered
+    - it will need a schotky diode there.
+    - VBUS of ATMega32U4 pin fails to detect of USB plug in/off event
+    - LTC4054 doesn't have this problem
+    - schotky also resolves charge LED problem*
+    # DONE 10/30    needs a good Vf diode
+
+- MCP73831 charge LED dim lights up when not charging
+    - MCP73832 has no upside MOSFET: may resolve this?
+    - schotky diode on vdd of MCP73831 resolve this problem*
+    # DONE 10/30    use MCP73831 with schottky diode
+
+- MCP73832 test
+    - charge LED is ok? should not light when not charging
+    - power LED should not light when not powered(need schotky diode on vdd of charger?)
+    # DONE 10/30    OK with the schottky fix on Rev.D
+
+- LED for non BT(USB controller)
+    - using USB hub holes is preferable
+    - for lock key and layer status
+    - BT indicators can be used?
+    - too tight space!
+    # CANCELED 10/30: HHKB users never mind LED indicators for lock keys.
+
+
+PATCH for Rev.D PCB
+===================
+With Rev.D to implements Bluetooth components you better have these fixes. It will work whitout fixes but these will make battery life a little bit longer.
+
+Charger leak Fix
+----------------
+Without this MCU is powered with leakage current of Lipo charger MCP73831 even when swich is off.
+
+Cut trace which runs from 'NoPPTC' solder jumper to 'PPTC' and place schottky diode on 'PPTC' lands with direction presented in picture.
+
+ADC Switch Fix
+--------------
+Without this MCU is powered through ADC pin from Lipo battery.
+Place components as located in picture.
+
+http://i.imgur.com/EJhoeVUl.jpg
+http://i.imgur.com/4MWi1xql.jpg
+http://i.imgur.com/sklO4KDl.jpg
+http://i.imgur.com/ExQrgwzl.jpg
+
+
+
+
+PENDING
+-------
+- MCU at 3.3V(or directly from Lipo)
+    - Voltage shifter between MCU and switch board
+    - 5V booster controlled by firmware
+- 3.3V regulator controlled by firmware
+    - use reglator with enable pin
+    - power saving controlled by firmware
+- Xtal 8MHz
+    - confirmed: USART doesn't work at baud rate 115200
+    - default buad rate of RN-42 is 115200(factory setting)
+    - power saving effect on MCU is not so drastic
+
+
+Rev.E Errata
+============
+2014/12/08
+
+
+- *** Rev.E BT test *** - DONE
+    - with MCP73832, new Schottky, tantalum caps - DONE 12/07
+        * MCP73832 doesn't leak from Vcc pin when unpluged and battery powered
+            34mV vs 2.07V(MCP73831) at Vcc pin
+            MCP73832 doesn't need revese protection diode D5
+        * PMEG2010ER is very low VF while reverse current/voltage is high
+            VF=0.96 vs 1.98(RB160M-30TR)with Fluke 175
+            Anode of D11 is 680mV vs 20mV(RB160M-30TR)
+            780mV is still low < 1.4V VBUS plugin detection(21.11)
+                this doesn't cause false VBUS detect
+                and 780mV on MCP73832 Vcc pin is also no problem.
+            D5 can be removed.
+    - ADC divider switching - DONE 12/07
+        * Drain and Source of Q4 Pch was reversed wrongly on Rev.E.
+
+    - reverse current from Lipo charger - DONE 12/07
+        * MCP73832 has no recverse current from Vcc pin unlike MCP73831
+
+
+- Rev.F design - DONE
+    - current measure point - DONE 12/08
+    - change value of cap 68->47    - DONE 12/08
+    - PPTC land pattern: no solder jumper, use 0Ohm resistor instead - CANCEL 12/08
+    - Q4 Pch FET: wrong Drain and Source - DONE 12/08
+    - D5 can be removed.    - DONE 12/08
+
+
+
+Rev.E Fix
+---------
+Q4 Pch FET drain and source pins are reversed stupidly in schematic and PCB on this revision.
+You need to solder the FET upside down like this, really shame.
+http://i.imgur.com/U6UnzaYl.jpg
+
+
+
+Rev.F Errata
+============
+
+- Poly FUSE foot print
+    Size up to 3225-3228
+    Recommended pads are used already, not changed. Solder jumper is removed. 03/09
+
+- GND pin should be connected to just one side due to thermal relief
+    thin spoke thermal relief is used for reset button 03/09
+
+
+
+Rev.G Errata
+============
+
+
+- Reset switch GND pin: remove thermal releif spokes on top side 
+    To make good solder filet
+    DONE 07/05
+
+
+
+Rev.H Errata
+============
+No Errata.
+
+- USB connector pads
+    should be lessened to recoomended size?
+
+- Remove C13
+    not used anymore.
+
+
+
+Rev.I Errata
+============
+No Errata.
+
+- Remove C13
+    not used anymore.
+
+
+
+Rev.J Errata
+============
+No Errata.
+
+
+
+
+Rev.K Errata
+============
+No Errata.
+
+Change
+------
+- Optimize D1 foot print for reflow
+- Reverse polarity protection for Lipo battery
+- Change R5 value to 1.5K
