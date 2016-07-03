@@ -7,8 +7,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "HHKB Alt Controller"
-Date "2016/01"
-Rev "J"
+Date "2016/07"
+Rev "K"
 Comp "TMK"
 Comment1 ""
 Comment2 ""
@@ -1232,7 +1232,7 @@ Wire Wire Line
 Wire Wire Line
 	4975 6625 4725 6625
 Wire Wire Line
-	4725 6625 4725 6975
+	4725 6425 4725 6975
 Wire Wire Line
 	2050 4900 2150 4900
 Wire Wire Line
@@ -1320,7 +1320,7 @@ Wire Wire Line
 Wire Wire Line
 	6475 7225 6475 7275
 Wire Wire Line
-	3925 6175 4525 6175
+	3925 6175 4725 6175
 Wire Wire Line
 	4875 6350 4875 7025
 Wire Wire Line
@@ -1588,4 +1588,21 @@ F 3 "" H 2300 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2850 2850
+$Comp
+L D D5
+U 1 1 57789BAF
+P 4725 6275
+F 0 "D5" V 4575 6225 60  0000 C CNN
+F 1 "D" V 4875 6225 60  0001 C CNN
+F 2 "keyboard_parts:D_SOD123" H 4725 6275 60  0001 C CNN
+F 3 "" H 4725 6275 60  0000 C CNN
+	1    4725 6275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 6175 4725 6225
+Connection ~ 4525 6175
+Connection ~ 4725 6625
+Text Notes 5100 6125 0    60   ~ 12
+D5: Reverse polarity protection diode\nThis depends on prerequisite that battery has\nprotection circuit in itself.
 $EndSCHEMATC
