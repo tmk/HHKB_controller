@@ -21,3 +21,17 @@ TODO
     - connecting battery with reversed polarity definitely breaks charger chip even with a few seconds, it breaks in kindof short-circuit, fried chip may make battery fault in the end.
     - Bigger + and - marking on battery connector
     - Schottky diode between battery + and -. SS2040FL(2A/40V sod123) works for this.
+
+
+DONE
+----
+In Rev.M:
+
+- TACT switch footprint
+    not fit to SKHH(4.5mm not 5.0mm between pins) 2017/03/24
+
+- LED hole size
+    LED D3 and D10: 1.1mm to 1mm    2017/03/30
+
+- Beef up TH pads of USB connector
+    +0.1mm 2017/03/30
