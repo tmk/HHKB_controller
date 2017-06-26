@@ -13,6 +13,8 @@ dimension
 
 Update
 ------
+- 2017/06/27: Rev.N     Fix footprint of USB: add SMD pads for frame
+- 2017/05/03: Rev.M     Fix footprints of USB, LED, SKHH and DF14
 - 2016/08/27: Rev.L     Enlarge TH land of USB connector
 - 2016/07/03: Rev.K     Add reverse polarity protection and change foot print of D1
 - 2016/01/28: Rev.J     Add TMK logo and remove C13
